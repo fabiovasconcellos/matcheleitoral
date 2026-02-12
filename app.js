@@ -552,8 +552,8 @@ function copyLink() {
     });
 }
 
-// Função para compartilhar resultados em diferentes redes sociais
-async function shareResults(network) {
+// Função para compartilhar resultados em diferentes redes sociais (TEXTO/URL)
+function shareResults(network) {
     // Precisa ter scores disponível (variável global criada em calculateResults)
     if (!window.matchScores || window.matchScores.length === 0) {
         alert('Erro: Resultados não disponíveis');
@@ -570,9 +570,7 @@ async function shareResults(network) {
     // Rastreia compartilhamento
     trackEvent(`compartilhamento_resultado_${network}`, `Clicou para compartilhar resultado no ${network}`);
 
-    const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-
-    // Para "copiar", apenas copia o texto
+    // Para "copiar", copia o texto
     if (network === 'copy') {
         navigator.clipboard.writeText(baseText).then(() => {
             alert('✅ Resultado copiado!\n\nCole onde quiser para compartilhar.');
@@ -583,86 +581,7 @@ async function shareResults(network) {
         return;
     }
 
-    // Para mobile, tenta compartilhar com imagem usando navigator.share
-    if (isMobile) {
-        try {
-            // Mostra mensagem de processamento
-            const loadingDiv = document.createElement('div');
-            loadingDiv.style.cssText = 'position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:9999; display:flex; flex-direction:column; align-items:center; justify-content:center; color:white;';
-            loadingDiv.innerHTML = '<i class="fas fa-spinner fa-spin" style="font-size:3rem; margin-bottom:1rem;"></i><p style="font-size:1.2rem;">Gerando imagem...</p>';
-            document.body.appendChild(loadingDiv);
-
-            // Prepara o card com os top 5
-            const shareList = document.getElementById('share-list');
-            shareList.innerHTML = scores.slice(0, 5).map((dep, idx) => `
-                <div style="display:flex; align-items:center; background:rgba(255,255,255,0.1); padding:15px; border-radius:25px; border-left:10px solid ${idx === 0 ? '#00e676' : '#00d2ff'};">
-                    <div style="width:110px; height:110px; border-radius:50%; overflow:hidden; border:4px solid #fff; margin-right:25px; flex-shrink:0;">
-                        <img src="https://wsrv.nl/?url=${encodeURIComponent(dep.foto)}&w=200&h=200&fit=cover" style="width:100%; height:100%; object-fit:cover;" crossorigin="anonymous">
-                    </div>
-                    <div style="flex:1;">
-                        <h2 style="font-size:2.2rem; margin-bottom:5px;">${dep.nome}</h2>
-                        <p style="font-size:1.6rem; opacity:0.8;">${dep.partido} - ${dep.uf}</p>
-                    </div>
-                    <div style="font-size:3rem; font-weight:900; color:${idx === 0 ? '#00e676' : '#00d2ff'};">
-                        ${dep.pct}%
-                    </div>
-                </div>
-            `).join('');
-
-            // Gera a imagem
-            const canvas = await html2canvas(document.querySelector("#share-card"), {
-                scale: 1,
-                useCORS: true,
-                backgroundColor: null,
-                allowTaint: true
-            });
-
-            // Converte para blob
-            canvas.toBlob(async (blob) => {
-                const file = new File([blob], "match-eleitoral-resultado.png", { type: "image/png" });
-
-                // Remove loading
-                document.body.removeChild(loadingDiv);
-
-                // Tenta compartilhar com imagem via navigator.share
-                if (navigator.canShare && navigator.canShare({ files: [file] })) {
-                    try {
-                        await navigator.share({
-                            files: [file],
-                            title: 'Meu Match Eleitoral',
-                            text: baseText
-                        });
-                        return; // Sucesso, encerra aqui
-                    } catch (e) {
-                        if (e.name === 'AbortError') {
-                            return; // Usuário cancelou
-                        }
-                        console.error('Erro ao compartilhar com imagem:', e);
-                        // Continua para fallback abaixo
-                    }
-                }
-
-                // Fallback: compartilha apenas texto/URL
-                compartilharTexto(network, baseText);
-            }, 'image/png');
-
-        } catch (err) {
-            console.error('Erro ao gerar imagem:', err);
-            // Remove loading se existir
-            const loadingDiv = document.querySelector('div[style*="z-index:9999"]');
-            if (loadingDiv) document.body.removeChild(loadingDiv);
-            // Fallback: compartilha apenas texto/URL
-            compartilharTexto(network, baseText);
-        }
-        return;
-    }
-
-    // Para desktop, compartilha apenas texto/URL
-    compartilharTexto(network, baseText);
-}
-
-// Função auxiliar para compartilhar texto/URL
-function compartilharTexto(network, baseText) {
+    // Compartilha texto/URL
     const url = encodeURIComponent(window.location.href);
     const text = encodeURIComponent(baseText);
     let shareUrl = "";
@@ -675,8 +594,6 @@ function compartilharTexto(network, baseText) {
             break;
         case 'twitter':
             // Twitter tem limite de caracteres
-            const scores = window.matchScores;
-            const topMatch = scores[0];
             const twitterText = encodeURIComponent(`Minha maior afinidade foi de ${topMatch.pct}% com ${topMatch.nome} (${topMatch.partido}). Faça o teste:`);
             shareUrl = `https://twitter.com/intent/tweet?text=${twitterText}&url=${url}`;
             break;
@@ -689,9 +606,110 @@ function compartilharTexto(network, baseText) {
     }
 
     if (shareUrl) {
-        console.log('Compartilhando:', network, shareUrl);
         window.open(shareUrl, '_blank');
     }
+}
+
+// Função para compartilhar IMAGEM dos resultados
+async function shareResultImage() {
+    if (!window.matchScores || window.matchScores.length === 0) {
+        alert('Erro: Resultados não disponíveis');
+        return;
+    }
+
+    const scores = window.matchScores;
+    const topMatch = scores[0];
+    const bottomMatch = scores[scores.length - 1];
+
+    const baseText = `Olha que interessante! 💡 Esse app calcula o quanto eu e uma lista de deputados temos de afinidade. 🧑‍⚖️🏛️\n\nMinha maior afinidade foi de ${topMatch.pct}% com ${topMatch.nome} (${topMatch.partido}) e a menor ${bottomMatch.pct}% com ${bottomMatch.nome} (${bottomMatch.partido}). 😲\n\nFaça o teste: ${window.location.href}`;
+
+    trackEvent('compartilhamento_imagem_resultado', 'Clicou para compartilhar imagem do resultado');
+
+    try {
+        // Mostra loading
+        const loadingDiv = document.createElement('div');
+        loadingDiv.id = 'share-loading';
+        loadingDiv.style.cssText = 'position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:9999; display:flex; flex-direction:column; align-items:center; justify-content:center; color:white;';
+        loadingDiv.innerHTML = '<i class="fas fa-spinner fa-spin" style="font-size:3rem; margin-bottom:1rem;"></i><p style="font-size:1.2rem;">Gerando imagem...</p>';
+        document.body.appendChild(loadingDiv);
+
+        // Prepara o card com os top 5
+        const shareList = document.getElementById('share-list');
+        shareList.innerHTML = scores.slice(0, 5).map((dep, idx) => `
+            <div style="display:flex; align-items:center; background:rgba(255,255,255,0.1); padding:15px; border-radius:25px; border-left:10px solid ${idx === 0 ? '#00e676' : '#00d2ff'};">
+                <div style="width:110px; height:110px; border-radius:50%; overflow:hidden; border:4px solid #fff; margin-right:25px; flex-shrink:0;">
+                    <img src="https://wsrv.nl/?url=${encodeURIComponent(dep.foto)}&w=200&h=200&fit=cover" style="width:100%; height:100%; object-fit:cover;" crossorigin="anonymous">
+                </div>
+                <div style="flex:1;">
+                    <h2 style="font-size:2.2rem; margin-bottom:5px;">${dep.nome}</h2>
+                    <p style="font-size:1.6rem; opacity:0.8;">${dep.partido} - ${dep.uf}</p>
+                </div>
+                <div style="font-size:3rem; font-weight:900; color:${idx === 0 ? '#00e676' : '#00d2ff'};">
+                    ${dep.pct}%
+                </div>
+            </div>
+        `).join('');
+
+        // Gera a imagem
+        const canvas = await html2canvas(document.querySelector("#share-card"), {
+            scale: 1,
+            useCORS: true,
+            backgroundColor: null,
+            allowTaint: true
+        });
+
+        // Converte para blob
+        canvas.toBlob(async (blob) => {
+            const file = new File([blob], "match-eleitoral-resultado.png", { type: "image/png" });
+
+            // Remove loading
+            const loading = document.getElementById('share-loading');
+            if (loading) document.body.removeChild(loading);
+
+            // Mobile: Tenta compartilhar com navigator.share
+            if (navigator.canShare && navigator.canShare({ files: [file] })) {
+                try {
+                    await navigator.share({
+                        files: [file],
+                        title: 'Meu Match Eleitoral',
+                        text: baseText
+                    });
+                } catch (e) {
+                    if (e.name !== 'AbortError') {
+                        console.error('Erro ao compartilhar:', e);
+                    }
+                }
+            }
+            // Desktop ou fallback: Baixa a imagem
+            else {
+                const link = document.createElement('a');
+                link.href = URL.createObjectURL(blob);
+                link.download = 'match-eleitoral-resultado.png';
+                link.click();
+
+                // Copia texto para área de transferência
+                navigator.clipboard.writeText(baseText).then(() => {
+                    alert('✅ Imagem baixada e texto copiado!\n\nVocê pode compartilhar manualmente.');
+                }).catch(() => {
+                    alert('✅ Imagem baixada!\n\nVocê pode compartilhá-la manualmente.');
+                });
+            }
+        }, 'image/png');
+
+    } catch (err) {
+        console.error('Erro ao gerar imagem:', err);
+        const loading = document.getElementById('share-loading');
+        if (loading) document.body.removeChild(loading);
+        alert('Erro ao gerar imagem. Tente novamente.');
+    }
+}
+
+// Mostra botão de compartilhar imagem apenas em mobile
+if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+    window.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('share-image-btn');
+        if (btn) btn.style.display = 'block';
+    });
 }
 
 
@@ -816,6 +834,7 @@ function sendDataToSheet(isFinal, silent = false) {
         }
     }).catch(err => console.error("Erro no envio:", err));
 }
+
 
 
 
