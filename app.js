@@ -603,7 +603,7 @@ function shareResults(network) {
     const bottomMatch = scores[scores.length - 1];
 
     // Texto com emojis para melhor engajamento
-    const baseText = `Olha que interessante! 💡 Esse app calcula o quanto eu e uma lista de deputados temos de afinidade. 🧑‍⚖️🏛️\n\nMinha maior afinidade foi de ${topMatch.pct}% com ${topMatch.nome} (${topMatch.partido}) e a menor ${bottomMatch.pct}% com ${bottomMatch.nome} (${bottomMatch.partido}). 😲\n\nFaça o teste: ${window.location.href}`;
+    const baseText = `Olha que interessante! 💡 Esse app calcula o quanto eu e uma lista de deputados temos de afinidade. 🧑‍⚖️🏛️\n\nMinha maior afinidade foi de ${topMatch.pct}% com ${topMatch.nome} (${topMatch.partido}-${topMatch.uf}) e a menor ${bottomMatch.pct}% com ${bottomMatch.nome} (${bottomMatch.partido}-${bottomMatch.uf}). 😲\n\nFaça o teste: ${window.location.href}`;
 
     // Rastreia compartilhamento
     trackEvent(`compartilhamento_resultado_${network}`, `Clicou para compartilhar resultado no ${network}`);
@@ -632,7 +632,7 @@ function shareResults(network) {
             break;
         case 'twitter':
             // Twitter: texto curto + URL
-            const twitterTextResultado = encodeURIComponent(`Minha maior afinidade foi de ${topMatch.pct}% com ${topMatch.nome} (${topMatch.partido}). Faça o teste: ${window.location.href}`);
+            const twitterTextResultado = encodeURIComponent(`Minha maior afinidade foi de ${topMatch.pct}% com ${topMatch.nome} (${topMatch.partido}-${topMatch.uf}). Faça o teste: ${window.location.href}`);
             shareUrl = `https://twitter.com/intent/tweet?text=${twitterTextResultado}`;
             break;
         case 'linkedin':
@@ -678,7 +678,7 @@ async function shareResultImage() {
     const topMatch = scores[0];
     const bottomMatch = scores[scores.length - 1];
 
-    const baseText = `Olha que interessante! 💡 Esse app calcula o quanto eu e uma lista de deputados temos de afinidade. 🧑‍⚖️🏛️\n\nMinha maior afinidade foi de ${topMatch.pct}% com ${topMatch.nome} (${topMatch.partido}) e a menor ${bottomMatch.pct}% com ${bottomMatch.nome} (${bottomMatch.partido}). 😲\n\nFaça o teste: ${window.location.href}`;
+    const baseText = `Olha que interessante! 💡 Esse app calcula o quanto eu e uma lista de deputados temos de afinidade. 🧑‍⚖️🏛️\n\nMinha maior afinidade foi de ${topMatch.pct}% com ${topMatch.nome} (${topMatch.partido}-${topMatch.uf}) e a menor ${bottomMatch.pct}% com ${bottomMatch.nome} (${bottomMatch.partido}-${bottomMatch.uf}). 😲\n\nFaça o teste: ${window.location.href}`;
 
     trackEvent('compartilhamento_imagem_resultado', 'Clicou para compartilhar imagem do resultado');
 
@@ -883,6 +883,7 @@ function sendDataToSheet(isFinal, silent = false) {
         }
     }).catch(err => console.error("Erro no envio:", err));
 }
+
 
 
 
