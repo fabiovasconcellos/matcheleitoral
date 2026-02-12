@@ -648,6 +648,25 @@ function shareResults(network) {
     }
 }
 
+// Função helper para baixar imagem (desktop)
+function downloadImage(blob, text) {
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = 'match-eleitoral-resultado.png';
+    link.click();
+
+    // Copia texto para área de transferência
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(() => {
+            alert('✅ Imagem baixada e texto copiado!\n\nVocê pode compartilhar manualmente.');
+        }).catch(() => {
+            alert('✅ Imagem baixada!\n\nVocê pode compartilhá-la manualmente.');
+        });
+    } else {
+        alert('✅ Imagem baixada!\n\nVocê pode compartilhá-la manualmente.');
+    }
+}
+
 // Função para compartilhar IMAGEM dos resultados
 async function shareResultImage() {
     if (!window.matchScores || window.matchScores.length === 0) {
@@ -705,7 +724,7 @@ async function shareResultImage() {
             if (loading) document.body.removeChild(loading);
 
             // Mobile: Tenta compartilhar com navigator.share
-            if (navigator.canShare && navigator.canShare({ files: [file] })) {
+            if (navigator.share && navigator.canShare && navigator.canShare({ files: [file] })) {
                 try {
                     await navigator.share({
                         files: [file],
@@ -715,22 +734,14 @@ async function shareResultImage() {
                 } catch (e) {
                     if (e.name !== 'AbortError') {
                         console.error('Erro ao compartilhar:', e);
+                        // Se falhou, baixa a imagem
+                        downloadImage(blob, baseText);
                     }
                 }
             }
             // Desktop ou fallback: Baixa a imagem
             else {
-                const link = document.createElement('a');
-                link.href = URL.createObjectURL(blob);
-                link.download = 'match-eleitoral-resultado.png';
-                link.click();
-
-                // Copia texto para área de transferência
-                navigator.clipboard.writeText(baseText).then(() => {
-                    alert('✅ Imagem baixada e texto copiado!\n\nVocê pode compartilhar manualmente.');
-                }).catch(() => {
-                    alert('✅ Imagem baixada!\n\nVocê pode compartilhá-la manualmente.');
-                });
+                downloadImage(blob, baseText);
             }
         }, 'image/png');
 
@@ -872,6 +883,8 @@ function sendDataToSheet(isFinal, silent = false) {
         }
     }).catch(err => console.error("Erro no envio:", err));
 }
+
+
 
 
 
