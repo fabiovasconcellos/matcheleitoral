@@ -519,7 +519,9 @@ function shareSocial(network) {
             shareUrl = `https://api.whatsapp.com/send?text=${text}%20${url}`;
             break;
         case 'twitter':
-            shareUrl = `https://twitter.com/intent/tweet?text=${text}&url=${url}`;
+            // Twitter: texto + URL juntos
+            const twitterTextInicial = encodeURIComponent(`Descubra seu Match Eleitoral! Compare seus votos com os deputados federais. ${window.location.href}`);
+            shareUrl = `https://twitter.com/intent/tweet?text=${twitterTextInicial}`;
             break;
         case 'linkedin':
             shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
@@ -593,9 +595,9 @@ function shareResults(network) {
                 : `https://web.whatsapp.com/send?text=${text}`;
             break;
         case 'twitter':
-            // Twitter tem limite de caracteres
-            const twitterText = encodeURIComponent(`Minha maior afinidade foi de ${topMatch.pct}% com ${topMatch.nome} (${topMatch.partido}). Faça o teste:`);
-            shareUrl = `https://twitter.com/intent/tweet?text=${twitterText}&url=${url}`;
+            // Twitter: texto curto + URL
+            const twitterTextResultado = encodeURIComponent(`Minha maior afinidade foi de ${topMatch.pct}% com ${topMatch.nome} (${topMatch.partido}). Faça o teste: ${window.location.href}`);
+            shareUrl = `https://twitter.com/intent/tweet?text=${twitterTextResultado}`;
             break;
         case 'linkedin':
             shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
@@ -834,6 +836,8 @@ function sendDataToSheet(isFinal, silent = false) {
         }
     }).catch(err => console.error("Erro no envio:", err));
 }
+
+
 
 
 
