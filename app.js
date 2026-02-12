@@ -301,33 +301,56 @@ function initSwipe() {
     const card = document.getElementById('active-card');
     let startX = 0;
     let currentX = 0;
+    let hasMoved = false; // Flag para detectar se houve movimento real
 
     card.addEventListener('touchstart', (e) => {
         startX = e.touches[0].clientX;
+        currentX = startX; // Inicializa currentX com startX
+        hasMoved = false; // Reset da flag
     });
 
     card.addEventListener('touchmove', (e) => {
         // Previne scroll da tela enquanto arrasta o card
         e.preventDefault();
         currentX = e.touches[0].clientX;
+        hasMoved = true; // Marca que houve movimento
         const diff = currentX - startX;
         updateCardTransform(card, diff);
     });
 
     card.addEventListener('touchend', (e) => {
         const diff = currentX - startX;
-        finishSwipe(card, diff);
+        // Só processa o swipe se houve movimento real
+        if (hasMoved) {
+            finishSwipe(card, diff);
+        } else {
+            // Toque sem movimento: reseta o card
+            card.style.transform = "";
+            card.style.transition = "transform 0.2s";
+            card.style.boxShadow = "";
+            const simStamp = card.querySelector('.stamp.sim');
+            const naoStamp = card.querySelector('.stamp.nao');
+            if (simStamp) simStamp.style.opacity = 0;
+            if (naoStamp) naoStamp.style.opacity = 0;
+        }
+        // Reset
+        startX = 0;
+        currentX = 0;
+        hasMoved = false;
     });
 
     // Mouse support
     card.addEventListener('mousedown', (e) => {
         startX = e.clientX;
+        currentX = startX; // Inicializa currentX com startX
+        hasMoved = false; // Reset da flag
         card.style.cursor = 'grabbing';
         card.addEventListener('mousemove', onMouseMove);
     });
 
     const onMouseMove = (e) => {
         currentX = e.clientX;
+        hasMoved = true; // Marca que houve movimento
         const diff = currentX - startX;
         updateCardTransform(card, diff);
     };
@@ -337,9 +360,22 @@ function initSwipe() {
         card.removeEventListener('mousemove', onMouseMove);
         card.style.cursor = 'grab';
         const diff = currentX - startX;
-        finishSwipe(card, diff);
+        // Só processa o swipe se houve movimento real
+        if (hasMoved) {
+            finishSwipe(card, diff);
+        } else {
+            // Clique sem movimento: reseta o card
+            card.style.transform = "";
+            card.style.transition = "transform 0.2s";
+            card.style.boxShadow = "";
+            const simStamp = card.querySelector('.stamp.sim');
+            const naoStamp = card.querySelector('.stamp.nao');
+            if (simStamp) simStamp.style.opacity = 0;
+            if (naoStamp) naoStamp.style.opacity = 0;
+        }
         startX = 0;
         currentX = 0;
+        hasMoved = false;
     });
 }
 
@@ -836,6 +872,8 @@ function sendDataToSheet(isFinal, silent = false) {
         }
     }).catch(err => console.error("Erro no envio:", err));
 }
+
+
 
 
 
