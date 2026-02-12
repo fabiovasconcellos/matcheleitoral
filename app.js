@@ -583,11 +583,10 @@ async function shareResults(network) {
         return;
     }
 
-    // Para mobile com WhatsApp, tenta compartilhar com imagem
-    if (isMobile && network === 'whatsapp') {
+    // Para mobile, tenta compartilhar com imagem usando navigator.share
+    if (isMobile) {
         try {
             // Mostra mensagem de processamento
-            const originalBody = document.body.innerHTML;
             const loadingDiv = document.createElement('div');
             loadingDiv.style.cssText = 'position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:9999; display:flex; flex-direction:column; align-items:center; justify-content:center; color:white;';
             loadingDiv.innerHTML = '<i class="fas fa-spinner fa-spin" style="font-size:3rem; margin-bottom:1rem;"></i><p style="font-size:1.2rem;">Gerando imagem...</p>';
@@ -625,7 +624,7 @@ async function shareResults(network) {
                 // Remove loading
                 document.body.removeChild(loadingDiv);
 
-                // Tenta compartilhar com imagem
+                // Tenta compartilhar com imagem via navigator.share
                 if (navigator.canShare && navigator.canShare({ files: [file] })) {
                     try {
                         await navigator.share({
@@ -633,28 +632,37 @@ async function shareResults(network) {
                             title: 'Meu Match Eleitoral',
                             text: baseText
                         });
+                        return; // Sucesso, encerra aqui
                     } catch (e) {
-                        if (e.name !== 'AbortError') {
-                            console.error(e);
-                            // Fallback: abre WhatsApp com texto
-                            window.open(`https://wa.me/?text=${encodeURIComponent(baseText)}`, '_blank');
+                        if (e.name === 'AbortError') {
+                            return; // Usuário cancelou
                         }
+                        console.error('Erro ao compartilhar com imagem:', e);
+                        // Continua para fallback abaixo
                     }
-                } else {
-                    // Fallback: abre WhatsApp com texto
-                    window.open(`https://wa.me/?text=${encodeURIComponent(baseText)}`, '_blank');
                 }
+
+                // Fallback: compartilha apenas texto/URL
+                compartilharTexto(network, baseText);
             }, 'image/png');
 
         } catch (err) {
-            console.error(err);
-            // Fallback: abre WhatsApp com texto
-            window.open(`https://wa.me/?text=${encodeURIComponent(baseText)}`, '_blank');
+            console.error('Erro ao gerar imagem:', err);
+            // Remove loading se existir
+            const loadingDiv = document.querySelector('div[style*="z-index:9999"]');
+            if (loadingDiv) document.body.removeChild(loadingDiv);
+            // Fallback: compartilha apenas texto/URL
+            compartilharTexto(network, baseText);
         }
         return;
     }
 
-    // Para outras redes ou desktop, compartilha apenas texto/URL
+    // Para desktop, compartilha apenas texto/URL
+    compartilharTexto(network, baseText);
+}
+
+// Função auxiliar para compartilhar texto/URL
+function compartilharTexto(network, baseText) {
     const url = encodeURIComponent(window.location.href);
     const text = encodeURIComponent(baseText);
     let shareUrl = "";
@@ -667,6 +675,8 @@ async function shareResults(network) {
             break;
         case 'twitter':
             // Twitter tem limite de caracteres
+            const scores = window.matchScores;
+            const topMatch = scores[0];
             const twitterText = encodeURIComponent(`Minha maior afinidade foi de ${topMatch.pct}% com ${topMatch.nome} (${topMatch.partido}). Faça o teste:`);
             shareUrl = `https://twitter.com/intent/tweet?text=${twitterText}&url=${url}`;
             break;
@@ -806,4 +816,7 @@ function sendDataToSheet(isFinal, silent = false) {
         }
     }).catch(err => console.error("Erro no envio:", err));
 }
+
+
+
 
