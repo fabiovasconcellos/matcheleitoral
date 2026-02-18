@@ -5,7 +5,6 @@ const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxEJiV9ugH1_4
 let deputies = [];
 let userVotes = {};
 let sessionId = generateSessionId(); // Identificador único da sessão
-// ... rest of variables
 let userProfile = {
     uf: "",
     ideologia: "", // Mudado de 4 para vazio (default explícito exigido)
@@ -32,8 +31,6 @@ function getDeviceType() {
 
 let currentPautaIndex = 0;
 let isVoting = false;
-
-// ... (Restante do código)
 
 const PAUTAS = [
     {
@@ -505,10 +502,10 @@ function calculateResults() {
                             text: baseText
                         });
                     } catch (e) {
-                        if (e.name !== 'AbortError') console.error(e);
+                         if (e.name !== 'AbortError') alert("Erro ao compartilhar: " + e.message);
                     }
                 } else {
-                    // Fallback Mobile raro (se não suportar arquivo)
+                    // Fallback Mobile raro
                     const url = `https://wa.me/?text=${encodeURIComponent(baseText)}`;
                     window.open(url, '_blank');
                 }
@@ -519,6 +516,7 @@ function calculateResults() {
 
         } catch (err) {
             console.error(err);
+            alert("Não foi possível gerar a imagem. Compartilhando apenas texto.");
             const url = `https://wa.me/?text=${encodeURIComponent(baseText)}`;
             window.open(url, '_blank');
             btn.disabled = false;
@@ -586,27 +584,45 @@ function showDeputyDetail(depId, matchPct) {
 }
 
 
-function shareSocial(network) {
-    const text = encodeURIComponent("Descubra seu Match Eleitoral! Compare seus votos com os deputados federais.");
-    const url = encodeURIComponent(window.location.href);
-    let shareUrl = "";
-
-    // Rastreia compartilhamento por rede social
+async function shareSocial(network) {
+    const text = "Descubra seu Match Eleitoral! Compare seus votos com os deputados federais.";
+    const url = window.location.href;
+    
+    // Rastreia o clique
     trackEvent(`compartilhamento_url_${network}`, `Clicou para compartilhar no ${network}`);
+
+    // Tenta usar o compartilhamento NATIVO do celular primeiro (se disponível)
+    if (navigator.share && /Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+        try {
+            await navigator.share({
+                title: 'Match Eleitoral',
+                text: text,
+                url: url
+            });
+            return; // Se funcionou, para aqui
+        } catch (err) {
+            // Se cancelou ou deu erro, segue para o fallback abaixo
+            console.log("Share nativo cancelado ou falhou, tentando URL direta.");
+        }
+    }
+
+    // Fallback: Abre a URL específica da rede
+    const encodedText = encodeURIComponent(text);
+    const encodedUrl = encodeURIComponent(url);
+    let shareUrl = "";
 
     switch (network) {
         case 'whatsapp':
-            shareUrl = `https://api.whatsapp.com/send?text=${text}%20${url}`;
+            shareUrl = `https://api.whatsapp.com/send?text=${encodedText}%20${encodedUrl}`;
             break;
         case 'twitter':
-            shareUrl = `https://twitter.com/intent/tweet?text=${text}&url=${url}`;
+            shareUrl = `https://twitter.com/intent/tweet?text=${encodedText}&url=${encodedUrl}`;
             break;
         case 'linkedin':
-            shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
+            shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`;
             break;
         case 'bluesky':
-            // Bluesky intent not standard yet, just open app or site
-            shareUrl = `https://bsky.app/intent/compose?text=${text}%20${url}`;
+            shareUrl = `https://bsky.app/intent/compose?text=${encodedText}%20${encodedUrl}`;
             break;
     }
 
@@ -708,5 +724,6 @@ function sendDataToSheet(isFinal, silent = false) {
         }
     }).catch(err => console.error("Erro no envio:", err));
 }
+
 
 
