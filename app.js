@@ -2,33 +2,10 @@
 // Cole a URL do seu Google Apps Script aqui entre as aspas:
 const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxEJiV9ugH1_43ry-qoxz10DD96vZnNY7XdB_HSq6_oPVSLBXelRKmDJnQsnsuGOLjH/exec";
 
-// *** DETECÇÃO DE DISPOSITIVO ***
-function getDeviceType() {
-    const ua = navigator.userAgent;
-    if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
-        return "Tablet";
-    }
-    if (/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(ua)) {
-        return "Smartphone";
-    }
-    return "Desktop";
-}
-
 let deputies = [];
 let userVotes = {};
 let sessionId = generateSessionId(); // Identificador único da sessão
-
-// *** SISTEMA DE RASTREAMENTO DE TEMPO ***
-// Armazena timestamps de cada fase para calcular duração
-const phaseTimestamps = {
-    app_loaded: null,           // Quando o app carregou
-    inicio: null,               // Clicou em "Iniciar"
-    uf_selecionada: null,       // Selecionou UF/ideologia/partido
-    votacao_iniciada: null,     // Primeira votação
-    votacao_completa: null,     // Completou votações
-    demografica_completa: null  // Completou pesquisa
-};
-
+// ... rest of variables
 let userProfile = {
     uf: "",
     ideologia: "", // Mudado de 4 para vazio (default explícito exigido)
@@ -38,6 +15,21 @@ let userProfile = {
     idade: "",
     avaliacaoCongresso: "" // Mudado de 5 para vazio
 };
+// Métricas de Tempo e Dispositivo
+let sessionStartTime = Date.now();
+let lastEventTime = Date.now();
+
+function getDeviceType() {
+    const ua = navigator.userAgent;
+    if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
+        return "tablet";
+    }
+    else if (/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(ua)) {
+        return "mobile";
+    }
+    return "desktop";
+}
+
 let currentPautaIndex = 0;
 let isVoting = false;
 
@@ -84,9 +76,6 @@ const PAUTAS = [
 
 // Load Data
 async function init() {
-    // Registra timestamp de carregamento do app
-    phaseTimestamps.app_loaded = Date.now();
-
     try {
         const response = await fetch('data.json');
         deputies = await response.json();
@@ -301,56 +290,33 @@ function initSwipe() {
     const card = document.getElementById('active-card');
     let startX = 0;
     let currentX = 0;
-    let hasMoved = false; // Flag para detectar se houve movimento real
 
     card.addEventListener('touchstart', (e) => {
         startX = e.touches[0].clientX;
-        currentX = startX; // Inicializa currentX com startX
-        hasMoved = false; // Reset da flag
     });
 
     card.addEventListener('touchmove', (e) => {
         // Previne scroll da tela enquanto arrasta o card
         e.preventDefault();
         currentX = e.touches[0].clientX;
-        hasMoved = true; // Marca que houve movimento
         const diff = currentX - startX;
         updateCardTransform(card, diff);
     });
 
     card.addEventListener('touchend', (e) => {
         const diff = currentX - startX;
-        // Só processa o swipe se houve movimento real
-        if (hasMoved) {
-            finishSwipe(card, diff);
-        } else {
-            // Toque sem movimento: reseta o card
-            card.style.transform = "";
-            card.style.transition = "transform 0.2s";
-            card.style.boxShadow = "";
-            const simStamp = card.querySelector('.stamp.sim');
-            const naoStamp = card.querySelector('.stamp.nao');
-            if (simStamp) simStamp.style.opacity = 0;
-            if (naoStamp) naoStamp.style.opacity = 0;
-        }
-        // Reset
-        startX = 0;
-        currentX = 0;
-        hasMoved = false;
+        finishSwipe(card, diff);
     });
 
     // Mouse support
     card.addEventListener('mousedown', (e) => {
         startX = e.clientX;
-        currentX = startX; // Inicializa currentX com startX
-        hasMoved = false; // Reset da flag
         card.style.cursor = 'grabbing';
         card.addEventListener('mousemove', onMouseMove);
     });
 
     const onMouseMove = (e) => {
         currentX = e.clientX;
-        hasMoved = true; // Marca que houve movimento
         const diff = currentX - startX;
         updateCardTransform(card, diff);
     };
@@ -360,22 +326,9 @@ function initSwipe() {
         card.removeEventListener('mousemove', onMouseMove);
         card.style.cursor = 'grab';
         const diff = currentX - startX;
-        // Só processa o swipe se houve movimento real
-        if (hasMoved) {
-            finishSwipe(card, diff);
-        } else {
-            // Clique sem movimento: reseta o card
-            card.style.transform = "";
-            card.style.transition = "transform 0.2s";
-            card.style.boxShadow = "";
-            const simStamp = card.querySelector('.stamp.sim');
-            const naoStamp = card.querySelector('.stamp.nao');
-            if (simStamp) simStamp.style.opacity = 0;
-            if (naoStamp) naoStamp.style.opacity = 0;
-        }
+        finishSwipe(card, diff);
         startX = 0;
         currentX = 0;
-        hasMoved = false;
     });
 }
 
@@ -455,9 +408,6 @@ function calculateResults() {
 
     scores.sort((a, b) => b.pct - a.pct);
 
-    // Salva scores globalmente para uso em shareResults()
-    window.matchScores = scores;
-
     const container = document.getElementById('ranking-container');
     container.innerHTML = `
         <p style="text-align:center; font-size:0.9rem; margin-bottom:1rem; color:var(--text-muted);">
@@ -480,8 +430,97 @@ function calculateResults() {
 
     const topMatch = scores[0];
     const bottomMatch = scores[scores.length - 1]; // Pega o último da lista (menor afinidade)
-}
 
+    document.getElementById('share-results-btn').onclick = async () => {
+        trackEvent('compartilhamento_resultado', 'Clicou para compartilhar resultado no WhatsApp');
+
+        const btn = document.getElementById('share-results-btn');
+        const originalText = btn.innerHTML;
+
+        // 1. Definições Básicas
+        const topMatch = scores[0];
+        const bottomMatch = scores[scores.length - 1]; // Menor afinidade
+        const baseText = `*Olha que interessante!* 💡 Esse app calcula o quanto eu e uma lista de deputados temos de afinidade. 🧑‍⚖️🏛️\n\n*Minha maior afinidade foi de ${topMatch.pct}%* com *${topMatch.nome}* (${topMatch.partido}) e a menor ${bottomMatch.pct}% com ${bottomMatch.nome} (${bottomMatch.partido}). 😲\n\nFaz o teste aí: ${window.location.href}`;
+        const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+        // 2. Lógica Desktop (Sem Imagem, só Texto + WhatsApp)
+        if (!isMobile) {
+            navigator.clipboard.writeText(baseText).then(() => {
+                alert("📋 Resultado copiado!\n\nFoi aberta uma aba do WhatsApp. Cole o texto (CTRL+V) para enviar.");
+                setTimeout(() => {
+                    const url = `https://web.whatsapp.com/send?text=${encodeURIComponent(baseText)}`;
+                    window.open(url, '_blank');
+                }, 500);
+            }).catch(() => {
+                const url = `https://web.whatsapp.com/send?text=${encodeURIComponent(baseText)}`;
+                window.open(url, '_blank');
+            });
+            return; // Encerra aqui no Desktop
+        }
+
+        // 3. Lógica Mobile (Gera Imagem + Share Nativo)
+        btn.disabled = true;
+        btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Gerando imagem...';
+
+        try {
+            // A. Prepara o Card Oculto (Top 5)
+            const shareList = document.getElementById('share-list');
+            shareList.innerHTML = scores.slice(0, 5).map((dep, idx) => `
+                <div style="display:flex; align-items:center; background:rgba(255,255,255,0.1); padding:15px; border-radius:25px; border-left:10px solid ${idx === 0 ? '#00e676' : '#00d2ff'};">
+                    <div style="width:110px; height:110px; border-radius:50%; overflow:hidden; border:4px solid #fff; margin-right:25px; flex-shrink:0;">
+                        <img src="https://wsrv.nl/?url=${encodeURIComponent(dep.foto)}&w=200&h=200&fit=cover" style="width:100%; height:100%; object-fit:cover;" crossorigin="anonymous">
+                    </div>
+                    <div style="flex:1;">
+                        <h2 style="font-size:2.2rem; margin-bottom:5px;">${dep.nome}</h2>
+                        <p style="font-size:1.6rem; opacity:0.8;">${dep.partido} - ${dep.uf}</p>
+                    </div>
+                    <div style="font-size:3rem; font-weight:900; color:${idx === 0 ? '#00e676' : '#00d2ff'};">
+                        ${dep.pct}%
+                    </div>
+                </div>
+            `).join('');
+
+            // B. Gera a Imagem
+            const canvas = await html2canvas(document.querySelector("#share-card"), {
+                scale: 1,
+                useCORS: true,
+                backgroundColor: null,
+                allowTaint: true
+            });
+
+            // C. Converte e Compartilha
+            canvas.toBlob(async (blob) => {
+                const file = new File([blob], "match-eleitoral-resultado.png", { type: "image/png" });
+
+                if (navigator.canShare && navigator.canShare({ files: [file] })) {
+                    try {
+                        await navigator.share({
+                            files: [file],
+                            title: 'Meu Match Eleitoral',
+                            text: baseText
+                        });
+                    } catch (e) {
+                        if (e.name !== 'AbortError') console.error(e);
+                    }
+                } else {
+                    // Fallback Mobile raro (se não suportar arquivo)
+                    const url = `https://wa.me/?text=${encodeURIComponent(baseText)}`;
+                    window.open(url, '_blank');
+                }
+
+                btn.disabled = false;
+                btn.innerHTML = originalText;
+            }, 'image/png');
+
+        } catch (err) {
+            console.error(err);
+            const url = `https://wa.me/?text=${encodeURIComponent(baseText)}`;
+            window.open(url, '_blank');
+            btn.disabled = false;
+            btn.innerHTML = originalText;
+        }
+    };
+}
 
 function showDeputyDetail(depId, matchPct) {
     const dep = deputies.find(d => d.id == depId);
@@ -555,9 +594,7 @@ function shareSocial(network) {
             shareUrl = `https://api.whatsapp.com/send?text=${text}%20${url}`;
             break;
         case 'twitter':
-            // Twitter: texto + URL juntos
-            const twitterTextInicial = encodeURIComponent(`Descubra seu Match Eleitoral! Compare seus votos com os deputados federais. ${window.location.href}`);
-            shareUrl = `https://twitter.com/intent/tweet?text=${twitterTextInicial}`;
+            shareUrl = `https://twitter.com/intent/tweet?text=${text}&url=${url}`;
             break;
         case 'linkedin':
             shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
@@ -569,196 +606,6 @@ function shareSocial(network) {
     }
 
     if (shareUrl) window.open(shareUrl, '_blank');
-}
-
-// Função para copiar link do site
-function copyLink() {
-    const url = window.location.href;
-
-    // Rastreia clique no botão de copiar link
-    trackEvent('compartilhamento_url_copy', 'Clicou para copiar link');
-
-    // Tenta copiar para área de transferência
-    navigator.clipboard.writeText(url).then(() => {
-        // Feedback visual de sucesso
-        alert('✅ Link copiado!\n\nCole onde quiser para compartilhar o Match Eleitoral.');
-    }).catch(err => {
-        // Fallback se clipboard API não funcionar
-        console.error('Erro ao copiar:', err);
-        // Mostra o link para o usuário copiar manualmente
-        prompt('Copie este link:', url);
-    });
-}
-
-// Função para compartilhar resultados em diferentes redes sociais (TEXTO/URL)
-function shareResults(network) {
-    // Precisa ter scores disponível (variável global criada em calculateResults)
-    if (!window.matchScores || window.matchScores.length === 0) {
-        alert('Erro: Resultados não disponíveis');
-        return;
-    }
-
-    const scores = window.matchScores;
-    const topMatch = scores[0];
-    const bottomMatch = scores[scores.length - 1];
-
-    // Texto com emojis para melhor engajamento
-    const baseText = `Olha que interessante! 💡 Esse app calcula o quanto eu e uma lista de deputados temos de afinidade. 🧑‍⚖️🏛️\n\nMinha maior afinidade foi de ${topMatch.pct}% com ${topMatch.nome} (${topMatch.partido}-${topMatch.uf}) e a menor ${bottomMatch.pct}% com ${bottomMatch.nome} (${bottomMatch.partido}-${bottomMatch.uf}). 😲\n\nFaça o teste: ${window.location.href}`;
-
-    // Rastreia compartilhamento
-    trackEvent(`compartilhamento_resultado_${network}`, `Clicou para compartilhar resultado no ${network}`);
-
-    // Para "copiar", copia o texto
-    if (network === 'copy') {
-        navigator.clipboard.writeText(baseText).then(() => {
-            alert('✅ Resultado copiado!\n\nCole onde quiser para compartilhar.');
-        }).catch(err => {
-            console.error('Erro ao copiar:', err);
-            prompt('Copie este texto:', baseText);
-        });
-        return;
-    }
-
-    // Compartilha texto/URL
-    const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent(baseText);
-    let shareUrl = "";
-
-    switch (network) {
-        case 'whatsapp':
-            shareUrl = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent)
-                ? `https://wa.me/?text=${text}`
-                : `https://web.whatsapp.com/send?text=${text}`;
-            break;
-        case 'twitter':
-            // Twitter: texto curto + URL
-            const twitterTextResultado = encodeURIComponent(`Minha maior afinidade foi de ${topMatch.pct}% com ${topMatch.nome} (${topMatch.partido}-${topMatch.uf}). Faça o teste: ${window.location.href}`);
-            shareUrl = `https://twitter.com/intent/tweet?text=${twitterTextResultado}`;
-            break;
-        case 'linkedin':
-            shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
-            break;
-        case 'bluesky':
-            shareUrl = `https://bsky.app/intent/compose?text=${text}`;
-            break;
-    }
-
-    if (shareUrl) {
-        window.open(shareUrl, '_blank');
-    }
-}
-
-// Função helper para baixar imagem (desktop)
-function downloadImage(blob, text) {
-    const link = document.createElement('a');
-    link.href = URL.createObjectURL(blob);
-    link.download = 'match-eleitoral-resultado.png';
-    link.click();
-
-    // Copia texto para área de transferência
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(text).then(() => {
-            alert('✅ Imagem baixada e texto copiado!\n\nVocê pode compartilhar manualmente.');
-        }).catch(() => {
-            alert('✅ Imagem baixada!\n\nVocê pode compartilhá-la manualmente.');
-        });
-    } else {
-        alert('✅ Imagem baixada!\n\nVocê pode compartilhá-la manualmente.');
-    }
-}
-
-// Função para compartilhar IMAGEM dos resultados
-async function shareResultImage() {
-    if (!window.matchScores || window.matchScores.length === 0) {
-        alert('Erro: Resultados não disponíveis');
-        return;
-    }
-
-    const scores = window.matchScores;
-    const topMatch = scores[0];
-    const bottomMatch = scores[scores.length - 1];
-
-    const baseText = `Olha que interessante! 💡 Esse app calcula o quanto eu e uma lista de deputados temos de afinidade. 🧑‍⚖️🏛️\n\nMinha maior afinidade foi de ${topMatch.pct}% com ${topMatch.nome} (${topMatch.partido}-${topMatch.uf}) e a menor ${bottomMatch.pct}% com ${bottomMatch.nome} (${bottomMatch.partido}-${bottomMatch.uf}). 😲\n\nFaça o teste: ${window.location.href}`;
-
-    trackEvent('compartilhamento_imagem_resultado', 'Clicou para compartilhar imagem do resultado');
-
-    try {
-        // Mostra loading
-        const loadingDiv = document.createElement('div');
-        loadingDiv.id = 'share-loading';
-        loadingDiv.style.cssText = 'position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:9999; display:flex; flex-direction:column; align-items:center; justify-content:center; color:white;';
-        loadingDiv.innerHTML = '<i class="fas fa-spinner fa-spin" style="font-size:3rem; margin-bottom:1rem;"></i><p style="font-size:1.2rem;">Gerando imagem...</p>';
-        document.body.appendChild(loadingDiv);
-
-        // Prepara o card com os top 5
-        const shareList = document.getElementById('share-list');
-        shareList.innerHTML = scores.slice(0, 5).map((dep, idx) => `
-            <div style="display:flex; align-items:center; background:rgba(255,255,255,0.1); padding:15px; border-radius:25px; border-left:10px solid ${idx === 0 ? '#00e676' : '#00d2ff'};">
-                <div style="width:110px; height:110px; border-radius:50%; overflow:hidden; border:4px solid #fff; margin-right:25px; flex-shrink:0;">
-                    <img src="https://wsrv.nl/?url=${encodeURIComponent(dep.foto)}&w=200&h=200&fit=cover" style="width:100%; height:100%; object-fit:cover;" crossorigin="anonymous">
-                </div>
-                <div style="flex:1;">
-                    <h2 style="font-size:2.2rem; margin-bottom:5px;">${dep.nome}</h2>
-                    <p style="font-size:1.6rem; opacity:0.8;">${dep.partido} - ${dep.uf}</p>
-                </div>
-                <div style="font-size:3rem; font-weight:900; color:${idx === 0 ? '#00e676' : '#00d2ff'};">
-                    ${dep.pct}%
-                </div>
-            </div>
-        `).join('');
-
-        // Gera a imagem
-        const canvas = await html2canvas(document.querySelector("#share-card"), {
-            scale: 1,
-            useCORS: true,
-            backgroundColor: null,
-            allowTaint: true
-        });
-
-        // Converte para blob
-        canvas.toBlob(async (blob) => {
-            const file = new File([blob], "match-eleitoral-resultado.png", { type: "image/png" });
-
-            // Remove loading
-            const loading = document.getElementById('share-loading');
-            if (loading) document.body.removeChild(loading);
-
-            // Mobile: Tenta compartilhar com navigator.share
-            if (navigator.share && navigator.canShare && navigator.canShare({ files: [file] })) {
-                try {
-                    await navigator.share({
-                        files: [file],
-                        title: 'Meu Match Eleitoral',
-                        text: baseText
-                    });
-                } catch (e) {
-                    if (e.name !== 'AbortError') {
-                        console.error('Erro ao compartilhar:', e);
-                        // Se falhou, baixa a imagem
-                        downloadImage(blob, baseText);
-                    }
-                }
-            }
-            // Desktop ou fallback: Baixa a imagem
-            else {
-                downloadImage(blob, baseText);
-            }
-        }, 'image/png');
-
-    } catch (err) {
-        console.error('Erro ao gerar imagem:', err);
-        const loading = document.getElementById('share-loading');
-        if (loading) document.body.removeChild(loading);
-        alert('Erro ao gerar imagem. Tente novamente.');
-    }
-}
-
-// Mostra botão de compartilhar imagem apenas em mobile
-if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-    window.addEventListener('DOMContentLoaded', () => {
-        const btn = document.getElementById('share-image-btn');
-        if (btn) btn.style.display = 'block';
-    });
 }
 
 
@@ -784,44 +631,13 @@ function generateSessionId() {
 }
 
 // *** SISTEMA DE MÉTRICAS ***
-
-// Função auxiliar para obter fase anterior
-function getPreviousPhase(currentPhase) {
-    const phaseOrder = [
-        'app_loaded',
-        'inicio',
-        'uf_selecionada',
-        'votacao_iniciada',
-        'votacao_completa',
-        'demografica_completa'
-    ];
-
-    const currentIndex = phaseOrder.indexOf(currentPhase);
-    return currentIndex > 0 ? phaseOrder[currentIndex - 1] : null;
-}
-
 function trackEvent(eventType, details = '') {
     if (GOOGLE_SCRIPT_URL.includes("COLE_AQUI")) return;
 
-    // Registrar timestamp desta fase
     const now = Date.now();
-    if (phaseTimestamps.hasOwnProperty(eventType)) {
-        phaseTimestamps[eventType] = now;
-    }
-
-    // Calcular tempo desde início do app (em segundos)
-    const timeFromStart = phaseTimestamps.app_loaded
-        ? Math.round((now - phaseTimestamps.app_loaded) / 1000)
-        : 0;
-
-    // Calcular tempo desde fase anterior (em segundos)
-    const previousPhase = getPreviousPhase(eventType);
-    const timeSincePrevious = previousPhase && phaseTimestamps[previousPhase]
-        ? Math.round((now - phaseTimestamps[previousPhase]) / 1000)
-        : 0;
-
-    // Calcular tempo total (só para fase final)
-    const totalTime = eventType === 'demografica_completa' ? timeFromStart : null;
+    const timeSinceStart = Math.round((now - sessionStartTime) / 1000); // em segundos
+    const timeSinceLastEvent = Math.round((now - lastEventTime) / 1000); // em segundos
+    lastEventTime = now; // Atualiza para o próximo evento
 
     const eventData = {
         event_type: eventType,
@@ -831,10 +647,9 @@ function trackEvent(eventType, details = '') {
         uf: userProfile.uf || '',
         ideologia: userProfile.ideologia || '',
         partido: userProfile.partido || '',
-        time_from_start_seconds: timeFromStart,
-        time_since_previous_seconds: timeSincePrevious,
-        total_time_seconds: totalTime,
-        device_type: getDeviceType() // NOVO: Tipo de dispositivo
+        device: getDeviceType(),
+        time_since_start: timeSinceStart,
+        time_since_last_event: timeSinceLastEvent
     };
 
     fetch(GOOGLE_SCRIPT_URL, {
@@ -844,7 +659,7 @@ function trackEvent(eventType, details = '') {
         body: JSON.stringify(eventData)
     }).catch(err => console.error('Erro ao rastrear evento:', err));
 
-    console.log('📊 Evento rastreado:', eventType, details, `| Tempo desde início: ${timeFromStart}s | Tempo desde anterior: ${timeSincePrevious}s`);
+    console.log('📊 Evento rastreado:', eventType, details);
 }
 
 function sendDataToSheet(isFinal, silent = false) {
@@ -867,7 +682,12 @@ function sendDataToSheet(isFinal, silent = false) {
         Q3_LicenciamentoAmb: userVotes['licenciamento_ambiental'] || "N/A",
         Q4_ReformaTrib: userVotes['reforma_tributaria'] || "N/A",
         Q5_ArcaboucoFisc: userVotes['arcabouco'] || "N/A",
-        Q6_MarcoTemporal: userVotes['marco_temporal'] || "N/A"
+
+        Q6_MarcoTemporal: userVotes['marco_temporal'] || "N/A",
+
+        // Métricas Extras
+        device: getDeviceType(),
+        time_total: Math.round((Date.now() - sessionStartTime) / 1000) // Tempo total em segundos
     };
 
     fetch(GOOGLE_SCRIPT_URL, {
@@ -883,16 +703,4 @@ function sendDataToSheet(isFinal, silent = false) {
         }
     }).catch(err => console.error("Erro no envio:", err));
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
