@@ -435,7 +435,7 @@ function calculateResults() {
         const btn = document.getElementById('share-results-btn');
         const originalText = btn.innerHTML;
 
-        const baseText = `*Olha que interessante!* 💡 Esse app calcula o quanto eu e uma lista de deputados temos de afinidade. 🧑‍⚖️🏛️\n\n*Minha maior afinidade foi de ${topMatch.pct}%* com *${topMatch.nome}* (${topMatch.partido}) e a menor ${bottomMatch.pct}% com ${bottomMatch.nome} (${bottomMatch.partido}). 😲\n\nFaz o teste aí: ${window.location.href}`;
+        const baseText = `*Olha que interessante!* 💡 Esse app calcula o quanto eu e uma lista de deputados temos de afinidade. 🧑‍⚖️🏛️\n\n*Minha maior afinidade foi de ${topMatch.pct}%* com *${topMatch.nome}* (${topMatch.partido}-${topMatch.uf}) e a menor ${bottomMatch.pct}% com ${bottomMatch.nome} (${bottomMatch.partido}-${bottomMatch.uf}). 😲\n\nFaz o teste aí: ${window.location.href}`;
 
         // Desabilita botão enquanto processa
         btn.disabled = true;
@@ -750,6 +750,8 @@ function sendDataToSheet(isFinal, silent = false) {
         }
     }).catch(err => console.error("Erro no envio:", err));
 }
+
+
 
 
 
