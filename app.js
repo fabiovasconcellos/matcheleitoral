@@ -5,7 +5,6 @@ const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxEJiV9ugH1_4
 let deputies = [];
 let userVotes = {};
 let sessionId = generateSessionId(); // Identificador único da sessão
-// ... rest of variables
 let userProfile = {
     uf: "",
     ideologia: "", // Mudado de 4 para vazio (default explícito exigido)
@@ -32,8 +31,6 @@ function getDeviceType() {
 
 let currentPautaIndex = 0;
 let isVoting = false;
-
-// ... (Restante do código)
 
 const PAUTAS = [
     {
@@ -431,81 +428,88 @@ function calculateResults() {
     const topMatch = scores[0];
     const bottomMatch = scores[scores.length - 1]; // Pega o último da lista (menor afinidade)
 
+    // *** LÓGICA DE COMPARTILHAMENTO DE RESULTADOS (RESTAURADA) ***
     document.getElementById('share-results-btn').onclick = async () => {
         trackEvent('compartilhamento_resultado', 'Clicou para compartilhar resultado no WhatsApp');
 
         const btn = document.getElementById('share-results-btn');
         const originalText = btn.innerHTML;
-        const topMatch = scores[0];
-        const bottomMatch = scores[scores.length - 1];
 
-        // Texto Base (Idêntico para todos)
         const baseText = `*Olha que interessante!* 💡 Esse app calcula o quanto eu e uma lista de deputados temos de afinidade. 🧑‍⚖️🏛️\n\n*Minha maior afinidade foi de ${topMatch.pct}%* com *${topMatch.nome}* (${topMatch.partido}) e a menor ${bottomMatch.pct}% com ${bottomMatch.nome} (${bottomMatch.partido}). 😲\n\nFaz o teste aí: ${window.location.href}`;
 
         // Desabilita botão enquanto processa
         btn.disabled = true;
-        btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Gerando...';
+        btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Gerando imagem...';
 
         try {
-            // Tenta gerar imagem SOMENTE no Mobile (Android/iOS)
-            const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-
-            if (isMobile && navigator.share) {
-                // 1. Prepara Card Oculto
-                const shareList = document.getElementById('share-list');
-                shareList.innerHTML = scores.slice(0, 5).map((dep, idx) => `
-                    <div style="display:flex; align-items:center; background:rgba(255,255,255,0.1); padding:15px; border-radius:25px; border-left:10px solid ${idx === 0 ? '#00e676' : '#00d2ff'};">
-                        <div style="width:110px; height:110px; border-radius:50%; overflow:hidden; border:4px solid #fff; margin-right:25px; flex-shrink:0;">
-                            <img src="https://wsrv.nl/?url=${encodeURIComponent(dep.foto)}&w=200&h=200&fit=cover" style="width:100%; height:100%; object-fit:cover;" crossorigin="anonymous">
-                        </div>
-                        <div style="flex:1;">
-                            <h2 style="font-size:2.2rem; margin-bottom:5px;">${dep.nome}</h2>
-                            <p style="font-size:1.6rem; opacity:0.8;">${dep.partido} - ${dep.uf}</p>
-                        </div>
-                        <div style="font-size:3rem; font-weight:900; color:${idx === 0 ? '#00e676' : '#00d2ff'};">
-                            ${dep.pct}%
-                        </div>
+            // 1. Prepara Card Oculto (Top 5)
+            const shareList = document.getElementById('share-list');
+            shareList.innerHTML = scores.slice(0, 5).map((dep, idx) => `
+                <div style="display:flex; align-items:center; background:rgba(255,255,255,0.1); padding:15px; border-radius:25px; border-left:10px solid ${idx === 0 ? '#00e676' : '#00d2ff'};">
+                    <div style="width:110px; height:110px; border-radius:50%; overflow:hidden; border:4px solid #fff; margin-right:25px; flex-shrink:0;">
+                        <img src="https://wsrv.nl/?url=${encodeURIComponent(dep.foto)}&w=200&h=200&fit=cover" style="width:100%; height:100%; object-fit:cover;" crossorigin="anonymous">
                     </div>
-                `).join('');
+                    <div style="flex:1;">
+                        <h2 style="font-size:2.2rem; margin-bottom:5px;">${dep.nome}</h2>
+                        <p style="font-size:1.6rem; opacity:0.8;">${dep.partido} - ${dep.uf}</p>
+                    </div>
+                    <div style="font-size:3rem; font-weight:900; color:${idx === 0 ? '#00e676' : '#00d2ff'};">
+                        ${dep.pct}%
+                    </div>
+                </div>
+            `).join('');
 
-                // 2. Gera Canvas
-                const canvas = await html2canvas(document.querySelector("#share-card"), {
-                    scale: 1,
-                    useCORS: true,
-                    backgroundColor: null
-                });
+            // 2. Gera Canvas
+            const canvas = await html2canvas(document.querySelector("#share-card"), {
+                scale: 1, useCORS: true, backgroundColor: null, allowTaint: true
+            });
 
-                // 3. Converte para Arquivo e Compartilha
-                canvas.toBlob(async (blob) => {
-                    if (blob) {
-                        const file = new File([blob], "match.png", { type: "image/png" });
-                        if (navigator.canShare && navigator.canShare({ files: [file] })) {
-                            try {
-                                await navigator.share({
-                                    files: [file],
-                                    title: 'Meu Match Eleitoral',
-                                    text: baseText
-                                });
-                                btn.disabled = false;
-                                btn.innerHTML = originalText;
-                                return; // Sucesso! Sai da função.
-                            } catch (e) {
-                                console.log("Erro no share nativo de imagem, usando fallback de texto.");
-                            }
-                        }
+            // 3. Converte para Blob
+            canvas.toBlob(async (blob) => {
+                if (!blob) throw new Error("Falha ao gerar imagem blob");
+
+                const file = new File([blob], "match-eleitoral.png", { type: "image/png" });
+                const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+                // A. Tenta Share Nativo (Mobile)
+                if (isMobile && navigator.canShare && navigator.canShare({ files: [file] })) {
+                    try {
+                        await navigator.share({
+                            files: [file],
+                            title: 'Meu Match Eleitoral',
+                            text: baseText
+                        });
+                        btn.disabled = false;
+                        btn.innerHTML = originalText;
+                        return;
+                    } catch (e) {
+                        console.warn("Share nativo cancelado/falhou:", e);
                     }
-                    // Se falhar blob ou share, cai no fallback abaixo
-                    shareTextFallback(baseText);
-                    btn.disabled = false;
-                    btn.innerHTML = originalText;
-                }, 'image/png');
+                }
 
-            } else {
-                // Desktop ou sem suporte a 'share': Vai direto para o texto
-                shareTextFallback(baseText);
+                // B. Fallback Desktop / Web: Copia imagem para o Clipboard + Alerta
+                try {
+                    // Tenta copiar imagem (Chrome/Edge/Safari Desktop modernos)
+                    if (navigator.clipboard && navigator.clipboard.write) {
+                        await navigator.clipboard.write([
+                            new ClipboardItem({ [blob.type]: blob })
+                        ]);
+                        alert("📸 Imagem copiada!\n\nAgora abra o WhatsApp (ou outra rede) e cole (CTRL+V) a imagem.");
+
+                        // Em seguida tenta copiar o link também
+                        window.open(`https://web.whatsapp.com/send?text=${encodeURIComponent(baseText)}`, '_blank');
+                    } else {
+                        throw new Error("Clipboard de imagem não suportado");
+                    }
+                } catch (err) {
+                    console.error("Erro ao copiar imagem:", err);
+                    shareTextFallback(baseText);
+                }
+
                 btn.disabled = false;
                 btn.innerHTML = originalText;
-            }
+
+            }, 'image/png');
 
         } catch (err) {
             console.error(err);
@@ -517,17 +521,20 @@ function calculateResults() {
 }
 
 function shareTextFallback(text) {
-    // Tenta copiar para area de transferência (PC)
     if (navigator.clipboard) {
         navigator.clipboard.writeText(text).then(() => {
-            alert("📋 Texto copiado! Cole no WhatsApp.");
-            window.open(`https://web.whatsapp.com/send?text=${encodeURIComponent(text)}`, '_blank');
+            alert("📋 Resultado copiado (Texto)!\nCole no WhatsApp.");
+            const url = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent)
+                ? `https://api.whatsapp.com/send?text=${encodeURIComponent(text)}`
+                : `https://web.whatsapp.com/send?text=${encodeURIComponent(text)}`;
+            window.open(url, '_blank');
         }).catch(() => {
-            window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(text)}`, '_blank');
+            const url = `https://api.whatsapp.com/send?text=${encodeURIComponent(text)}`;
+            window.open(url, '_blank');
         });
     } else {
-        // Fallback final: Abre URL do WhatsApp direto
-        window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(text)}`, '_blank');
+        const url = `https://api.whatsapp.com/send?text=${encodeURIComponent(text)}`;
+        window.open(url, '_blank');
     }
 }
 
@@ -597,7 +604,22 @@ async function shareSocial(network) {
     // Rastreia o clique
     trackEvent(`compartilhamento_url_${network}`, `Clicou para compartilhar no ${network}`);
 
-    // Tenta usar o compartilhamento NATIVO do celular primeiro (se disponível)
+    // *** NOVA LÓGICA COPY/LINK ***
+    if (network === 'copy' || network === 'link') {
+        if (navigator.clipboard) {
+            navigator.clipboard.writeText(text + " " + url).then(() => {
+                alert("🔗 Link copiado para a área de transferência!");
+            }).catch(err => {
+                console.error("Erro ao copiar", err);
+                prompt("Copie o link:", url);
+            });
+        } else {
+            prompt("Copie o link:", url);
+        }
+        return; // Encerra aqui se for copy
+    }
+
+    // Tenta usar o compartilhamento NATIVO do celular primeiro
     if (navigator.share && /Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
         try {
             await navigator.share({
@@ -605,9 +627,8 @@ async function shareSocial(network) {
                 text: text,
                 url: url
             });
-            return; // Se funcionou, para aqui
+            return;
         } catch (err) {
-            // Se cancelou ou deu erro, segue para o fallback abaixo
             console.log("Share nativo cancelado ou falhou, tentando URL direta.");
         }
     }
@@ -709,7 +730,6 @@ function sendDataToSheet(isFinal, silent = false) {
         Q3_LicenciamentoAmb: userVotes['licenciamento_ambiental'] || "N/A",
         Q4_ReformaTrib: userVotes['reforma_tributaria'] || "N/A",
         Q5_ArcaboucoFisc: userVotes['arcabouco'] || "N/A",
-
         Q6_MarcoTemporal: userVotes['marco_temporal'] || "N/A",
 
         // Métricas Extras
