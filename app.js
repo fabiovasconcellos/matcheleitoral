@@ -445,16 +445,21 @@ function calculateResults() {
 
         // 2. Lógica Desktop (Sem Imagem, só Texto + WhatsApp)
         if (!isMobile) {
-            navigator.clipboard.writeText(baseText).then(() => {
-                alert("📋 Resultado copiado!\n\nFoi aberta uma aba do WhatsApp. Cole o texto (CTRL+V) para enviar.");
-                setTimeout(() => {
+            // Verifica se tem suporte a clipboard (exige HTTPS ou localhost)
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(baseText).then(() => {
+                    alert("📋 Resultado copiado!\n\nFoi aberta uma aba do WhatsApp. Cole o texto (CTRL+V) para enviar.");
                     const url = `https://web.whatsapp.com/send?text=${encodeURIComponent(baseText)}`;
                     window.open(url, '_blank');
-                }, 500);
-            }).catch(() => {
+                }).catch(() => {
+                    const url = `https://web.whatsapp.com/send?text=${encodeURIComponent(baseText)}`;
+                    window.open(url, '_blank');
+                });
+            } else {
+                // Fallback para HTTP ou navegadores antigos
                 const url = `https://web.whatsapp.com/send?text=${encodeURIComponent(baseText)}`;
                 window.open(url, '_blank');
-            });
+            }
             return; // Encerra aqui no Desktop
         }
 
@@ -703,4 +708,5 @@ function sendDataToSheet(isFinal, silent = false) {
         }
     }).catch(err => console.error("Erro no envio:", err));
 }
+
 
