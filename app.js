@@ -75,7 +75,36 @@ const PAUTAS = [
 async function init() {
     try {
         const response = await fetch('data.json');
-        deputies = await response.json();
+        let rawDeputies = await response.json();
+
+        // 1. DEDUPLICAÇÃO E MERGE DE DADOS (Correção Roberto Duarte)
+        const uniqueDeputies = {};
+
+        rawDeputies.forEach(dep => {
+            const key = `${dep.nome}-${dep.uf}`.toUpperCase();
+
+            if (uniqueDeputies[key]) {
+                // Se já existe, faz o MERGE das informações
+                const existing = uniqueDeputies[key];
+
+                // 1.1 Merge de Votos (novos votos complementam os antigos)
+                existing.votos = { ...existing.votos, ...dep.votos };
+
+                // 1.2 Prioriza o nome de partido mais padronizado (ex: REPUBLICANOS sobre Republican)
+                if (dep.partido && dep.partido.length > existing.partido.length) {
+                    existing.partido = dep.partido;
+                }
+                // 1.3 Garante ID e Foto (mantém o primeiro que tiver foto)
+                if (!existing.foto && dep.foto) existing.foto = dep.foto;
+
+            } else {
+                // Se não existe, cria a entrada
+                uniqueDeputies[key] = dep;
+            }
+        });
+
+        // Converte de volta para array
+        deputies = Object.values(uniqueDeputies);
 
         // CORREÇÃO: Normaliza nomes de partidos (Ex: Republicanos)
         deputies = deputies.map(d => {
