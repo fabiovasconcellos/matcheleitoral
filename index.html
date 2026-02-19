@@ -16,15 +16,19 @@
     <meta property="og:site_name" content="Match Eleitoral">
     <meta property="og:title" content="Match Eleitoral | Descubra seu deputado">
     <meta property="og:description"
-        content="Compare seus votos com os deputados federais e descubra quem te representa. Uma iniciativa do INCT ReDem/UFPR.">
+        content="Compare seus votos com os deputados federais e descubra quem te representa. Uma iniciativa do INCT ReDem.">
     <meta property="og:image" content="https://fabiovasconcellos.github.io/matcheleitoral/og-image.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:url" content="https://fabiovasconcellos.github.io/matcheleitoral/">
 
+    <link rel="canonical" href="https://fabiovasconcellos.github.io/matcheleitoral/">
+
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:domain" content="fabiovasconcellos.github.io">
+    <meta name="twitter:url" content="https://fabiovasconcellos.github.io/matcheleitoral/">
     <meta name="twitter:title" content="Match Eleitoral | Descubra seu deputado">
     <meta name="twitter:description"
         content="Compare seus votos com os deputados federais e descubra quem te representa.">
@@ -32,13 +36,13 @@
 
     <!-- Additional Meta Tags -->
     <meta name="description"
-        content="Compare seus votos com os deputados federais e descubra quem te representa. Uma iniciativa do INCT ReDem/UFPR.">
+        content="Compare seus votos com os deputados federais e descubra quem te representa. Uma iniciativa do INCT ReDem.">
     <meta name="keywords"
         content="política, deputados, eleições, brasil, match eleitoral, câmara dos deputados, votação">
-    <meta name="author" content="Fábio Vasconcellos - INCT ReDem UFPR">
+    <meta name="author" content="Fábio Vasconcellos - INCT ReDem">
 
     <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
     <link rel="stylesheet" href="style.css?v=7">
 </head>
@@ -48,29 +52,29 @@
     <header id="app-header">
         <div id="brand-name" style="font-weight: 800; letter-spacing: -1px;">MATCH ELEITORAL</div>
         <div id="author-note">Concepção e desenvolvimento Fábio Vasconcellos | <a href="https://redem.tec.br/"
-                target="_blank">INCT ReDem UFPR</a></div>
+                target="_blank">INCT ReDem</a></div>
     </header>
 
     <main>
         <!-- SCREEN 1: LANDING -->
         <section id="landing-screen" class="screen active">
             <h1>QUEM É SEU MATCH NA CÂMARA DOS DEPUTADOS?</h1>
-            <p style="margin-bottom: 2rem; color: var(--text-muted);">Compare os seus votos com os votos dos deputados
+            <p style="margin-bottom: 0.5rem; color: var(--text-muted);">Compare os seus votos com os votos dos deputados
                 em temas relevantes do Brasil entre 2023 e 2026.</p>
+
+            <p
+                style="margin-bottom: 2rem; margin-top: 1.5rem; color: var(--text-muted); font-size: 0.85rem; opacity: 0.8;">
+                <i class="far fa-clock"></i> O teste dura entre 2 e 3 min.
+            </p>
+
             <button id="start-btn" class="btn-primary">INICIAR MATCH</button>
 
             <div class="social-footer">
                 <a href="#" onclick="shareSocial('whatsapp'); return false;"><i class="fab fa-whatsapp"></i></a>
                 <a href="#" onclick="shareSocial('twitter'); return false;"><i class="fab fa-x-twitter"></i></a>
                 <a href="#" onclick="shareSocial('linkedin'); return false;"><i class="fab fa-linkedin"></i></a>
-                <a href="#" onclick="shareSocial('bluesky'); return false;" title="Bluesky">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8Z" />
-                    </svg>
-                </a>
-                <a href="#" onclick="copyLink(); return false;" title="Copiar Link"><i class="fas fa-link"></i></a>
+                <a href="#" onclick="shareSocial('bluesky'); return false;"><i class="fa-brands fa-bluesky"></i></a>
+                <a href="#" onclick="shareSocial('copy'); return false;"><i class="fas fa-link"></i></a>
             </div>
         </section>
 
@@ -275,11 +279,10 @@
                 <!-- Ranking items will be injected by JS -->
             </div>
 
-            <div style="margin-top:1.5rem; margin-bottom:0.5rem; width:100%; text-align:center;">
-                <!-- Botão Único de Compartilhamento -->
-                <button id="share-result-btn" onclick="shareResultImage(); return false;"
-                    style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; padding: 14px 32px; border-radius: 30px; font-size: 1.1rem; font-weight: 600; cursor: pointer; margin-bottom: 1rem; box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4); transition: transform 0.2s;">
-                    📤 Compartilhar Resultado
+            <div style="margin-top:1rem; margin-bottom:1rem; width:100%; text-align:center;">
+                <button id="share-results-btn" class="btn-primary"
+                    style="background: #25d366; width:100%; max-width: 400px;">
+                    <i class="fas fa-whatsapp"></i> Compartilhar Resultado
                 </button>
             </div>
             <p style="font-size: 0.85rem; margin-top: 0.8rem; margin-bottom: 1rem; color: var(--text-muted); cursor: pointer; font-weight: 500;"
@@ -313,10 +316,10 @@
         </div>
 
         <div
-            style="margin-top:auto; text-align:center; border-top:2px solid rgba(255,255,255,0.2); padding-top:60px; width:100%; padding-left:40px; padding-right:40px;">
+            style="margin-top:auto; text-align:center; border-top:2px solid rgba(255,255,255,0.2); padding-top:60px; width:100%;">
             <p style="font-size:2rem; margin-bottom:15px;">Faça o teste agora:</p>
-            <h2 style="font-size:2.5rem; color:#00d2ff; font-weight:800; word-break:break-word;">
-                fabiovasconcellos.github.io/matcheleitoral</h2>
+            <h2 style="font-size:2.5rem; color:#00d2ff; font-weight:800;">fabiovasconcellos.github.io/matcheleitoral
+            </h2>
         </div>
     </div>
 
