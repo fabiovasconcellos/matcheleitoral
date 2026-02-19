@@ -17,6 +17,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+input, button, select, textarea {
+    font-family: 'Montserrat', sans-serif;
+}
+
 /* Scroll Indicator */
 .scroll-indicator::after {
     content: '\f107';
@@ -411,29 +415,7 @@ option {
     transition: color 0.3s;
 }
 
-.social-footer svg {
-    width: 1.5rem;
-    height: 1.5rem;
-    color: var(--text-muted);
-    transition: color 0.3s;
-}
-
-.social-footer a {
-    color: var(--text-muted);
-    text-decoration: none;
-    transition: color 0.3s;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    /* Mesmo tamanho dos ícones */
-    line-height: 1;
-    /* Remove espaço extra */
-}
-
-.social-footer i:hover,
-.social-footer svg:hover,
-.social-footer a:hover {
+.social-footer i:hover {
     color: var(--accent-color);
 }
 
