@@ -79,9 +79,17 @@ async function init() {
 
         // CORREÇÃO: Normaliza nomes de partidos (Ex: Republicanos)
         deputies = deputies.map(d => {
-            if (d.partido && (d.partido.toUpperCase().includes('REPI') || d.partido.toUpperCase().includes('REPU'))) {
-                d.partido = 'REPUBLICANOS';
-            }
+            const partido = d.partido ? d.partido.toUpperCase() : "";
+
+            if (partido.includes('REPI') || partido.includes('REPU')) d.partido = 'REPUBLICANOS';
+            else if (partido.includes('REDE')) d.partido = 'REDE';
+            else if (partido.includes('SOLIDARIED')) d.partido = 'SOLIDARIEDADE';
+            else if (partido.includes('UNIAO') || partido.includes('UNIÃO')) d.partido = 'UNIÃO';
+            else if (partido.includes('NOVO')) d.partido = 'NOVO';
+            else if (partido.includes('CIDADANIA')) d.partido = 'CIDADANIA';
+            else if (partido.includes('AVANTE')) d.partido = 'AVANTE';
+            else if (partido.includes('PODE') || partido.includes('PODEMOS')) d.partido = 'PODE';
+
             return d;
         });
         populateParties(); // Preenche select de partidos
@@ -244,13 +252,13 @@ function renderPauta() {
             
             <a href="${pauta.link}" target="_blank" class="saiba-mais">Saiba mais sobre este tema</a>
             
-            <div style="margin: 1.5rem 0; padding: 1rem; background: rgba(255,255,255,0.1); border-radius: 10px; border: 1px solid var(--accent-color);">
-                <p style="font-weight: 800; color: var(--accent-color); font-size: 1.1rem; margin-bottom: 0.5rem; text-transform: uppercase;">
+            <div style="margin: 1.5rem 0; padding: 1rem; background: rgba(0,0,0,0.3); border-radius: 10px; border: 1px solid var(--accent-color);">
+                <p style="font-weight: 800; color: #ffffff; font-size: 1.2rem; margin-bottom: 0.8rem; text-transform: uppercase; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">
                     VOCÊ É FAVORÁVEL A ESSA PROPOSTA?
                 </p>
-                <div style="display: flex; justify-content: space-between; font-weight: bold; font-size: 0.9rem;">
-                    <span style="color: var(--danger-color);">⬅️ NÃO (Esquerda)</span>
-                    <span style="color: var(--success-color);">SIM (Direita) ➡️</span>
+                <div style="display:flex; justify-content: space-between; font-weight: 900; font-size: 1.3rem; margin-top: 1rem;">
+                    <span style="color: #ff5252; text-shadow: 0 1px 2px rgba(0,0,0,0.8); cursor: pointer; padding: 10px;" onclick="handleVote('Não')">⬅️ NÃO</span>
+                    <span style="color: #69f0ae; text-shadow: 0 1px 2px rgba(0,0,0,0.8); cursor: pointer; padding: 10px;" onclick="handleVote('Sim')">SIM ➡️</span>
                 </div>
             </div>
         </div>
@@ -287,46 +295,86 @@ function initSwipe() {
     const card = document.getElementById('active-card');
     let startX = 0;
     let currentX = 0;
+    let isDragging = false;
 
-    card.addEventListener('touchstart', (e) => {
+    const onTouchStart = (e) => {
+        // Ignora se tocar em links ou elementos clicáveis
+        if (e.target.closest('a') || e.target.onclick) return;
+
         startX = e.touches[0].clientX;
-    });
+        currentX = startX;
+        isDragging = false;
+    };
 
-    card.addEventListener('touchmove', (e) => {
+    const onTouchMove = (e) => {
+        if (!startX) return;
         // Previne scroll da tela enquanto arrasta o card
         e.preventDefault();
         currentX = e.touches[0].clientX;
         const diff = currentX - startX;
-        updateCardTransform(card, diff);
-    });
 
-    card.addEventListener('touchend', (e) => {
-        const diff = currentX - startX;
-        finishSwipe(card, diff);
-    });
+        // Só considera arrasto se mover mais que 5px
+        if (Math.abs(diff) > 5) isDragging = true;
 
-    // Mouse support
-    card.addEventListener('mousedown', (e) => {
-        startX = e.clientX;
-        card.style.cursor = 'grabbing';
-        card.addEventListener('mousemove', onMouseMove);
-    });
-
-    const onMouseMove = (e) => {
-        currentX = e.clientX;
-        const diff = currentX - startX;
-        updateCardTransform(card, diff);
+        if (isDragging) {
+            updateCardTransform(card, diff);
+        }
     };
 
-    window.addEventListener('mouseup', (e) => {
-        if (!startX) return;
-        card.removeEventListener('mousemove', onMouseMove);
-        card.style.cursor = 'grab';
+    const onTouchEnd = (e) => {
+        if (!startX || !isDragging) {
+            startX = 0;
+            return;
+        }
         const diff = currentX - startX;
         finishSwipe(card, diff);
         startX = 0;
-        currentX = 0;
-    });
+        isDragging = false;
+    };
+
+    card.addEventListener('touchstart', onTouchStart);
+    card.addEventListener('touchmove', onTouchMove);
+    card.addEventListener('touchend', onTouchEnd);
+
+    // Mouse support
+    const onMouseDown = (e) => {
+        if (e.target.closest('a') || e.target.onclick) return;
+
+        startX = e.clientX;
+        currentX = startX;
+        isDragging = false;
+        card.style.cursor = 'grabbing';
+        card.addEventListener('mousemove', onMouseMove);
+    };
+
+    const onMouseMove = (e) => {
+        if (!startX) return;
+        currentX = e.clientX;
+        const diff = currentX - startX;
+
+        if (Math.abs(diff) > 5) isDragging = true;
+
+        if (isDragging) {
+            updateCardTransform(card, diff);
+        }
+    };
+
+    const onMouseUp = (e) => {
+        if (!startX) return;
+        card.removeEventListener('mousemove', onMouseMove);
+        card.style.cursor = 'grab';
+
+        if (isDragging) {
+            const diff = currentX - startX;
+            finishSwipe(card, diff);
+        }
+
+        startX = 0;
+        isDragging = false;
+    };
+
+    card.addEventListener('mousedown', onMouseDown);
+    window.addEventListener('mouseup', onMouseUp);
 }
 
 function updateCardTransform(card, diff) {
