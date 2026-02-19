@@ -706,8 +706,9 @@ function trackEvent(eventType, details = '') {
 
     // LÓGICA DE BATCHING:
     // Se for 'inicio', envia imediatamente para contar acessos (Bounce Rate)
+    // Se for evento de 'compartilhamento', envia imediatamente (pois ocorre após o envio final)
     // Para todos os outros, guarda na fila para enviar apenas no final
-    if (eventType === 'inicio') {
+    if (eventType === 'inicio' || eventType.startsWith('compartilhamento_')) {
         sendSingleEvent(eventData);
     } else {
         eventQueue.push(eventData);
