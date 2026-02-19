@@ -446,7 +446,8 @@ function calculateResults() {
             const shareList = document.getElementById('share-list');
             shareList.innerHTML = scores.slice(0, 5).map((dep, idx) => `
                 <div style="display:flex; align-items:center; background:rgba(255,255,255,0.1); padding:15px; border-radius:25px; border-left:10px solid ${idx === 0 ? '#00e676' : '#00d2ff'};">
-                    <div style="width:110px; height:110px; border-radius:50%; border:4px solid #fff; margin-right:25px; flex-shrink:0; background-image: url('https://wsrv.nl/?url=${encodeURIComponent(dep.foto)}&w=200&h=200&fit=cover&a=top'); background-size: cover; background-position: center top;">
+                    <div style="width:110px; height:110px; border-radius:50%; overflow:hidden; border:4px solid #fff; margin-right:25px; flex-shrink:0; position: relative;">
+                        <img src="https://wsrv.nl/?url=${encodeURIComponent(dep.foto)}&w=400" style="position: absolute; top:0; left:0; width:100%; min-height:100%; object-fit:cover;" crossorigin="anonymous">
                     </div>
                     <div style="flex:1;">
                         <h2 style="font-size:2.2rem; margin-bottom:5px;">${dep.nome}</h2>
