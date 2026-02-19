@@ -679,6 +679,10 @@ function generateSessionId() {
 }
 
 // *** SISTEMA DE MÉTRICAS ***
+
+// Fila de eventos para reduzir chamadas ao servidor (Batching)
+let eventQueue = [];
+
 function trackEvent(eventType, details = '') {
     if (GOOGLE_SCRIPT_URL.includes("COLE_AQUI")) return;
 
@@ -700,14 +704,25 @@ function trackEvent(eventType, details = '') {
         time_since_last_event: timeSinceLastEvent
     };
 
+    // LÓGICA DE BATCHING:
+    // Se for 'inicio', envia imediatamente para contar acessos (Bounce Rate)
+    // Para todos os outros, guarda na fila para enviar apenas no final
+    if (eventType === 'inicio') {
+        sendSingleEvent(eventData);
+    } else {
+        eventQueue.push(eventData);
+        console.log('📥 Evento agendado (Batching):', eventType, details);
+    }
+}
+
+function sendSingleEvent(eventData) {
     fetch(GOOGLE_SCRIPT_URL, {
         method: 'POST',
         mode: 'no-cors',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(eventData)
-    }).catch(err => console.error('Erro ao rastrear evento:', err));
-
-    console.log('📊 Evento rastreado:', eventType, details);
+    }).catch(err => console.error('Erro ao rastrear evento inicial:', err));
+    console.log('📤 Evento enviado imediatamente:', eventData.event_type);
 }
 
 function sendDataToSheet(isFinal, silent = false) {
@@ -734,7 +749,10 @@ function sendDataToSheet(isFinal, silent = false) {
 
         // Métricas Extras
         device: getDeviceType(),
-        time_total: Math.round((Date.now() - sessionStartTime) / 1000) // Tempo total em segundos
+        time_total: Math.round((Date.now() - sessionStartTime) / 1000), // Tempo total em segundos
+
+        // *** NOVO: Histórico de Eventos (Batch) ***
+        event_history: eventQueue
     };
 
     fetch(GOOGLE_SCRIPT_URL, {
@@ -744,17 +762,10 @@ function sendDataToSheet(isFinal, silent = false) {
         body: JSON.stringify(dataToSend)
     }).then(() => {
         if (isFinal && !silent) {
-            console.log("Dados demográficos salvos com sucesso.");
+            console.log("Dados finais e histórico de eventos enviados com sucesso.");
+            eventQueue = []; // Limpa fila após envio bem sucedido (teórico, pois é no-cors)
         } else if (silent) {
             console.log("Auto-save successful");
         }
     }).catch(err => console.error("Erro no envio:", err));
 }
-
-
-
-
-
-
-
-
