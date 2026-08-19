@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Match Eleitoral | Descubra seu deputado</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Match Eleitoral | Congresso Nacional</title>
 
     <!-- Fonts -->
     <link
@@ -14,9 +17,9 @@
     <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Match Eleitoral">
-    <meta property="og:title" content="Match Eleitoral | Descubra seu deputado">
+    <meta property="og:title" content="Match Eleitoral | Descubra seu match no Congresso">
     <meta property="og:description"
-        content="Compare seus votos com os deputados federais e descubra quem te representa. Uma iniciativa do INCT ReDem.">
+        content="Compare seus votos com deputados federais e senadores e descubra quem te representa. Uma iniciativa do INCT ReDem.">
     <meta property="og:image" content="https://fabiovasconcellos.github.io/matcheleitoral/og-image.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1200">
@@ -29,22 +32,22 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:domain" content="fabiovasconcellos.github.io">
     <meta name="twitter:url" content="https://fabiovasconcellos.github.io/matcheleitoral/">
-    <meta name="twitter:title" content="Match Eleitoral | Descubra seu deputado">
+    <meta name="twitter:title" content="Match Eleitoral | Descubra seu match no Congresso">
     <meta name="twitter:description"
-        content="Compare seus votos com os deputados federais e descubra quem te representa.">
+        content="Compare seus votos com deputados federais e senadores e descubra quem te representa.">
     <meta name="twitter:image" content="https://fabiovasconcellos.github.io/matcheleitoral/og-image.png">
 
     <!-- Additional Meta Tags -->
     <meta name="description"
-        content="Compare seus votos com os deputados federais e descubra quem te representa. Uma iniciativa do INCT ReDem.">
+        content="Compare seus votos com os deputados federais e senadores e descubra quem te representa. Uma iniciativa do INCT ReDem.">
     <meta name="keywords"
-        content="política, deputados, eleições, brasil, match eleitoral, câmara dos deputados, votação">
+        content="política, deputados, senadores, congresso nacional, eleições, brasil, match eleitoral, câmara dos deputados, senado federal">
     <meta name="author" content="Fábio Vasconcellos - INCT ReDem">
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-    <link rel="stylesheet" href="style.css?v=7">
+    <link rel="stylesheet" href="style.css?v=20260819_2">
 </head>
 
 <body>
@@ -58,16 +61,23 @@
     <main>
         <!-- SCREEN 1: LANDING -->
         <section id="landing-screen" class="screen active">
-            <h1>QUEM É SEU MATCH NA CÂMARA DOS DEPUTADOS?</h1>
-            <p style="margin-bottom: 0.5rem; color: var(--text-muted);">Compare os seus votos com os votos dos deputados
+            <h1>QUEM É SEU MATCH NO CONGRESSO NACIONAL?</h1>
+            <p style="margin-bottom: 0.5rem; color: var(--text-muted);">Compare os seus votos com os votos dos parlamentares
                 em temas relevantes do Brasil entre 2023 e 2026.</p>
 
             <p
-                style="margin-bottom: 2rem; margin-top: 1.5rem; color: var(--text-muted); font-size: 0.85rem; opacity: 0.8;">
+                style="margin-bottom: 1.5rem; margin-top: 1rem; color: var(--text-muted); font-size: 0.85rem; opacity: 0.8;">
                 <i class="far fa-clock"></i> O teste dura entre 2 e 3 min.
             </p>
 
-            <button id="start-btn" class="btn-primary">INICIAR MATCH</button>
+            <div style="display: flex; flex-direction: column; gap: 1rem; width: 100%; max-width: 320px; margin-bottom: 1.5rem;">
+                <button id="start-camara-btn" class="btn-primary" style="display:flex; align-items:center; justify-content:center; gap:0.8rem; padding: 1.1rem 1.5rem; font-size: 1.1rem; width: 100%;">
+                    <i class="fas fa-landmark"></i> MATCH NA CÂMARA
+                </button>
+                <button id="start-senado-btn" class="btn-primary" style="display:flex; align-items:center; justify-content:center; gap:0.8rem; padding: 1.1rem 1.5rem; font-size: 1.1rem; width: 100%; background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);">
+                    <i class="fas fa-university"></i> MATCH NO SENADO
+                </button>
+            </div>
 
             <div class="social-footer">
                 <a href="#" onclick="shareSocial('whatsapp'); return false;"><i class="fab fa-whatsapp"></i></a>
@@ -230,7 +240,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label
+                    <label id="label-nota-congresso"
                         style="display:block; margin-bottom:0.3rem; font-size:0.9rem; color:var(--text-muted); text-align:left;">4.
                         Qual nota você dá para a Câmara dos Deputados? (0 a 10)</label>
                     <div class="scale-group" style="flex-wrap: wrap; padding-bottom: 0.5rem;">
@@ -266,11 +276,11 @@
 
         <!-- SCREEN 5: RESULTS -->
         <section id="results-screen" class="screen">
-            <h2 style="margin-bottom: 0.3rem;">Seu Match Eleitoral</h2>
-            <p style="margin-bottom: 0.5rem; color: var(--text-muted);">Estes são os deputados que pensam como você.</p>
-            <p
+            <h2 id="results-title" style="margin-bottom: 0.3rem;">Seu Match Eleitoral</h2>
+            <p id="results-subtitle" style="margin-bottom: 0.5rem; color: var(--text-muted);">Estes são os parlamentares que pensam como você.</p>
+            <p id="results-methodology"
                 style="font-size:0.75rem; opacity:0.7; margin-top:0.3rem; max-width:600px; margin-left:auto; margin-right:auto; margin-bottom: 1rem;">
-                Metodologia: O cálculo de afinidade compara seus votos com os votos dos deputados nas pautas
+                Metodologia: O cálculo de afinidade compara seus votos com os votos dos parlamentares nas pautas
                 selecionadas. A pontuação considera apenas votos convergentes ("Sim" com "Sim", "Não" com "Não") em
                 relação ao total de temas votados.
             </p>
@@ -325,7 +335,7 @@
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-    <script src="app.js"></script>
+    <script src="app.js?v=20260819_4"></script>
 </body>
 
 </html>

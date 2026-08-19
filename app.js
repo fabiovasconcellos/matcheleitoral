@@ -2,6 +2,7 @@
 // Cole a URL do seu Google Apps Script aqui entre as aspas:
 const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxEJiV9ugH1_43ry-qoxz10DD96vZnNY7XdB_HSq6_oPVSLBXelRKmDJnQsnsuGOLjH/exec";
 
+let selectedHouse = "camara"; // "camara" ou "senado"
 let deputies = [];
 let userVotes = {};
 let sessionId = generateSessionId(); // Identificador único da sessão
@@ -32,7 +33,8 @@ function getDeviceType() {
 let currentPautaIndex = 0;
 let isVoting = false;
 
-const PAUTAS = [
+// 1. PAUTAS DA CÂMARA DOS DEPUTADOS (8 Pautas)
+const PAUTAS_CAMARA = [
     {
         id: "reduz_pena",
         titulo: "PL da Dosimetria",
@@ -59,7 +61,7 @@ const PAUTAS = [
     },
     {
         id: "arcabouco",
-        titulo: "Novo Arcabouço Fiscal",
+        titulo: "Arcabouço Fiscal",
         resumo: "O Regime Fiscal Sustentável, conhecido como Novo Arcabouço Fiscal, foi aprovado em 2023. Ele é um mecanismo de controle do endividamento que substituiu o antigo Teto de Gastos por um regime fiscal sustentável focado no equilíbrio entre arrecadação e despesas do governo federal.",
         link: "https://www.camara.leg.br/internet/agencia/infograficos-html5/novo-arcabouco-fiscal/index.html"
     },
@@ -68,45 +70,90 @@ const PAUTAS = [
         titulo: "Marco Temporal",
         resumo: "A Câmara dos Deputados aprovou o marco temporal das terras indígenas, projeto que define a demarcação apenas de terras que já eram ocupadas por povos indígenas até a promulgação da Constituição Federal de 1988.",
         link: "https://www.camara.leg.br/noticias/967344-CAMARA-APROVA-PROJETO-DO-MARCO-TEMPORAL-PARA-DEMARCACAO-DAS-TERRAS-INDIGENAS"
+    },
+    {
+        id: "isencao_ir",
+        titulo: "Isenção do Imposto de Renda",
+        resumo: "A Câmara dos Deputados aprovou o PL que zera o Imposto de Renda para quem ganha até R$ 5 mil por mês e dá desconto progressivo até R$ 7.350. A medida foi sancionada em novembro de 2025 e vale a partir de janeiro de 2026.",
+        link: "https://www.camara.leg.br/noticias/1206672-camara-aprova-projeto-que-isenta-do-imposto-de-renda-quem-ganha-ate-r$-5-mil-por-mes"
+    },
+    {
+        id: "bets",
+        titulo: "Regulamentação das Bets",
+        resumo: "Os deputados aprovaram no fim de 2023 o projeto de lei que regulamentou as apostas esportivas on-line, as chamadas bets. O texto aprovado tributou empresas e apostadores, definindo ainda regras para a exploração do serviço.",
+        link: "https://www.camara.leg.br/noticias/1029089-camara-aprova-projeto-que-regulamenta-apostas-on-line"
     }
 ];
 
+// 2. PAUTAS DO SENADO FEDERAL (6 Pautas)
+const PAUTAS_SENADO = [
+    {
+        id: "reduz_pena",
+        titulo: "PL da Dosimetria",
+        resumo: "O Plenário do Senado aprovou em dezembro de 2025 o projeto que reduz as penas dos condenados por envolvimento nos atos golpistas do 8 de janeiro de 2023. A medida beneficia, entre outras pessoas, o ex-presidente da República Jair Bolsonaro, condenado pelo STF a uma pena de mais de 27 anos.",
+        link: "https://www25.senado.leg.br/web/atividade/materias/-/materia/172003"
+    },
+    {
+        id: "arcabouco",
+        titulo: "Arcabouço Fiscal",
+        resumo: "O Plenário do Senado aprovou o novo marco de regras fiscais para o governo federal em junho de 2023. O arcabouço fixou limites para o crescimento da despesa primária. Eles devem ser reajustados anualmente, segundo a combinação de dois critérios: o Índice Nacional de Preços ao Consumidor Amplo (IPCA) e um percentual sobre o crescimento da receita primária.",
+        link: "https://www12.senado.leg.br/noticias/materias/2023/06/21/senado-aprova-o-novo-marco-fiscal-e-devolve-a-camara"
+    },
+    {
+        id: "marco_temporal",
+        titulo: "Marco Temporal",
+        resumo: "A proposta de emenda constitucional que impõe limite à reivindicação de terras pelos povos indígenas foi aprovada pelos senadores em dezembro de 2025. O texto inseriu na Constituição a tese de que somente poderão ser demarcadas as terras que estavam sob a posse dos indígenas na data da promulgação da Constituição, em 5 de outubro de 1988.",
+        link: "https://www12.senado.leg.br/noticias/materias/2025/12/09/aprovada-em-dois-turnos-pec-do-marco-temporal-vai-a-camara"
+    },
+    {
+        id: "reforma_tributaria",
+        titulo: "Reforma Tributária",
+        resumo: "Proposta de Emenda à Constituição (PEC) 45/2019, que institui a reforma do sistema tributário nacional, foi aprovada pelo Senado em novembro de 2023. A iniciativa prevê, entre outras medidas, a isenção de impostos dos produtos da cesta básica e a redução no valor do imposto incidente em 13 setores da economia.",
+        link: "https://www12.senado.leg.br/institucional/presidencia/noticia/rodrigo-pacheco/senado-federal-aprova-a-proposta-de-emenda-da-constituicao-da-reforma-tributaria-em-dois-turnos"
+    },
+    {
+        id: "licenciamento_ambiental",
+        titulo: "Licenciamento Ambiental",
+        resumo: "O Senado aprovou o projeto que cria a Lei Geral do Licenciamento Ambiental em maio de 2025. Uma das alterações feitas pelo Senado é a criação de um novo tipo de licença, com rito simplificado, para projetos considerados prioritários pelo governo.",
+        link: "https://www12.senado.leg.br/noticias/materias/2025/05/21/senado-aprova-projeto-da-lei-do-licenciamento-ambiental"
+    },
+    {
+        id: "bets",
+        titulo: "Regulamentação das Bets",
+        resumo: "O Plenário do Senado aprovou em dezembro de 2023 o Projeto de Lei de autoria do Poder Executivo que regulamenta as apostas esportivas de quota fixa, as chamadas bets esportivas. Na discussão, os senadores decidiram manter a publicidade de bets em arenas esportivas e o patrocínio das casas de jogos a atletas.",
+        link: "https://www12.senado.leg.br/noticias/materias/2023/12/12/plenario-aprova-regulamentacao-das-bets-texto-volta-a-camara"
+    }
+];
+
+let PAUTAS = PAUTAS_CAMARA;
+
 // Load Data
-async function init() {
+async function loadData(dataFile) {
     try {
-        const response = await fetch('data.json');
+        const response = await fetch(dataFile);
         let rawDeputies = await response.json();
 
-        // 1. DEDUPLICAÇÃO E MERGE DE DADOS (Correção Roberto Duarte)
+        // 1. DEDUPLICAÇÃO E MERGE DE DADOS
         const uniqueDeputies = {};
 
         rawDeputies.forEach(dep => {
             const key = `${dep.nome}-${dep.uf}`.toUpperCase();
 
             if (uniqueDeputies[key]) {
-                // Se já existe, faz o MERGE das informações
                 const existing = uniqueDeputies[key];
-
-                // 1.1 Merge de Votos (novos votos complementam os antigos)
                 existing.votos = { ...existing.votos, ...dep.votos };
-
-                // 1.2 Prioriza o nome de partido mais padronizado (ex: REPUBLICANOS sobre Republican)
                 if (dep.partido && dep.partido.length > existing.partido.length) {
                     existing.partido = dep.partido;
                 }
-                // 1.3 Garante ID e Foto (mantém o primeiro que tiver foto)
                 if (!existing.foto && dep.foto) existing.foto = dep.foto;
-
             } else {
-                // Se não existe, cria a entrada
                 uniqueDeputies[key] = dep;
             }
         });
 
-        // Converte de volta para array
         deputies = Object.values(uniqueDeputies);
 
-        // CORREÇÃO: Normaliza nomes de partidos (Ex: Republicanos)
+        // Normalização de partidos
         deputies = deputies.map(d => {
             const partido = d.partido ? d.partido.toUpperCase() : "";
 
@@ -121,24 +168,59 @@ async function init() {
 
             return d;
         });
-        populateParties(); // Preenche select de partidos
+
+        populateParties();
     } catch (e) {
         console.error("Erro ao carregar dados:", e);
     }
 }
 
+async function selectHouse(house) {
+    selectedHouse = house;
+    currentPautaIndex = 0;
+    userVotes = {};
+
+    PAUTAS = house === "senado" ? PAUTAS_SENADO : PAUTAS_CAMARA;
+
+    // Atualiza rótulos dinâmicos
+    const labelNota = document.getElementById('label-nota-congresso');
+    if (labelNota) {
+        labelNota.textContent = house === "senado"
+            ? "4. Qual nota você dá para o Senado Federal? (0 a 10)"
+            : "4. Qual nota você dá para a Câmara dos Deputados? (0 a 10)";
+    }
+
+    const resultsTitle = document.getElementById('results-title');
+    if (resultsTitle) {
+        resultsTitle.textContent = house === "senado"
+            ? "Seu Match no Senado Federal"
+            : "Seu Match na Câmara dos Deputados";
+    }
+
+    const resultsSubtitle = document.getElementById('results-subtitle');
+    if (resultsSubtitle) {
+        resultsSubtitle.textContent = house === "senado"
+            ? "Estes são os senadores que pensam como você."
+            : "Estes são os deputados que pensam como você.";
+    }
+
+    const dataFile = house === "senado" ? "data_senado.json" : "data.json";
+    await loadData(dataFile);
+
+    trackEvent('escolha_casa', `Selecionou: ${house}`);
+    showScreen('uf-screen');
+}
+
 function showScreen(screenId) {
     document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
     document.getElementById(screenId).classList.add('active');
-
-    // Rola para o topo ao trocar de tela
     window.scrollTo(0, 0);
 }
 
 function populateParties() {
-    // Extrai partidos únicos e ordena alfabeticamente
-    const partidos = [...new Set(deputies.map(d => d.partido))].sort();
+    const partidos = [...new Set(deputies.map(d => d.partido))].filter(Boolean).sort();
     const select = document.getElementById('partido-select');
+    if (!select) return;
 
     select.innerHTML = '<option value="" disabled selected>Escolha um partido</option>';
     select.innerHTML += '<option value="Nenhum">Nenhum</option>';
@@ -152,23 +234,26 @@ function populateAgeSelect() {
     const select = document.getElementById('idade-input');
     if (!select) return;
 
+    select.innerHTML = '<option value="" selected disabled>Selecione...</option>';
     for (let age = 16; age <= 99; age++) {
         select.innerHTML += `<option value="${age}">${age} anos</option>`;
     }
 }
 
-
 function setupEventListeners() {
-    const startBtn = document.getElementById('start-btn');
-    if (startBtn) startBtn.onclick = () => {
-        trackEvent('inicio', 'Clicou em Iniciar Match');
-        showScreen('uf-screen');
-    };
+    const startCamaraBtn = document.getElementById('start-camara-btn');
+    if (startCamaraBtn) startCamaraBtn.onclick = () => selectHouse('camara');
 
-    document.getElementById('uf-select').onchange = (e) => {
-        userProfile.uf = e.target.value;
-        checkStartButton();
-    };
+    const startSenadoBtn = document.getElementById('start-senado-btn');
+    if (startSenadoBtn) startSenadoBtn.onclick = () => selectHouse('senado');
+
+    const ufSelect = document.getElementById('uf-select');
+    if (ufSelect) {
+        ufSelect.onchange = (e) => {
+            userProfile.uf = e.target.value;
+            checkStartButton();
+        };
+    }
 
     // Listeners para Ideologia (Radio Buttons)
     const ideologiaRadios = document.querySelectorAll('input[name="ideologia"]');
@@ -188,9 +273,10 @@ function setupEventListeners() {
             if (val == 6) label = "Direita";
             if (val == 7) label = "Extrema-Direita";
 
-            ideologiaDisplay.textContent = `${val} - ${label}`;
+            if (ideologiaDisplay) {
+                ideologiaDisplay.textContent = `${val} - ${label}`;
+            }
 
-            // Marca que o usuário mexeu (ou simplesmente pelo fato de ter escolhido)
             hasMovedIdeologySlider = true;
             checkStartButton();
         });
@@ -204,8 +290,6 @@ function setupEventListeners() {
             checkStartButton();
         };
     }
-
-
 
     // Listeners para a tela demográfica
     const demographicInputs = ['sexo-input', 'escolaridade-input', 'idade-input'];
@@ -221,7 +305,7 @@ function setupEventListeners() {
         }
     });
 
-    // Listener para nota do congresso na tela demográfica
+    // Listener para nota na tela demográfica
     const congressoRadios = document.querySelectorAll('input[name="nota-congresso"]');
     congressoRadios.forEach(radio => {
         radio.addEventListener('change', (e) => {
@@ -235,16 +319,19 @@ function setupEventListeners() {
     if (viewMatchBtn) {
         viewMatchBtn.onclick = () => {
             trackEvent('demografica_completa', 'Respondeu pesquisa demográfica');
-            sendDataToSheet(true, false); // Salva dados finais
+            sendDataToSheet(true, false);
             calculateResults();
         };
     }
 
-    document.getElementById('uf-confirm-btn').onclick = () => {
-        trackEvent('uf_selecionada', `UF:${userProfile.uf} Ideologia:${userProfile.ideologia} Partido:${userProfile.partido}`);
-        showScreen('voting-screen');
-        renderPauta();
-    };
+    const ufConfirmBtn = document.getElementById('uf-confirm-btn');
+    if (ufConfirmBtn) {
+        ufConfirmBtn.onclick = () => {
+            trackEvent('uf_selecionada', `Casa:${selectedHouse} UF:${userProfile.uf} Ideologia:${userProfile.ideologia} Partido:${userProfile.partido}`);
+            showScreen('voting-screen');
+            renderPauta();
+        };
+    }
 
     document.querySelectorAll('.vote-manual-btn').forEach(btn => {
         btn.onclick = () => handleVote(btn.dataset.vote);
@@ -252,7 +339,8 @@ function setupEventListeners() {
 
     // Keyboard support
     document.onkeydown = (e) => {
-        if (document.getElementById('voting-screen').classList.contains('active')) {
+        const votingScreen = document.getElementById('voting-screen');
+        if (votingScreen && votingScreen.classList.contains('active')) {
             if (e.key === "ArrowRight") handleVote("Sim");
             if (e.key === "ArrowLeft") handleVote("Não");
         }
@@ -261,16 +349,16 @@ function setupEventListeners() {
 
 function renderPauta() {
     if (currentPautaIndex >= PAUTAS.length) {
-        // Rastreia conclusão das votações
-        trackEvent('votacao_completa', `Completou ${PAUTAS.length} votações`);
-        // Redireciona para tela demográfica ao invés de ir direto aos resultados
+        trackEvent('votacao_completa', `Completou ${PAUTAS.length} votações na casa ${selectedHouse}`);
         showScreen('demographic-screen');
-        populateAgeSelect(); // Popula o select de idade
+        populateAgeSelect();
         return;
     }
 
     const pauta = PAUTAS[currentPautaIndex];
     const stack = document.getElementById('vote-stack');
+    if (!stack) return;
+
     stack.innerHTML = `
         <div class="vote-card" id="active-card">
             <div class="stamp sim">SIM</div>
@@ -297,39 +385,40 @@ function renderPauta() {
 }
 
 function handleVote(vote) {
-    if (isVoting) return; // Debounce anti-duplo clique
+    if (isVoting) return;
     isVoting = true;
 
     const pauta = PAUTAS[currentPautaIndex];
     userVotes[pauta.id] = vote;
 
-    // Rastreia primeira votação
     if (currentPautaIndex === 0) {
-        trackEvent('votacao_iniciada', 'Primeira votação realizada');
+        trackEvent('votacao_iniciada', `Primeira votação realizada (${selectedHouse})`);
     }
 
     const card = document.getElementById('active-card');
-    const direction = vote === "Sim" ? 1000 : -1000;
-    card.style.transition = "transform 0.5s ease";
-    card.style.transform = `translateX(${direction}px) rotate(${direction / 20}deg)`;
+    if (card) {
+        const direction = vote === "Sim" ? 1000 : -1000;
+        card.style.transition = "transform 0.5s ease";
+        card.style.transform = `translateX(${direction}px) rotate(${direction / 20}deg)`;
+    }
 
     setTimeout(() => {
         currentPautaIndex++;
         renderPauta();
-        isVoting = false; // Destrava para o próximo voto
+        isVoting = false;
     }, 300);
 }
 
 function initSwipe() {
     const card = document.getElementById('active-card');
+    if (!card) return;
+
     let startX = 0;
     let currentX = 0;
     let isDragging = false;
 
     const onTouchStart = (e) => {
-        // Ignora se tocar em links ou elementos clicáveis
         if (e.target.closest('a') || e.target.onclick) return;
-
         startX = e.touches[0].clientX;
         currentX = startX;
         isDragging = false;
@@ -337,17 +426,11 @@ function initSwipe() {
 
     const onTouchMove = (e) => {
         if (!startX) return;
-        // Previne scroll da tela enquanto arrasta o card
         e.preventDefault();
         currentX = e.touches[0].clientX;
         const diff = currentX - startX;
-
-        // Só considera arrasto se mover mais que 5px
         if (Math.abs(diff) > 5) isDragging = true;
-
-        if (isDragging) {
-            updateCardTransform(card, diff);
-        }
+        if (isDragging) updateCardTransform(card, diff);
     };
 
     const onTouchEnd = (e) => {
@@ -368,7 +451,6 @@ function initSwipe() {
     // Mouse support
     const onMouseDown = (e) => {
         if (e.target.closest('a') || e.target.onclick) return;
-
         startX = e.clientX;
         currentX = startX;
         isDragging = false;
@@ -380,24 +462,18 @@ function initSwipe() {
         if (!startX) return;
         currentX = e.clientX;
         const diff = currentX - startX;
-
         if (Math.abs(diff) > 5) isDragging = true;
-
-        if (isDragging) {
-            updateCardTransform(card, diff);
-        }
+        if (isDragging) updateCardTransform(card, diff);
     };
 
     const onMouseUp = (e) => {
         if (!startX) return;
         card.removeEventListener('mousemove', onMouseMove);
         card.style.cursor = 'grab';
-
         if (isDragging) {
             const diff = currentX - startX;
             finishSwipe(card, diff);
         }
-
         startX = 0;
         isDragging = false;
     };
@@ -415,16 +491,16 @@ function updateCardTransform(card, diff) {
 
     if (diff > 50) {
         card.style.boxShadow = "0 10px 50px rgba(0, 230, 118, 0.5)";
-        simStamp.style.opacity = Math.min(diff / 150, 1);
-        naoStamp.style.opacity = 0;
+        if (simStamp) simStamp.style.opacity = Math.min(diff / 150, 1);
+        if (naoStamp) naoStamp.style.opacity = 0;
     } else if (diff < -50) {
         card.style.boxShadow = "0 10px 50px rgba(255, 82, 82, 0.5)";
-        naoStamp.style.opacity = Math.min(Math.abs(diff) / 150, 1);
-        simStamp.style.opacity = 0;
+        if (naoStamp) naoStamp.style.opacity = Math.min(Math.abs(diff) / 150, 1);
+        if (simStamp) simStamp.style.opacity = 0;
     } else {
         card.style.boxShadow = "";
-        simStamp.style.opacity = 0;
-        naoStamp.style.opacity = 0;
+        if (simStamp) simStamp.style.opacity = 0;
+        if (naoStamp) naoStamp.style.opacity = 0;
     }
 }
 
@@ -437,28 +513,25 @@ function finishSwipe(card, diff) {
         card.style.boxShadow = "";
         const simStamp = card.querySelector('.stamp.sim');
         const naoStamp = card.querySelector('.stamp.nao');
-        simStamp.style.opacity = 0;
-        naoStamp.style.opacity = 0;
+        if (simStamp) simStamp.style.opacity = 0;
+        if (naoStamp) naoStamp.style.opacity = 0;
     }
 }
 
-// Flag para garantir movimento
 let hasMovedIdeologySlider = false;
 
 function checkStartButton() {
     const btn = document.getElementById('uf-confirm-btn');
-
-    // UF, Ideologia e Partido são obrigatórios
+    if (!btn) return;
     const hasUF = userProfile.uf !== "";
     const hasIdeologia = userProfile.ideologia !== "";
     const hasPartido = userProfile.partido !== "";
-
     btn.disabled = !(hasUF && hasIdeologia && hasPartido);
 }
 
 function calculateResults() {
-    // Não salva mais dados parciais aqui - salvamento ocorre apenas após pesquisa demográfica
     showScreen('results-screen');
+    const isSenado = selectedHouse === "senado";
     const filtered = deputies.filter(d => d.uf === userProfile.uf);
 
     const scores = filtered.map(dep => {
@@ -468,24 +541,24 @@ function calculateResults() {
             const userVote = userVotes[p.id];
             const depVote = dep.votos[p.id];
 
-            // Considera match apenas se deputado votou Sim ou Não e coincidiu com usuário
-            // A divisão será sempre por 6 (PAUTAS.length), evitando distorções
             if ((depVote === "Sim" || depVote === "Não") && userVote === depVote) {
                 matches++;
             }
         });
 
-        // Divisão pelo total de pautas (6)
         const pct = Math.round((matches / PAUTAS.length) * 100);
         return { ...dep, pct };
     });
 
     scores.sort((a, b) => b.pct - a.pct);
 
+    const cargoPlural = isSenado ? "senadores" : "deputados";
+    const cargoSingular = isSenado ? "senador" : "deputado";
+
     const container = document.getElementById('ranking-container');
     container.innerHTML = `
         <p style="text-align:center; font-size:0.9rem; margin-bottom:1rem; color:var(--text-muted);">
-            Clique no deputado para ver o comparativo detalhado
+            Clique no ${cargoSingular} para ver o comparativo detalhado
         </p>
     ` + scores.slice(0, 20).map((dep, idx) => `
         <div class="ranking-item" style="cursor:pointer;" onclick="showDeputyDetail('${dep.id}', ${dep.pct})">
@@ -502,26 +575,23 @@ function calculateResults() {
         </div>
     `).join('');
 
-    const topMatch = scores[0];
-    const bottomMatch = scores[scores.length - 1]; // Pega o último da lista (menor afinidade)
+    const topMatch = scores[0] || { nome: "N/A", partido: "", uf: "", pct: 0 };
+    const bottomMatch = scores[scores.length - 1] || { nome: "N/A", partido: "", uf: "", pct: 0 };
 
-    // *** LÓGICA DE COMPARTILHAMENTO DE RESULTADOS (RESTAURADA) ***
     document.getElementById('share-results-btn').onclick = async () => {
-        trackEvent('compartilhamento_resultado', 'Clicou para compartilhar resultado no WhatsApp');
+        trackEvent('compartilhamento_resultado', `Compartilhar WhatsApp (${selectedHouse})`);
 
         const btn = document.getElementById('share-results-btn');
         const originalText = btn.innerHTML;
 
-        const baseText = `*Olha que interessante!* 💡 Esse app calcula o quanto eu e uma lista de deputados temos de afinidade. 🧑‍⚖️🏛️\n\n*Minha maior afinidade foi de ${topMatch.pct}%* com *${topMatch.nome}* (${topMatch.partido}-${topMatch.uf}) e a menor ${bottomMatch.pct}% com ${bottomMatch.nome} (${bottomMatch.partido}-${bottomMatch.uf}). 😲\n\nFaz o teste aí: ${window.location.href}`;
+        const baseText = `*Olha que interessante!* 💡 Esse app calcula o quanto eu e uma lista de ${cargoPlural} temos de afinidade. 🧑‍⚖️🏛️\n\n*Minha maior afinidade foi de ${topMatch.pct}%* com *${topMatch.nome}* (${topMatch.partido}-${topMatch.uf}) e a menor ${bottomMatch.pct}% com ${bottomMatch.nome} (${bottomMatch.partido}-${bottomMatch.uf}). 😲\n\nFaz o teste aí: ${window.location.href}`;
 
-        // Desabilita botão enquanto processa
         btn.disabled = true;
         btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Gerando imagem...';
 
         try {
-            // 1. Prepara Card Oculto (Top 5)
             const shareList = document.getElementById('share-list');
-            shareList.innerHTML = scores.slice(0, 5).map((dep, idx) => `
+            shareList.innerHTML = scores.slice(0, isSenado ? 3 : 5).map((dep, idx) => `
                 <div style="display:flex; align-items:center; background:rgba(255,255,255,0.1); padding:15px; border-radius:25px; border-left:10px solid ${idx === 0 ? '#00e676' : '#00d2ff'};">
                     <div style="width:110px; height:110px; border-radius:50%; overflow:hidden; border:4px solid #fff; margin-right:25px; flex-shrink:0; position: relative;">
                         <img src="https://wsrv.nl/?url=${encodeURIComponent(dep.foto)}&w=400" style="position: absolute; top:0; left:0; width:100%; min-height:100%; object-fit:cover;" crossorigin="anonymous">
@@ -536,19 +606,16 @@ function calculateResults() {
                 </div>
             `).join('');
 
-            // 2. Gera Canvas
             const canvas = await html2canvas(document.querySelector("#share-card"), {
                 scale: 1, useCORS: true, backgroundColor: null, allowTaint: true
             });
 
-            // 3. Converte para Blob
             canvas.toBlob(async (blob) => {
                 if (!blob) throw new Error("Falha ao gerar imagem blob");
 
                 const file = new File([blob], "match-eleitoral.png", { type: "image/png" });
                 const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 
-                // A. Tenta Share Nativo (Mobile)
                 if (isMobile && navigator.canShare && navigator.canShare({ files: [file] })) {
                     try {
                         await navigator.share({
@@ -560,20 +627,16 @@ function calculateResults() {
                         btn.innerHTML = originalText;
                         return;
                     } catch (e) {
-                        console.warn("Share nativo cancelado/falhou:", e);
+                        console.warn("Share nativo cancelado:", e);
                     }
                 }
 
-                // B. Fallback Desktop / Web: Copia imagem para o Clipboard + Alerta
                 try {
-                    // Tenta copiar imagem (Chrome/Edge/Safari Desktop modernos)
                     if (navigator.clipboard && navigator.clipboard.write) {
                         await navigator.clipboard.write([
                             new ClipboardItem({ [blob.type]: blob })
                         ]);
-                        alert("📸 Imagem copiada!\n\nAgora abra o WhatsApp (ou outra rede) e cole (CTRL+V) a imagem.");
-
-                        // Em seguida tenta copiar o link também
+                        alert("📸 Imagem copiada!\n\nAbra o WhatsApp e cole (CTRL+V) a imagem.");
                         window.open(`https://web.whatsapp.com/send?text=${encodeURIComponent(baseText)}`, '_blank');
                     } else {
                         throw new Error("Clipboard de imagem não suportado");
@@ -619,6 +682,9 @@ function showDeputyDetail(depId, matchPct) {
     const dep = deputies.find(d => d.id == depId);
     if (!dep) return;
 
+    const isSenado = selectedHouse === "senado";
+    const cargoSingular = isSenado ? "Senador(a)" : "Deputado(a)";
+
     const modal = document.getElementById('dep-modal');
     const content = document.getElementById('modal-content');
 
@@ -630,7 +696,6 @@ function showDeputyDetail(depId, matchPct) {
         let color, borderColor;
 
         if (depVote !== "Sim" && depVote !== "Não") {
-            // Voto neutro/ausente
             color = 'var(--text-muted)';
             borderColor = 'rgba(255,255,255,0.2)';
         } else if (isMatch) {
@@ -645,7 +710,7 @@ function showDeputyDetail(depId, matchPct) {
             <div style="margin-bottom:1rem; padding:0.8rem; background:rgba(255,255,255,0.05); border-radius:10px; border-left:4px solid ${borderColor}; text-align:left;">
                 <div style="font-size:0.9rem; font-weight:bold; margin-bottom:0.3rem;">${p.titulo}</div>
                 <div style="font-size:0.8rem; opacity:0.8;">
-                    Deputado: <span style="font-weight:bold; color:${color}">${depVote}</span> | 
+                    ${cargoSingular}: <span style="font-weight:bold; color:${color}">${depVote}</span> | 
                     Você: <span style="opacity:0.7;">${userVote}</span>
                 </div>
             </div>
@@ -673,31 +738,25 @@ function showDeputyDetail(depId, matchPct) {
     modal.style.display = 'block';
 }
 
-
 async function shareSocial(network) {
-    const text = "Descubra seu Match Eleitoral! Compare seus votos com os deputados federais.";
-    // Usar URL canônica para garantir que a imagem apareça
+    const text = "Descubra seu Match Eleitoral! Compare seus votos com os parlamentares no Congresso Nacional.";
     const url = "https://fabiovasconcellos.github.io/matcheleitoral/";
 
-    // Rastreia o clique
     trackEvent(`compartilhamento_url_${network}`, `Clicou para compartilhar no ${network}`);
 
-    // *** NOVA LÓGICA COPY/LINK ***
     if (network === 'copy' || network === 'link') {
         if (navigator.clipboard) {
             navigator.clipboard.writeText(text + " " + url).then(() => {
                 alert("🔗 Link copiado para a área de transferência!");
             }).catch(err => {
-                console.error("Erro ao copiar", err);
                 prompt("Copie o link:", url);
             });
         } else {
             prompt("Copie o link:", url);
         }
-        return; // Encerra aqui se for copy
+        return;
     }
 
-    // Tenta usar o compartilhamento NATIVO do celular primeiro
     if (navigator.share && /Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
         try {
             await navigator.share({
@@ -707,11 +766,10 @@ async function shareSocial(network) {
             });
             return;
         } catch (err) {
-            console.log("Share nativo cancelado ou falhou, tentando URL direta.");
+            console.log("Share nativo cancelado");
         }
     }
 
-    // Fallback: Abre a URL específica da rede
     const encodedText = encodeURIComponent(text);
     const encodedUrl = encodeURIComponent(url);
     let shareUrl = "";
@@ -734,8 +792,6 @@ async function shareSocial(network) {
     if (shareUrl) window.open(shareUrl, '_blank');
 }
 
-
-// Função para verificar se todas as perguntas demográficas foram respondidas
 function checkDemographicButton() {
     const btn = document.getElementById('view-match-btn');
     if (!btn) return;
@@ -750,28 +806,26 @@ function checkDemographicButton() {
 
 // Inicializa
 setupEventListeners();
-init();
 
 function generateSessionId() {
     return 'sess_' + Math.random().toString(36).substr(2, 9) + '_' + Date.now();
 }
 
 // *** SISTEMA DE MÉTRICAS ***
-
-// Fila de eventos para reduzir chamadas ao servidor (Batching)
 let eventQueue = [];
 
 function trackEvent(eventType, details = '') {
     if (GOOGLE_SCRIPT_URL.includes("COLE_AQUI")) return;
 
     const now = Date.now();
-    const timeSinceStart = Math.round((now - sessionStartTime) / 1000); // em segundos
-    const timeSinceLastEvent = Math.round((now - lastEventTime) / 1000); // em segundos
-    lastEventTime = now; // Atualiza para o próximo evento
+    const timeSinceStart = Math.round((now - sessionStartTime) / 1000);
+    const timeSinceLastEvent = Math.round((now - lastEventTime) / 1000);
+    lastEventTime = now;
 
     const eventData = {
         event_type: eventType,
         session_id: sessionId,
+        casa: selectedHouse,
         timestamp: new Date().toISOString(),
         details: details,
         uf: userProfile.uf || '',
@@ -782,15 +836,10 @@ function trackEvent(eventType, details = '') {
         time_since_last_event: timeSinceLastEvent
     };
 
-    // LÓGICA DE BATCHING:
-    // Se for 'inicio', envia imediatamente para contar acessos (Bounce Rate)
-    // Se for evento de 'compartilhamento', envia imediatamente (pois ocorre após o envio final)
-    // Para todos os outros, guarda na fila para enviar apenas no final
-    if (eventType === 'inicio' || eventType.startsWith('compartilhamento_')) {
+    if (eventType === 'inicio' || eventType.startsWith('compartilhamento_') || eventType === 'escolha_casa') {
         sendSingleEvent(eventData);
     } else {
         eventQueue.push(eventData);
-        console.log('📥 Evento agendado (Batching):', eventType, details);
     }
 }
 
@@ -800,8 +849,7 @@ function sendSingleEvent(eventData) {
         mode: 'no-cors',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(eventData)
-    }).catch(err => console.error('Erro ao rastrear evento inicial:', err));
-    console.log('📤 Evento enviado imediatamente:', eventData.event_type);
+    }).catch(err => console.error('Erro ao rastrear evento:', err));
 }
 
 function sendDataToSheet(isFinal, silent = false) {
@@ -809,6 +857,7 @@ function sendDataToSheet(isFinal, silent = false) {
 
     const dataToSend = {
         session_id: sessionId,
+        casa: selectedHouse,
         etapa: isFinal ? "final" : "parcial",
         uf: userProfile.uf,
         ideologia: userProfile.ideologia,
@@ -825,16 +874,13 @@ function sendDataToSheet(isFinal, silent = false) {
         Q4_ReformaTrib: userVotes['reforma_tributaria'] || "N/A",
         Q5_ArcaboucoFisc: userVotes['arcabouco'] || "N/A",
         Q6_MarcoTemporal: userVotes['marco_temporal'] || "N/A",
+        Q7_IsencaoIR: userVotes['isencao_ir'] || "N/A",
+        Q8_Bets: userVotes['bets'] || "N/A",
 
-        // Métricas Extras
         device: getDeviceType(),
-        time_total: Math.round((Date.now() - sessionStartTime) / 1000), // Tempo total em segundos
-
-        // *** NOVO: Histórico de Eventos (Batch) ***
+        time_total: Math.round((Date.now() - sessionStartTime) / 1000),
         event_history: eventQueue
     };
-
-    console.log("📤 Enviando dados para planilha:", dataToSend);
 
     fetch(GOOGLE_SCRIPT_URL, {
         method: 'POST',
@@ -843,10 +889,7 @@ function sendDataToSheet(isFinal, silent = false) {
         body: JSON.stringify(dataToSend)
     }).then(() => {
         if (isFinal && !silent) {
-            console.log("Dados finais e histórico de eventos enviados com sucesso.");
-            eventQueue = []; // Limpa fila após envio bem sucedido (teórico, pois é no-cors)
-        } else if (silent) {
-            console.log("Auto-save successful");
+            eventQueue = [];
         }
     }).catch(err => console.error("Erro no envio:", err));
 }

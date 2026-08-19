@@ -10,7 +10,9 @@
       "arcabouco": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -52,7 +54,9 @@
       "arcabouco": "Não",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -66,7 +70,9 @@
       "arcabouco": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -81,7 +87,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Ausente/Não Votou",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -96,7 +104,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -125,7 +135,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -140,7 +152,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -194,7 +208,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -223,7 +239,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -238,7 +256,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -251,7 +271,9 @@
       "reduz_pena": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -265,7 +287,9 @@
       "arcabouco": "Ausente",
       "reforma_tributaria": "Ausente/Não Votou",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -279,7 +303,8 @@
       "arcabouco": "Sim",
       "marco_temporal": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim"
     }
   },
   {
@@ -322,7 +347,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -337,7 +364,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -352,7 +381,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -366,7 +397,9 @@
       "arcabouco": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -377,7 +410,8 @@
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/178831.jpg",
     "votos": {
       "reduz_pena": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim"
     }
   },
   {
@@ -392,7 +426,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -407,7 +443,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -422,7 +460,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -491,7 +531,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -520,7 +562,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -535,7 +579,9 @@
       "marco_temporal": "Artigo 17",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Artigo 17"
     }
   },
   {
@@ -590,7 +636,9 @@
       "arcabouco": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -605,7 +653,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -620,7 +670,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -635,7 +687,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -650,7 +704,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -665,7 +721,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -694,7 +752,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -709,7 +769,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -724,7 +786,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -739,7 +803,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -754,7 +820,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -811,7 +879,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -840,7 +910,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -855,7 +927,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -867,7 +941,8 @@
     "votos": {
       "reduz_pena": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim"
     }
   },
   {
@@ -896,7 +971,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -924,7 +1001,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -939,7 +1018,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -954,7 +1035,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -969,7 +1052,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -1011,7 +1096,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -1025,7 +1112,9 @@
       "arcabouco": "Ausente",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -1040,7 +1129,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -1082,7 +1173,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -1125,7 +1218,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -1140,7 +1235,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -1169,7 +1266,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -1198,7 +1297,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -1213,7 +1314,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -1228,7 +1331,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -1243,7 +1348,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -1258,7 +1365,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -1273,7 +1382,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Ausente/Não Votou",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -1288,7 +1399,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Ausente/Não Votou",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -1317,7 +1430,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -1331,7 +1446,9 @@
       "arcabouco": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -1346,7 +1463,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -1361,7 +1480,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -1376,7 +1497,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -1400,7 +1523,8 @@
     "votos": {
       "reduz_pena": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim"
     }
   },
   {
@@ -1471,7 +1595,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -1486,7 +1612,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -1543,7 +1671,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -1571,7 +1701,9 @@
       "arcabouco": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -1600,7 +1732,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -1614,7 +1748,9 @@
       "arcabouco": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -1629,7 +1765,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -1658,7 +1796,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -1673,7 +1813,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -1688,7 +1830,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -1703,7 +1847,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -1717,7 +1863,9 @@
       "arcabouco": "Sim",
       "reforma_tributaria": "Ausente/Não Votou",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Ausente"
+      "PEC_blindagem": "Ausente",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -1732,7 +1880,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -1747,7 +1897,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -1759,7 +1911,9 @@
     "votos": {
       "reduz_pena": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -1772,7 +1926,9 @@
       "reduz_pena": "Sim",
       "reforma_tributaria": "Ausente/Não Votou",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -1801,7 +1957,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -1842,7 +2000,9 @@
       "arcabouco": "Não",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -1857,7 +2017,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -1913,7 +2075,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -1928,7 +2092,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -1943,7 +2109,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -1958,7 +2126,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -2023,7 +2193,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -2035,7 +2207,8 @@
     "votos": {
       "reduz_pena": "Não",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim"
     }
   },
   {
@@ -2050,7 +2223,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -2065,7 +2240,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -2080,7 +2257,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -2095,7 +2274,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -2176,7 +2357,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Ausente",
+      "bets": "Sim"
     }
   },
   {
@@ -2205,7 +2388,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -2262,7 +2447,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -2288,7 +2475,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -2302,7 +2491,9 @@
       "arcabouco": "Não",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -2317,7 +2508,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -2332,7 +2525,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -2347,7 +2542,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Ausente"
+      "PEC_blindagem": "Ausente",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -2362,7 +2559,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -2430,7 +2629,9 @@
       "arcabouco": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -2459,7 +2660,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -2474,7 +2677,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -2489,7 +2694,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -2504,7 +2711,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -2533,7 +2742,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -2548,7 +2759,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -2563,7 +2776,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Ausente/Não Votou",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -2618,7 +2833,9 @@
       "arcabouco": "Não",
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -2633,7 +2850,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -2653,14 +2872,16 @@
     "nome": "Glauber Braga",
     "partido": "PSOL",
     "uf": "RJ",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/152605.jpg",
     "votos": {
       "reduz_pena": "Não",
       "arcabouco": "Não",
       "marco_temporal": "Não",
       "reforma_tributaria": "Ausente/Não Votou",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -2710,7 +2931,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -2739,7 +2962,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -2754,7 +2979,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -2769,7 +2996,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -2784,7 +3013,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -2799,7 +3030,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -2825,7 +3058,8 @@
     "votos": {
       "reduz_pena": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim"
     }
   },
   {
@@ -2854,7 +3088,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Ausente"
+      "PEC_blindagem": "Ausente",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -2882,7 +3118,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -2910,7 +3148,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -2924,7 +3164,9 @@
       "arcabouco": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -2939,7 +3181,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Ausente"
+      "PEC_blindagem": "Ausente",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -2954,7 +3198,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -2969,7 +3215,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -2983,7 +3231,8 @@
       "arcabouco": "Sim",
       "marco_temporal": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim"
     }
   },
   {
@@ -2998,7 +3247,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -3013,7 +3264,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -3028,7 +3281,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -3043,7 +3298,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -3083,7 +3340,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Ausente/Não Votou",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -3098,7 +3357,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -3113,7 +3374,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -3128,7 +3391,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -3157,7 +3422,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -3172,7 +3439,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Ausente",
+      "bets": "Não"
     }
   },
   {
@@ -3198,7 +3467,8 @@
     "votos": {
       "reduz_pena": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim"
     }
   },
   {
@@ -3213,7 +3483,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -3227,7 +3499,9 @@
       "arcabouco": "Ausente",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Ausente"
+      "PEC_blindagem": "Ausente",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -3255,7 +3529,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -3270,7 +3546,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -3282,7 +3560,8 @@
     "votos": {
       "reduz_pena": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Ausente"
+      "PEC_blindagem": "Ausente",
+      "isencao_ir": "Sim"
     }
   },
   {
@@ -3297,7 +3576,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Ausente/Não Votou",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -3325,7 +3606,9 @@
       "arcabouco": "Não",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -3339,7 +3622,8 @@
       "arcabouco": "Sim",
       "marco_temporal": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim"
     }
   },
   {
@@ -3353,7 +3637,9 @@
       "arcabouco": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -3381,7 +3667,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -3396,7 +3684,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -3439,7 +3729,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -3451,7 +3743,8 @@
     "votos": {
       "reduz_pena": "Não",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim"
     }
   },
   {
@@ -3466,7 +3759,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -3494,7 +3789,8 @@
       "arcabouco": "Sim",
       "marco_temporal": "Não",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim"
     }
   },
   {
@@ -3509,7 +3805,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -3524,7 +3822,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -3532,7 +3832,7 @@
     "nome": "Lucas Abrahao",
     "partido": "REDE",
     "uf": "AP",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/234253.jpg",
     "votos": {
       "reduz_pena": "Não"
     }
@@ -3549,7 +3849,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -3564,7 +3866,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -3579,7 +3883,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Ausente",
+      "bets": "Sim"
     }
   },
   {
@@ -3619,7 +3925,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -3662,7 +3970,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -3716,7 +4026,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -3731,7 +4043,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -3743,7 +4057,8 @@
     "votos": {
       "reduz_pena": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim"
     }
   },
   {
@@ -3758,7 +4073,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -3785,7 +4102,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -3812,7 +4131,9 @@
       "arcabouco": "Ausente",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -3827,7 +4148,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Ausente",
+      "bets": "Sim"
     }
   },
   {
@@ -3842,7 +4165,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -3857,7 +4182,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -3927,7 +4254,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -3956,7 +4285,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -3971,7 +4302,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Ausente/Não Votou",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -4013,7 +4346,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -4028,7 +4363,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -4071,7 +4408,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -4085,7 +4424,9 @@
       "arcabouco": "Não",
       "marco_temporal": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -4113,7 +4454,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -4128,7 +4471,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -4157,7 +4502,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -4172,7 +4519,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -4215,7 +4564,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -4258,7 +4609,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -4273,7 +4626,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -4301,7 +4656,9 @@
       "arcabouco": "Ausente",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Ausente"
+      "PEC_blindagem": "Ausente",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -4316,7 +4673,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -4331,7 +4690,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -4360,7 +4721,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -4375,7 +4738,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -4404,7 +4769,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -4416,7 +4783,8 @@
     "votos": {
       "reduz_pena": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Ausente"
     }
   },
   {
@@ -4444,7 +4812,9 @@
       "arcabouco": "Não",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -4459,7 +4829,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -4474,7 +4846,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -4488,7 +4862,9 @@
       "arcabouco": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -4503,7 +4879,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -4542,7 +4920,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -4571,7 +4951,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -4579,11 +4961,12 @@
     "nome": "Pastor Claudio Mariano",
     "partido": "UNIÃO",
     "uf": "PA",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/230762.jpg",
     "votos": {
       "reduz_pena": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim"
     }
   },
   {
@@ -4612,7 +4995,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -4654,7 +5039,9 @@
       "arcabouco": "Ausente",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -4666,7 +5053,8 @@
     "votos": {
       "reduz_pena": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Ausente"
+      "PEC_blindagem": "Ausente",
+      "isencao_ir": "Sim"
     }
   },
   {
@@ -4692,7 +5080,9 @@
       "arcabouco": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -4735,7 +5125,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -4750,7 +5142,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -4764,7 +5158,9 @@
       "arcabouco": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -4779,7 +5175,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -4791,7 +5189,8 @@
     "votos": {
       "reduz_pena": "Não",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim"
     }
   },
   {
@@ -4806,7 +5205,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Abstenção"
     }
   },
   {
@@ -4821,7 +5222,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -4859,7 +5262,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -4874,7 +5279,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -4889,7 +5296,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -4903,7 +5312,9 @@
       "arcabouco": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -4918,7 +5329,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -4932,7 +5345,9 @@
       "arcabouco": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -4961,7 +5376,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -4986,7 +5403,8 @@
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/160641.jpg",
     "votos": {
       "reduz_pena": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim"
     }
   },
   {
@@ -5000,7 +5418,9 @@
       "arcabouco": "Ausente",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Ausente"
+      "PEC_blindagem": "Ausente",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -5011,7 +5431,8 @@
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/233594.jpg",
     "votos": {
       "reduz_pena": "Sim",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim"
     }
   },
   {
@@ -5025,7 +5446,9 @@
       "arcabouco": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -5054,7 +5477,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -5069,7 +5494,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -5084,7 +5511,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -5099,7 +5528,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -5128,7 +5559,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -5140,7 +5573,8 @@
     "votos": {
       "reduz_pena": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim"
     }
   },
   {
@@ -5179,7 +5613,8 @@
     "votos": {
       "reduz_pena": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim"
     }
   },
   {
@@ -5228,7 +5663,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -5282,7 +5719,9 @@
       "reduz_pena": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -5297,7 +5736,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -5312,7 +5753,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -5337,7 +5780,8 @@
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/141533.jpg",
     "votos": {
       "reduz_pena": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim"
     }
   },
   {
@@ -5363,7 +5807,8 @@
     "votos": {
       "reduz_pena": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim"
     }
   },
   {
@@ -5405,7 +5850,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -5444,7 +5891,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -5473,7 +5922,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -5488,7 +5939,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -5517,7 +5970,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -5556,7 +6011,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -5571,7 +6028,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -5624,7 +6083,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -5639,7 +6100,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -5681,7 +6144,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -5696,7 +6161,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -5711,7 +6178,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -5726,7 +6195,9 @@
       "marco_temporal": "Abstenção",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -5741,7 +6212,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Ausente/Não Votou",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -5779,7 +6252,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -5794,7 +6269,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -5809,7 +6286,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -5824,7 +6303,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -5839,7 +6320,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -5850,7 +6333,8 @@
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/143084.jpg",
     "votos": {
       "reduz_pena": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim"
     }
   },
   {
@@ -5876,7 +6360,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Ausente/Não Votou",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -5919,7 +6405,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -5934,7 +6422,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -5972,7 +6462,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -5987,7 +6479,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -6014,7 +6508,9 @@
       "arcabouco": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Ausente",
+      "bets": "Sim"
     }
   },
   {
@@ -6029,7 +6525,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -6058,7 +6556,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -6087,7 +6587,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -6115,7 +6617,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Ausente"
+      "PEC_blindagem": "Ausente",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -6130,7 +6634,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -6158,7 +6664,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -6187,7 +6695,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -6201,7 +6711,9 @@
       "arcabouco": "Ausente",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -6216,7 +6728,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -6229,7 +6743,9 @@
       "arcabouco": "Ausente",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -6237,11 +6753,12 @@
     "nome": "Abilio Brunini",
     "partido": "PL",
     "uf": "MT",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220593.jpg",
     "votos": {
       "arcabouco": "Não",
       "marco_temporal": "Sim",
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "bets": "Não"
     }
   },
   {
@@ -6255,7 +6772,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -6269,7 +6788,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -6283,7 +6804,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -6297,7 +6820,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -6305,11 +6830,12 @@
     "nome": "Alberto Mourão",
     "partido": "MDB",
     "uf": "SP",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/74696.jpg",
     "votos": {
       "arcabouco": "Sim",
       "marco_temporal": "Sim",
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -6341,7 +6867,7 @@
     "nome": "Alexandre Leite",
     "partido": "UNIÃO",
     "uf": "SP",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/160545.jpg",
     "votos": {
       "arcabouco": "Sim",
       "marco_temporal": "Sim"
@@ -6357,7 +6883,9 @@
       "arcabouco": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -6365,11 +6893,12 @@
     "nome": "Amália Barros",
     "partido": "PL",
     "uf": "MT",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220596.jpg",
     "votos": {
       "arcabouco": "Não",
       "marco_temporal": "Sim",
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "bets": "Não"
     }
   },
   {
@@ -6377,7 +6906,7 @@
     "nome": "André Fufuca",
     "partido": "PP",
     "uf": "MA",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/178882.jpg",
     "votos": {
       "arcabouco": "Sim",
       "marco_temporal": "Sim"
@@ -6393,7 +6922,9 @@
       "arcabouco": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Ausente"
+      "PEC_blindagem": "Ausente",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -6414,12 +6945,13 @@
     "nome": "Augusto Puppio",
     "partido": "MDB",
     "uf": "AP",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220577.jpg",
     "votos": {
       "arcabouco": "Ausente",
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
-      "licenciamento_ambiental": "Sim"
+      "licenciamento_ambiental": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -6433,7 +6965,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -6441,10 +6975,11 @@
     "nome": "Carla Zambelli",
     "partido": "PL",
     "uf": "SP",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/204507.jpg",
     "votos": {
       "arcabouco": "Ausente",
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "bets": "Não"
     }
   },
   {
@@ -6452,11 +6987,12 @@
     "nome": "Carlos Chiodini",
     "partido": "MDB",
     "uf": "SC",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/204361.jpg",
     "votos": {
       "arcabouco": "Ausente",
       "marco_temporal": "Sim",
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -6477,7 +7013,9 @@
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/74262.jpg",
     "votos": {
       "arcabouco": "Sim",
-      "marco_temporal": "Sim"
+      "marco_temporal": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -6491,7 +7029,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -6516,7 +7056,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Ausente"
+      "PEC_blindagem": "Ausente",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -6524,7 +7066,7 @@
     "nome": "Chiquinho Brazão",
     "partido": "UNIÃO",
     "uf": "RJ",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/204476.jpg",
     "votos": {
       "arcabouco": "Sim",
       "marco_temporal": "Sim"
@@ -6540,7 +7082,9 @@
       "arcabouco": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -6551,7 +7095,9 @@
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/141408.jpg",
     "votos": {
       "arcabouco": "Sim",
-      "marco_temporal": "Sim"
+      "marco_temporal": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -6559,11 +7105,12 @@
     "nome": "Coronel Telhada",
     "partido": "PP",
     "uf": "SP",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/222142.jpg",
     "votos": {
       "arcabouco": "Ausente",
       "marco_temporal": "Sim",
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "bets": "Não"
     }
   },
   {
@@ -6601,7 +7148,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Ausente"
+      "PEC_blindagem": "Ausente",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -6609,7 +7158,7 @@
     "nome": "Daniel Soranz",
     "partido": "PSD",
     "uf": "RJ",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220614.jpg",
     "votos": {
       "arcabouco": "Ausente"
     }
@@ -6645,13 +7194,15 @@
     "nome": "Delegado Ramagem",
     "partido": "PL",
     "uf": "RJ",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220619.jpg",
     "votos": {
       "arcabouco": "Não",
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -6659,7 +7210,7 @@
     "nome": "Deltan Dallagnol",
     "partido": "PODE",
     "uf": "PR",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220705.jpg",
     "votos": {
       "arcabouco": "Não",
       "marco_temporal": "Sim"
@@ -6674,7 +7225,8 @@
     "votos": {
       "arcabouco": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Ausente"
     }
   },
   {
@@ -6682,7 +7234,7 @@
     "nome": "Dr. Benjamim",
     "partido": "UNIÃO",
     "uf": "MA",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/221339.jpg",
     "votos": {
       "arcabouco": "Sim",
       "marco_temporal": "Sim"
@@ -6696,7 +7248,9 @@
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/204518.jpg",
     "votos": {
       "arcabouco": "Não",
-      "marco_temporal": "Sim"
+      "marco_temporal": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -6710,7 +7264,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Ausente"
+      "PEC_blindagem": "Ausente",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -6718,11 +7274,12 @@
     "nome": "Eduardo Bismarck",
     "partido": "PDT",
     "uf": "CE",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/204541.jpg",
     "votos": {
       "arcabouco": "Sim",
       "marco_temporal": "Não",
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -6730,7 +7287,7 @@
     "nome": "Eduardo Bolsonaro",
     "partido": "PL",
     "uf": "SP",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/92346.jpg",
     "votos": {
       "arcabouco": "Não",
       "marco_temporal": "Sim",
@@ -6747,7 +7304,8 @@
       "arcabouco": "Sim",
       "marco_temporal": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim"
     }
   },
   {
@@ -6760,7 +7318,9 @@
       "arcabouco": "Sim",
       "reforma_tributaria": "Ausente/Não Votou",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Ausente"
+      "PEC_blindagem": "Ausente",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -6771,7 +7331,8 @@
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/74454.jpg",
     "votos": {
       "arcabouco": "Sim",
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -6779,7 +7340,7 @@
     "nome": "Fabio Garcia",
     "partido": "UNIÃO",
     "uf": "MT",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/178905.jpg",
     "votos": {
       "arcabouco": "Sim",
       "marco_temporal": "Sim"
@@ -6795,7 +7356,9 @@
       "arcabouco": "Sim",
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -6803,7 +7366,7 @@
     "nome": "Fernanda Pessoa",
     "partido": "UNIÃO",
     "uf": "CE",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220656.jpg",
     "votos": {
       "arcabouco": "Sim",
       "marco_temporal": "Sim",
@@ -6830,7 +7393,8 @@
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/204494.jpg",
     "votos": {
       "arcabouco": "Ausente",
-      "marco_temporal": "Não"
+      "marco_temporal": "Não",
+      "isencao_ir": "Sim"
     }
   },
   {
@@ -6851,11 +7415,12 @@
     "nome": "Gerlen Diniz",
     "partido": "PP",
     "uf": "AC",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220587.jpg",
     "votos": {
       "arcabouco": "Não",
       "marco_temporal": "Sim",
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "bets": "Não"
     }
   },
   {
@@ -6886,7 +7451,7 @@
     "nome": "Gilvan Maximo",
     "partido": "REPUBLICANOS",
     "uf": "DF",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220531.jpg",
     "votos": {
       "arcabouco": "Não",
       "marco_temporal": "Sim",
@@ -6908,11 +7473,12 @@
     "nome": "Gleisi Hoffmann",
     "partido": "PT",
     "uf": "PR",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/107283.jpg",
     "votos": {
       "arcabouco": "Sim",
       "marco_temporal": "Não",
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -6920,13 +7486,15 @@
     "nome": "Guilherme Boulos",
     "partido": "PSOL",
     "uf": "SP",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220639.jpg",
     "votos": {
       "arcabouco": "Não",
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -6940,7 +7508,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -6954,7 +7524,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Ausente/Não Votou",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -6962,11 +7534,12 @@
     "nome": "Idilvan Alencar",
     "partido": "PDT",
     "uf": "CE",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/204533.jpg",
     "votos": {
       "arcabouco": "Sim",
       "marco_temporal": "Não",
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -6977,7 +7550,9 @@
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/204508.jpg",
     "votos": {
       "arcabouco": "Sim",
-      "marco_temporal": "Sim"
+      "marco_temporal": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -7006,13 +7581,15 @@
     "nome": "Josias Gomes",
     "partido": "PT",
     "uf": "BA",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/74141.jpg",
     "votos": {
       "arcabouco": "Sim",
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -7049,7 +7626,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -7073,7 +7652,9 @@
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/141459.jpg",
     "votos": {
       "arcabouco": "Sim",
-      "marco_temporal": "Sim"
+      "marco_temporal": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -7086,7 +7667,9 @@
       "arcabouco": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Ausente"
+      "PEC_blindagem": "Ausente",
+      "isencao_ir": "Ausente",
+      "bets": "Ausente"
     }
   },
   {
@@ -7094,13 +7677,15 @@
     "nome": "Julio Arcoverde",
     "partido": "PP",
     "uf": "PI",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/66385.jpg",
     "votos": {
       "arcabouco": "Sim",
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -7114,7 +7699,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -7125,7 +7712,9 @@
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/204550.jpg",
     "votos": {
       "arcabouco": "Sim",
-      "marco_temporal": "Sim"
+      "marco_temporal": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -7133,7 +7722,7 @@
     "nome": "Lebrão",
     "partido": "UNIÃO",
     "uf": "RO",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220600.jpg",
     "votos": {
       "arcabouco": "Ausente",
       "marco_temporal": "Sim",
@@ -7151,7 +7740,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -7170,11 +7761,12 @@
     "nome": "Luciano Azevedo",
     "partido": "PSD",
     "uf": "RS",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/103758.jpg",
     "votos": {
       "arcabouco": "Sim",
       "marco_temporal": "Sim",
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -7188,7 +7780,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -7237,7 +7831,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -7245,11 +7841,12 @@
     "nome": "Lázaro Botelho",
     "partido": "PP",
     "uf": "TO",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/141480.jpg",
     "votos": {
       "arcabouco": "Sim",
       "reforma_tributaria": "Sim",
-      "licenciamento_ambiental": "Sim"
+      "licenciamento_ambiental": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -7260,7 +7857,9 @@
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/166402.jpg",
     "votos": {
       "arcabouco": "Não",
-      "marco_temporal": "Sim"
+      "marco_temporal": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -7268,7 +7867,7 @@
     "nome": "Marcelo Lima",
     "partido": "PSB",
     "uf": "SP",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220634.jpg",
     "votos": {
       "arcabouco": "Sim",
       "marco_temporal": "Sim"
@@ -7279,7 +7878,7 @@
     "nome": "Marcelo Queiroz",
     "partido": "PP",
     "uf": "RJ",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/160161.jpg",
     "votos": {
       "arcabouco": "Sim",
       "marco_temporal": "Não",
@@ -7291,7 +7890,7 @@
     "nome": "Marco Bertaiolli",
     "partido": "PSD",
     "uf": "SP",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/204522.jpg",
     "votos": {
       "arcabouco": "Sim",
       "marco_temporal": "Não"
@@ -7302,11 +7901,12 @@
     "nome": "Marco Brasil",
     "partido": "PP",
     "uf": "PR",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/219585.jpg",
     "votos": {
       "arcabouco": "Sim",
       "marco_temporal": "Sim",
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -7330,7 +7930,8 @@
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/204566.jpg",
     "votos": {
       "arcabouco": "Sim",
-      "marco_temporal": "Sim"
+      "marco_temporal": "Sim",
+      "isencao_ir": "Sim"
     }
   },
   {
@@ -7344,7 +7945,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -7352,7 +7955,7 @@
     "nome": "Milton Vieira",
     "partido": "REPUBLICANOS",
     "uf": "SP",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/154178.jpg",
     "votos": {
       "arcabouco": "Sim"
     }
@@ -7393,7 +7996,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -7406,7 +8011,9 @@
       "arcabouco": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -7427,7 +8034,7 @@
     "nome": "Nely Aquino",
     "partido": "PODE",
     "uf": "MG",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220622.jpg",
     "votos": {
       "arcabouco": "Sim",
       "marco_temporal": "Sim",
@@ -7457,7 +8064,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -7469,7 +8078,9 @@
     "votos": {
       "arcabouco": "Não",
       "marco_temporal": "Sim",
-      "licenciamento_ambiental": "Sim"
+      "licenciamento_ambiental": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -7477,13 +8088,15 @@
     "nome": "Otto Alencar Filho",
     "partido": "PSD",
     "uf": "BA",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/204573.jpg",
     "votos": {
       "arcabouco": "Sim",
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -7496,7 +8109,8 @@
       "arcabouco": "Sim",
       "marco_temporal": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim"
     }
   },
   {
@@ -7504,7 +8118,7 @@
     "nome": "Paulinho Freire",
     "partido": "UNIÃO",
     "uf": "RN",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220627.jpg",
     "votos": {
       "arcabouco": "Sim",
       "marco_temporal": "Sim"
@@ -7521,7 +8135,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -7529,7 +8145,7 @@
     "nome": "Pedro Aihara",
     "partido": "PATRIOTA",
     "uf": "MG",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220630.jpg",
     "votos": {
       "arcabouco": "Sim",
       "marco_temporal": "Não"
@@ -7553,7 +8169,7 @@
     "nome": "Prof. Paulo Fernando",
     "partido": "REPUBLICANOS",
     "uf": "DF",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/89536.jpg",
     "votos": {
       "arcabouco": "Não",
       "marco_temporal": "Sim"
@@ -7577,12 +8193,13 @@
     "nome": "Professora Goreth",
     "partido": "PDT",
     "uf": "AP",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220580.jpg",
     "votos": {
       "arcabouco": "Sim",
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
-      "licenciamento_ambiental": "Ausente"
+      "licenciamento_ambiental": "Ausente",
+      "bets": "Sim"
     }
   },
   {
@@ -7602,11 +8219,12 @@
     "nome": "Reginete Bispo",
     "partido": "PT",
     "uf": "RS",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/221378.jpg",
     "votos": {
       "arcabouco": "Sim",
       "marco_temporal": "Não",
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -7614,7 +8232,7 @@
     "nome": "Renan Ferreirinha",
     "partido": "PSD",
     "uf": "RJ",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/225386.jpg",
     "votos": {
       "arcabouco": "Sim"
     }
@@ -7629,7 +8247,9 @@
       "arcabouco": "Ausente",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Ausente"
+      "PEC_blindagem": "Ausente",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -7640,7 +8260,8 @@
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/204362.jpg",
     "votos": {
       "arcabouco": "Não",
-      "marco_temporal": "Sim"
+      "marco_temporal": "Sim",
+      "isencao_ir": "Sim"
     }
   },
   {
@@ -7654,7 +8275,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Ausente"
+      "PEC_blindagem": "Ausente",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -7673,10 +8296,11 @@
     "nome": "Ricardo Silva",
     "partido": "PSD",
     "uf": "SP",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/213274.jpg",
     "votos": {
       "arcabouco": "Sim",
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -7687,7 +8311,9 @@
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220624.jpg",
     "votos": {
       "arcabouco": "Sim",
-      "marco_temporal": "Sim"
+      "marco_temporal": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -7706,10 +8332,11 @@
     "nome": "Roseana Sarney",
     "partido": "MDB",
     "uf": "MA",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/73806.jpg",
     "votos": {
       "arcabouco": "Sim",
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -7739,7 +8366,7 @@
     "nome": "Saullo Vianna",
     "partido": "UNIÃO",
     "uf": "AM",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220713.jpg",
     "votos": {
       "arcabouco": "Sim"
     }
@@ -7765,7 +8392,9 @@
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/204360.jpg",
     "votos": {
       "arcabouco": "Não",
-      "marco_temporal": "Sim"
+      "marco_temporal": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -7773,12 +8402,13 @@
     "nome": "Silvia Waiãpi",
     "partido": "PL",
     "uf": "AP",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220579.jpg",
     "votos": {
       "arcabouco": "Não",
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
-      "licenciamento_ambiental": "Ausente"
+      "licenciamento_ambiental": "Ausente",
+      "bets": "Ausente"
     }
   },
   {
@@ -7786,7 +8416,7 @@
     "nome": "Silvio Costa Filho",
     "partido": "REPUBLICANOS",
     "uf": "PE",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/204425.jpg",
     "votos": {
       "arcabouco": "Sim",
       "marco_temporal": "Não"
@@ -7797,12 +8427,13 @@
     "nome": "Sonize Barbosa",
     "partido": "PL",
     "uf": "AP",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220575.jpg",
     "votos": {
       "arcabouco": "Ausente",
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
-      "licenciamento_ambiental": "Ausente"
+      "licenciamento_ambiental": "Ausente",
+      "bets": "Ausente"
     }
   },
   {
@@ -7825,7 +8456,9 @@
     "votos": {
       "arcabouco": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -7836,7 +8469,9 @@
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/204396.jpg",
     "votos": {
       "arcabouco": "Sim",
-      "marco_temporal": "Sim"
+      "marco_temporal": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -7844,10 +8479,11 @@
     "nome": "Washington Quaquá",
     "partido": "PT",
     "uf": "RJ",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220601.jpg",
     "votos": {
       "arcabouco": "Sim",
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -7861,7 +8497,9 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -7881,7 +8519,7 @@
     "nome": "Yury do Paredão",
     "partido": "PL",
     "uf": "CE",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220660.jpg",
     "votos": {
       "arcabouco": "Sim",
       "marco_temporal": "Sim"
@@ -7895,7 +8533,9 @@
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220552.jpg",
     "votos": {
       "arcabouco": "Não",
-      "marco_temporal": "Sim"
+      "marco_temporal": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -7921,7 +8561,9 @@
       "marco_temporal": "Não",
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Ausente"
+      "PEC_blindagem": "Ausente",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -7929,7 +8571,7 @@
     "nome": "Flavinha",
     "partido": "MDB",
     "uf": "MT",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/225727.jpg",
     "votos": {
       "marco_temporal": "Sim"
     }
@@ -7941,7 +8583,9 @@
     "uf": "AM",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220714.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -7951,7 +8595,9 @@
     "uf": "SP",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/204528.jpg",
     "votos": {
-      "reforma_tributaria": "Obstrução"
+      "reforma_tributaria": "Obstrução",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -7961,7 +8607,9 @@
     "uf": "RR",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220538.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -7971,7 +8619,9 @@
     "uf": "SP",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/178972.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -7981,7 +8631,9 @@
     "uf": "BA",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/204571.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -7991,7 +8643,9 @@
     "uf": "TO",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220542.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -7999,9 +8653,10 @@
     "nome": "Alexandre Leite",
     "partido": "União",
     "uf": "SP",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/160545.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -8011,7 +8666,9 @@
     "uf": "AL",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220576.jpg",
     "votos": {
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -8021,7 +8678,9 @@
     "uf": "ES",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/204356.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8031,7 +8690,9 @@
     "uf": "AM",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220715.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8041,7 +8702,8 @@
     "uf": "MG",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/204515.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8051,7 +8713,9 @@
     "uf": "AC",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/123756.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -8061,7 +8725,9 @@
     "uf": "TO",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220544.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -8069,9 +8735,11 @@
     "nome": "Antonio Carlos R.",
     "partido": "PL",
     "uf": "SP",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220638.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -8081,7 +8749,9 @@
     "uf": "RS",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220549.jpg",
     "votos": {
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8091,7 +8761,9 @@
     "uf": "SP",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/141391.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8099,9 +8771,11 @@
     "nome": "Arthur O. Maia",
     "partido": "União",
     "uf": "BA",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/160600.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -8111,7 +8785,9 @@
     "uf": "PE",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/160665.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -8121,7 +8797,9 @@
     "uf": "RJ",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/160512.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -8131,7 +8809,9 @@
     "uf": "RN",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/109429.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8141,7 +8821,9 @@
     "uf": "MG",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/210989.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8151,7 +8833,9 @@
     "uf": "SP",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220635.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8159,9 +8843,11 @@
     "nome": "Cap. Alberto Neto",
     "partido": "PL",
     "uf": "AM",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/204572.jpg",
     "votos": {
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8169,9 +8855,11 @@
     "nome": "Carlos Gaguim",
     "partido": "União",
     "uf": "TO",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/178993.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8179,9 +8867,11 @@
     "nome": "Cb Gilberto Silva",
     "partido": "PL",
     "uf": "PB",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220574.jpg",
     "votos": {
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8189,9 +8879,11 @@
     "nome": "Cel. Chrisóstomo",
     "partido": "PL",
     "uf": "RO",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/204378.jpg",
     "votos": {
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -8201,7 +8893,9 @@
     "uf": "SP",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/73441.jpg",
     "votos": {
-      "reforma_tributaria": "Ausente/Não Votou"
+      "reforma_tributaria": "Ausente/Não Votou",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -8209,9 +8903,11 @@
     "nome": "Cezinha Madureira",
     "partido": "PSD",
     "uf": "SP",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/204504.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -8221,7 +8917,9 @@
     "uf": "PE",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/88256.jpg",
     "votos": {
-      "reforma_tributaria": "Ausente/Não Votou"
+      "reforma_tributaria": "Ausente/Não Votou",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -8231,7 +8929,9 @@
     "uf": "MT",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220594.jpg",
     "votos": {
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -8241,7 +8941,9 @@
     "uf": "AC",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220590.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8251,7 +8953,9 @@
     "uf": "RO",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220608.jpg",
     "votos": {
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -8261,7 +8965,9 @@
     "uf": "BA",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220692.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -8271,7 +8977,9 @@
     "uf": "PB",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/74467.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8281,7 +8989,9 @@
     "uf": "RJ",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220603.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -8289,9 +8999,11 @@
     "nome": "Daniela Waguinho",
     "partido": "União",
     "uf": "RJ",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/204459.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8301,7 +9013,9 @@
     "uf": "CE",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/62881.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8309,9 +9023,10 @@
     "nome": "Darci de Matos",
     "partido": "PSD",
     "uf": "SC",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/116379.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8321,7 +9036,9 @@
     "uf": "SP",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/204511.jpg",
     "votos": {
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -8331,7 +9048,9 @@
     "uf": "CE",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220659.jpg",
     "votos": {
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8339,9 +9058,11 @@
     "nome": "Def. Stélio Dener",
     "partido": "Republican",
     "uf": "RR",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220539.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -8349,9 +9070,11 @@
     "nome": "Del. Adriana A.",
     "partido": "PT",
     "uf": "GO",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220565.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8359,9 +9082,11 @@
     "nome": "Del. Éder Mauro",
     "partido": "PL",
     "uf": "PA",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/178908.jpg",
     "votos": {
-      "reforma_tributaria": "Ausente/Não Votou"
+      "reforma_tributaria": "Ausente/Não Votou",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8369,9 +9094,11 @@
     "nome": "Del. Fabio Costa",
     "partido": "PP",
     "uf": "AL",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220583.jpg",
     "votos": {
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8379,9 +9106,11 @@
     "nome": "Del. Matheus L.",
     "partido": "União",
     "uf": "PR",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220701.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8391,7 +9120,9 @@
     "uf": "MG",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220625.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -8399,9 +9130,11 @@
     "nome": "Delegado Bilynskyj",
     "partido": "PL",
     "uf": "SP",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220654.jpg",
     "votos": {
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8411,7 +9144,9 @@
     "uf": "MG",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/204512.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8421,7 +9156,9 @@
     "uf": "PR",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/178929.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -8429,9 +9166,10 @@
     "nome": "Dr Fabio Rueda",
     "partido": "União",
     "uf": "AC",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/227401.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -8439,9 +9177,11 @@
     "nome": "Dr Fernando Máximo",
     "partido": "União",
     "uf": "RO",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220610.jpg",
     "votos": {
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -8449,9 +9189,11 @@
     "nome": "Dr Victor Linhalis",
     "partido": "Podemos",
     "uf": "ES",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220528.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8459,9 +9201,10 @@
     "nome": "Dr. Benjamim",
     "partido": "União",
     "uf": "MA",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/221339.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8471,7 +9214,9 @@
     "uf": "GO",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220570.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8479,9 +9224,11 @@
     "nome": "Dr.Zacharias Calil",
     "partido": "União",
     "uf": "GO",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/204412.jpg",
     "votos": {
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8489,9 +9236,11 @@
     "nome": "Dra. Alessandra H.",
     "partido": "MDB",
     "uf": "PA",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220674.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8499,9 +9248,11 @@
     "nome": "EduardoBolsonaro",
     "partido": "PL",
     "uf": "SP",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/92346.jpg",
     "votos": {
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "isencao_ir": "Ausente",
+      "bets": "Não"
     }
   },
   {
@@ -8511,7 +9262,9 @@
     "uf": "BA",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/178854.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8521,7 +9274,9 @@
     "uf": "SP",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/218086.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -8531,7 +9286,9 @@
     "uf": "MT",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/198783.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8541,7 +9298,9 @@
     "uf": "MG",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/204482.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8549,9 +9308,11 @@
     "nome": "Evair de Melo",
     "partido": "PP",
     "uf": "ES",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/178871.jpg",
     "votos": {
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -8561,7 +9322,9 @@
     "uf": "MA",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220681.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Ausente",
+      "bets": "Sim"
     }
   },
   {
@@ -8571,7 +9334,9 @@
     "uf": "SC",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/204368.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8581,7 +9346,9 @@
     "uf": "AM",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220712.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -8591,7 +9358,8 @@
     "uf": "SP",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220646.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim"
     }
   },
   {
@@ -8601,7 +9369,9 @@
     "uf": "PR",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/204398.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8609,9 +9379,10 @@
     "nome": "Felipe Saliba",
     "partido": "PRD",
     "uf": "MG",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/227370.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -8619,9 +9390,11 @@
     "nome": "Félix Mendonça Jr",
     "partido": "PDT",
     "uf": "BA",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/160666.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8629,9 +9402,11 @@
     "nome": "Fernanda Pessôa",
     "partido": "União",
     "uf": "CE",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220656.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8639,9 +9414,11 @@
     "nome": "FernandaMelchionna",
     "partido": "PSOL",
     "uf": "RS",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/204407.jpg",
     "votos": {
-      "reforma_tributaria": "Abstenção"
+      "reforma_tributaria": "Abstenção",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -8651,7 +9428,9 @@
     "uf": "PE",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/141431.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -8661,7 +9440,9 @@
     "uf": "RS",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220551.jpg",
     "votos": {
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -8671,7 +9452,9 @@
     "uf": "DF",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220534.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -8681,7 +9464,9 @@
     "uf": "RR",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/224117.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8691,7 +9476,9 @@
     "uf": "PR",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220702.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Ausente",
+      "bets": "Ausente"
     }
   },
   {
@@ -8701,7 +9488,9 @@
     "uf": "MG",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/204491.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -8709,9 +9498,11 @@
     "nome": "GilbertoNascimento",
     "partido": "PSD",
     "uf": "SP",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/74270.jpg",
     "votos": {
-      "reforma_tributaria": "Ausente/Não Votou"
+      "reforma_tributaria": "Ausente/Não Votou",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -8721,7 +9512,9 @@
     "uf": "ES",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220529.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8731,7 +9524,9 @@
     "uf": "SC",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/204365.jpg",
     "votos": {
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -8739,9 +9534,10 @@
     "nome": "Gilvan Maximo",
     "partido": "Republican",
     "uf": "DF",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220531.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -8751,7 +9547,9 @@
     "uf": "MT",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/226179.jpg",
     "votos": {
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -8761,7 +9559,8 @@
     "uf": "GO",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/204419.jpg",
     "votos": {
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "bets": "Não"
     }
   },
   {
@@ -8771,7 +9570,9 @@
     "uf": "MG",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/198197.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -8781,7 +9582,9 @@
     "uf": "SE",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/204408.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -8789,9 +9592,10 @@
     "nome": "Hélio Leite",
     "partido": "União",
     "uf": "PA",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/178909.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8799,9 +9603,10 @@
     "nome": "Henrique Júnior",
     "partido": "PL",
     "uf": "MA",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/227324.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -8809,9 +9614,11 @@
     "nome": "Hercílio Diniz",
     "partido": "MDB",
     "uf": "MG",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/204539.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Ausente",
+      "bets": "Sim"
     }
   },
   {
@@ -8819,9 +9626,10 @@
     "nome": "Hildo do Candango",
     "partido": "Republican",
     "uf": "GO",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/100689.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8831,7 +9639,9 @@
     "uf": "PB",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/160674.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Artigo 17",
+      "bets": "Sim"
     }
   },
   {
@@ -8841,7 +9651,9 @@
     "uf": "AL",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/204436.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8859,9 +9671,11 @@
     "nome": "JoãoCarlosBacelar",
     "partido": "PL",
     "uf": "BA",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/69871.jpg",
     "votos": {
-      "reforma_tributaria": "Ausente/Não Votou"
+      "reforma_tributaria": "Ausente/Não Votou",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8869,9 +9683,10 @@
     "nome": "Jones Moura",
     "partido": "PSD",
     "uf": "RJ",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/217480.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8881,7 +9696,9 @@
     "uf": "RJ",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/205550.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -8891,7 +9708,9 @@
     "uf": "SC",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/214694.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8901,7 +9720,9 @@
     "uf": "CE",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/141464.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8921,7 +9742,9 @@
     "uf": "BA",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/74554.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8931,7 +9754,9 @@
     "uf": "RJ",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/204457.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8941,7 +9766,9 @@
     "uf": "SP",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/204536.jpg",
     "votos": {
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -8949,9 +9776,11 @@
     "nome": "Lafayette Andrada",
     "partido": "Republican",
     "uf": "MG",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/98057.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -8959,9 +9788,10 @@
     "nome": "Lebrão",
     "partido": "União",
     "uf": "RO",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220600.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -8969,9 +9799,11 @@
     "nome": "Leur Lomanto Jr.",
     "partido": "União",
     "uf": "BA",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/92102.jpg",
     "votos": {
-      "reforma_tributaria": "Ausente/Não Votou"
+      "reforma_tributaria": "Ausente/Não Votou",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8981,7 +9813,9 @@
     "uf": "RS",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220554.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -8993,7 +9827,9 @@
     "votos": {
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -9003,7 +9839,9 @@
     "uf": "PE",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/74478.jpg",
     "votos": {
-      "reforma_tributaria": "Ausente/Não Votou"
+      "reforma_tributaria": "Ausente/Não Votou",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -9011,9 +9849,10 @@
     "nome": "Luciano Galego",
     "partido": "PL",
     "uf": "MA",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/227323.jpg",
     "votos": {
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "bets": "Sim"
     }
   },
   {
@@ -9023,7 +9862,9 @@
     "uf": "RJ",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220616.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -9033,7 +9874,9 @@
     "uf": "RJ",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/222429.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -9043,7 +9886,9 @@
     "uf": "MG",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/160510.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -9053,7 +9898,9 @@
     "uf": "RS",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/141485.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -9063,7 +9910,9 @@
     "uf": "PR",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/73778.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -9073,7 +9922,9 @@
     "uf": "MG",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/141487.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -9083,7 +9934,9 @@
     "uf": "RJ",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/204455.jpg",
     "votos": {
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -9091,9 +9944,11 @@
     "nome": "Luiz P.O Bragança",
     "partido": "PL",
     "uf": "SP",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/204526.jpg",
     "votos": {
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -9103,7 +9958,9 @@
     "uf": "SP",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220648.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -9113,7 +9970,9 @@
     "uf": "RS",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/156190.jpg",
     "votos": {
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -9123,7 +9982,9 @@
     "uf": "MG",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/179000.jpg",
     "votos": {
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -9133,7 +9994,9 @@
     "uf": "RJ",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220599.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -9141,9 +10004,10 @@
     "nome": "Marcelo Queiroz",
     "partido": "PSDB",
     "uf": "RJ",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/160161.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -9153,7 +10017,9 @@
     "uf": "BA",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/150418.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -9161,9 +10027,11 @@
     "nome": "Marcos A. Sampaio",
     "partido": "PSD",
     "uf": "PI",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/204431.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -9173,7 +10041,9 @@
     "uf": "SP",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/204506.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -9183,7 +10053,9 @@
     "uf": "RJ",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/178943.jpg",
     "votos": {
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "isencao_ir": "Ausente",
+      "bets": "Não"
     }
   },
   {
@@ -9193,7 +10065,9 @@
     "uf": "PE",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220668.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -9203,7 +10077,9 @@
     "uf": "SP",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/204540.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -9211,9 +10087,10 @@
     "nome": "Mariana Carvalho",
     "partido": "Republican",
     "uf": "MA",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/227275.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -9221,7 +10098,7 @@
     "nome": "Mario Farias",
     "partido": "PL",
     "uf": "SP",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220655.jpg",
     "votos": {
       "reforma_tributaria": "Não"
     }
@@ -9233,7 +10110,9 @@
     "uf": "BA",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/178858.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -9241,9 +10120,11 @@
     "nome": "Maurício Carva lho",
     "partido": "União",
     "uf": "RO",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220609.jpg",
     "votos": {
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -9253,7 +10134,9 @@
     "uf": "RS",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220550.jpg",
     "votos": {
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -9261,9 +10144,11 @@
     "nome": "MauroBenevides Fo.",
     "partido": "PDT",
     "uf": "CE",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/204486.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Ausente",
+      "bets": "Sim"
     }
   },
   {
@@ -9273,7 +10158,9 @@
     "uf": "AC",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220591.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -9283,7 +10170,9 @@
     "uf": "PE",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/74428.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -9293,7 +10182,9 @@
     "uf": "ES",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220530.jpg",
     "votos": {
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -9303,7 +10194,9 @@
     "uf": "CE",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/178997.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -9313,7 +10206,9 @@
     "uf": "RJ",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220617.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -9323,7 +10218,9 @@
     "uf": "PB",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220584.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -9331,9 +10228,11 @@
     "nome": "Nely Aquino",
     "partido": "Podemos",
     "uf": "MG",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220622.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -9353,7 +10252,9 @@
     "uf": "RR",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/204479.jpg",
     "votos": {
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -9363,7 +10264,9 @@
     "uf": "PE",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/204422.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -9373,7 +10276,9 @@
     "uf": "PR",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220706.jpg",
     "votos": {
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -9383,7 +10288,9 @@
     "uf": "RR",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/180214.jpg",
     "votos": {
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -9391,9 +10298,11 @@
     "nome": "Pastor Henrique V.",
     "partido": "PSOL",
     "uf": "RJ",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220615.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -9401,9 +10310,11 @@
     "nome": "Pastor Isidório",
     "partido": "Avante",
     "uf": "BA",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/204553.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -9411,9 +10322,10 @@
     "nome": "Paulinho Freire",
     "partido": "União",
     "uf": "RN",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220627.jpg",
     "votos": {
-      "reforma_tributaria": "Ausente/Não Votou"
+      "reforma_tributaria": "Ausente/Não Votou",
+      "bets": "Sim"
     }
   },
   {
@@ -9423,7 +10335,9 @@
     "uf": "SP",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/141518.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -9431,9 +10345,11 @@
     "nome": "Paulo A. Barbosa",
     "partido": "PSDB",
     "uf": "SP",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220650.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -9443,7 +10359,9 @@
     "uf": "BA",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/178860.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -9451,9 +10369,10 @@
     "nome": "Paulo Marinho Jr",
     "partido": "PL",
     "uf": "MA",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/128760.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -9461,9 +10380,11 @@
     "nome": "Pedro A ihara",
     "partido": "PRD",
     "uf": "MG",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220630.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -9471,9 +10392,11 @@
     "nome": "Pedro Lucas F.",
     "partido": "União",
     "uf": "MA",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/122974.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -9483,7 +10406,9 @@
     "uf": "PR",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/204395.jpg",
     "votos": {
-      "reforma_tributaria": "Ausente/Não Votou"
+      "reforma_tributaria": "Ausente/Não Votou",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -9491,9 +10416,11 @@
     "nome": "Pr.Marco Feliciano",
     "partido": "PL",
     "uf": "SP",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/160601.jpg",
     "votos": {
-      "reforma_tributaria": "Ausente/Não Votou"
+      "reforma_tributaria": "Ausente/Não Votou",
+      "isencao_ir": "Ausente",
+      "bets": "Ausente"
     }
   },
   {
@@ -9501,9 +10428,11 @@
     "nome": "Prof. Reginaldo V.",
     "partido": "PV",
     "uf": "DF",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220533.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -9511,9 +10440,10 @@
     "nome": "Prof.PauloFernando",
     "partido": "Republican",
     "uf": "DF",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/89536.jpg",
     "votos": {
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "bets": "Não"
     }
   },
   {
@@ -9523,7 +10453,9 @@
     "uf": "SP",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/221338.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -9533,7 +10465,9 @@
     "uf": "MG",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220626.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -9543,7 +10477,9 @@
     "uf": "BA",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/204567.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -9553,7 +10489,9 @@
     "uf": "SP",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/178989.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -9563,7 +10501,9 @@
     "uf": "RJ",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/221329.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -9573,7 +10513,9 @@
     "uf": "TO",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220543.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -9583,7 +10525,9 @@
     "uf": "SP",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220633.jpg",
     "votos": {
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -9593,7 +10537,9 @@
     "uf": "AC",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220588.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -9603,7 +10549,9 @@
     "uf": "RJ",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220613.jpg",
     "votos": {
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -9613,7 +10561,9 @@
     "uf": "SP",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220641.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -9623,7 +10573,9 @@
     "uf": "SE",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/165470.jpg",
     "votos": {
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -9633,7 +10585,9 @@
     "uf": "MG",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/141531.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -9643,7 +10597,9 @@
     "uf": "BA",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220695.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -9653,7 +10609,9 @@
     "uf": "PB",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/160629.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -9663,7 +10621,9 @@
     "uf": "RS",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/163321.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -9673,7 +10633,9 @@
     "uf": "SP",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220644.jpg",
     "votos": {
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -9681,9 +10643,11 @@
     "nome": "Rubens Pereira Jr.",
     "partido": "PT",
     "uf": "MA",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/178887.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -9693,7 +10657,9 @@
     "uf": "PB",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/160635.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -9703,7 +10669,9 @@
     "uf": "MG",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220631.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -9713,7 +10681,9 @@
     "uf": "RJ",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220618.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -9721,9 +10691,10 @@
     "nome": "Saullo Vianna",
     "partido": "União",
     "uf": "AM",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220713.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -9735,7 +10706,9 @@
     "votos": {
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -9743,9 +10716,11 @@
     "nome": "Sgt. Gonçalves",
     "partido": "PL",
     "uf": "RN",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220621.jpg",
     "votos": {
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -9755,7 +10730,9 @@
     "uf": "AM",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/74356.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -9763,9 +10740,10 @@
     "nome": "Silvio Antonio",
     "partido": "PL",
     "uf": "MA",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/227310.jpg",
     "votos": {
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "bets": "Não"
     }
   },
   {
@@ -9775,7 +10753,9 @@
     "uf": "GO",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220569.jpg",
     "votos": {
-      "reforma_tributaria": "Não"
+      "reforma_tributaria": "Não",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -9785,7 +10765,9 @@
     "uf": "RJ",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/178947.jpg",
     "votos": {
-      "reforma_tributaria": "Ausente/Não Votou"
+      "reforma_tributaria": "Ausente/Não Votou",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -9803,9 +10785,11 @@
     "nome": "ToninhoWandscheer",
     "partido": "PP",
     "uf": "PR",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/178934.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -9813,9 +10797,11 @@
     "nome": "Túlio Gadêl ha",
     "partido": "Rede",
     "uf": "PE",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/157130.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -9825,7 +10811,9 @@
     "uf": "SP",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/141555.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -9835,7 +10823,9 @@
     "uf": "PE",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/91228.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -9845,7 +10835,9 @@
     "uf": "MG",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/160518.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -9855,7 +10847,9 @@
     "uf": "PB",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/74044.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -9865,7 +10859,9 @@
     "uf": "SE",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220564.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -9873,11 +10869,13 @@
     "nome": "Yury do Paredão",
     "partido": "MDB",
     "uf": "CE",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220660.jpg",
     "votos": {
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -9887,7 +10885,9 @@
     "uf": "MG",
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/160632.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -9895,9 +10895,11 @@
     "nome": "ZéHaroldoCathedral",
     "partido": "PSD",
     "uf": "RR",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220536.jpg",
     "votos": {
-      "reforma_tributaria": "Sim"
+      "reforma_tributaria": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -9905,7 +10907,7 @@
     "nome": "Coronel Armando",
     "partido": "PP",
     "uf": "SC",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/204376.jpg",
     "votos": {
       "licenciamento_ambiental": "Sim"
     }
@@ -9915,7 +10917,7 @@
     "nome": "Coronel Tadeu",
     "partido": "PL",
     "uf": "SP",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/204514.jpg",
     "votos": {
       "licenciamento_ambiental": "Sim"
     }
@@ -9928,7 +10930,8 @@
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220642.jpg",
     "votos": {
       "licenciamento_ambiental": "Não",
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim"
     }
   },
   {
@@ -9939,7 +10942,8 @@
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/225730.jpg",
     "votos": {
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim"
     }
   },
   {
@@ -9950,7 +10954,9 @@
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/92699.jpg",
     "votos": {
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -9961,7 +10967,8 @@
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/178884.jpg",
     "votos": {
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim"
     }
   },
   {
@@ -9972,7 +10979,9 @@
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220697.jpg",
     "votos": {
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Não"
     }
   },
   {
@@ -9983,7 +10992,9 @@
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/204391.jpg",
     "votos": {
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -9994,7 +11005,8 @@
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/178886.jpg",
     "votos": {
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim"
     }
   },
   {
@@ -10013,10 +11025,11 @@
     "nome": "Nelinho Freitas",
     "partido": "MDB",
     "uf": "CE",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/233218.jpg",
     "votos": {
       "licenciamento_ambiental": "Ausente",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Ausente"
     }
   },
   {
@@ -10027,7 +11040,9 @@
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220703.jpg",
     "votos": {
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Sim"
     }
   },
   {
@@ -10035,7 +11050,7 @@
     "nome": "Nitinho",
     "partido": "PSD",
     "uf": "SE",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/227660.jpg",
     "votos": {
       "licenciamento_ambiental": "Sim"
     }
@@ -10045,7 +11060,7 @@
     "nome": "Pedro Aihara",
     "partido": "PRD",
     "uf": "MG",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/220630.jpg",
     "votos": {
       "licenciamento_ambiental": "Não",
       "PEC_blindagem": "Não"
@@ -10059,7 +11074,9 @@
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/220597.jpg",
     "votos": {
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim",
+      "bets": "Ausente"
     }
   },
   {
@@ -10070,7 +11087,8 @@
     "foto": "https://www.camara.leg.br/internet/deputado/bandep/230768.jpg",
     "votos": {
       "licenciamento_ambiental": "Sim",
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Ausente"
     }
   },
   {
@@ -10078,9 +11096,10 @@
     "nome": "Aline Gurgel",
     "partido": "REPUBLICANOS",
     "uf": "AP",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/204353.jpg",
     "votos": {
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Sim"
     }
   },
   {
@@ -10088,9 +11107,10 @@
     "nome": "Paulo Lemos",
     "partido": "PSOL",
     "uf": "AP",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/233592.jpg",
     "votos": {
-      "PEC_blindagem": "Não"
+      "PEC_blindagem": "Não",
+      "isencao_ir": "Sim"
     }
   },
   {
@@ -10098,9 +11118,50 @@
     "nome": "Samuel Santos",
     "partido": "PODE",
     "uf": "GO",
-    "foto": "",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/233598.jpg",
     "votos": {
-      "PEC_blindagem": "Sim"
+      "PEC_blindagem": "Sim",
+      "isencao_ir": "Ausente"
+    }
+  },
+  {
+    "id": 798,
+    "nome": "JosimarMaranhãozi",
+    "partido": "PL",
+    "uf": "MA",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/178881.jpg",
+    "votos": {
+      "isencao_ir": "Sim"
+    }
+  },
+  {
+    "id": 799,
+    "nome": "LuizAntônioCorrêa",
+    "partido": "PP",
+    "uf": "RJ",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/204468.jpg",
+    "votos": {
+      "isencao_ir": "Sim"
+    }
+  },
+  {
+    "id": 800,
+    "nome": "Mis. José Olimpio",
+    "partido": "PL",
+    "uf": "SP",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/160561.jpg",
+    "votos": {
+      "isencao_ir": "Sim"
+    }
+  },
+  {
+    "id": 801,
+    "nome": "Wolmer Araújo",
+    "partido": "Solidaried",
+    "uf": "MA",
+    "foto": "https://www.camara.leg.br/internet/deputado/bandep/182146.jpg",
+    "votos": {
+      "bets": "Sim"
     }
   }
 ]

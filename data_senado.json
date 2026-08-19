@@ -1,0 +1,1338 @@
+[
+  {
+    "id": 1,
+    "nome": "Alan Rick",
+    "nome_completo": "Alan Rick Miranda",
+    "partido": "REPUBLICANOS",
+    "uf": "AC",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5672.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Sim",
+      "marco_temporal": "Sim",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Ausente (Missão)"
+    }
+  },
+  {
+    "id": 2,
+    "nome": "Alessandro Vieira",
+    "nome_completo": "Alessandro Vieira",
+    "partido": "MDB",
+    "uf": "SE",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5982.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Sim",
+      "marco_temporal": "Não",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Ausente (Licença Particular)",
+      "bets": "Sim"
+    }
+  },
+  {
+    "id": 3,
+    "nome": "Ana Paula Lobato",
+    "nome_completo": "Ana Paula Dias Lobato Nova Alves",
+    "partido": "PDT",
+    "uf": "MA",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador6358.jpg",
+    "votos": {
+      "reduz_pena": "Não",
+      "arcabouco": "Sim",
+      "marco_temporal": "Não",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Não",
+      "bets": "Não"
+    }
+  },
+  {
+    "id": 4,
+    "nome": "Angelo Coronel",
+    "nome_completo": "Angelo Mario Coronel de Azevedo Martins",
+    "partido": "PSD",
+    "uf": "BA",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5967.jpg",
+    "votos": {
+      "reduz_pena": "Abstenção",
+      "arcabouco": "Sim",
+      "marco_temporal": "Ausente (Missão)",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Não"
+    }
+  },
+  {
+    "id": 5,
+    "nome": "Astronauta Marcos Pontes",
+    "nome_completo": "Marcos Cesar Pontes",
+    "partido": "PL",
+    "uf": "SP",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador6009.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Ausente (Licença Saúde)",
+      "marco_temporal": "Ausente (Missão)",
+      "reforma_tributaria": "Não",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Sim"
+    }
+  },
+  {
+    "id": 6,
+    "nome": "Augusta Brito",
+    "nome_completo": "Augusta Brito de Paula",
+    "partido": "PT",
+    "uf": "CE",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador6350.jpg",
+    "votos": {
+      "reduz_pena": "Não",
+      "arcabouco": "Sim",
+      "marco_temporal": "Não",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Não",
+      "bets": "Não"
+    }
+  },
+  {
+    "id": 7,
+    "nome": "Beto Faro",
+    "nome_completo": "José Roberto Oliveira Faro",
+    "partido": "PT",
+    "uf": "PA",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador4639.jpg",
+    "votos": {
+      "reduz_pena": "Não",
+      "arcabouco": "Sim",
+      "marco_temporal": "Não",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Não",
+      "bets": "Não"
+    }
+  },
+  {
+    "id": 8,
+    "nome": "Bruno Bonetti",
+    "nome_completo": "Bruno Bierrenbach Bonetti",
+    "partido": "PL",
+    "uf": "RJ",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador6372.jpg",
+    "votos": {
+      "reduz_pena": "Sim"
+    }
+  },
+  {
+    "id": 9,
+    "nome": "Carlos Portinho",
+    "nome_completo": "Carlos Francisco Portinho",
+    "partido": "PL",
+    "uf": "RJ",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5936.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Não",
+      "marco_temporal": "Ausente (Justificado)",
+      "reforma_tributaria": "Não",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Sim"
+    }
+  },
+  {
+    "id": 10,
+    "nome": "Carlos Viana",
+    "nome_completo": "Carlos Alberto Dias Viana",
+    "partido": "PODEMOS",
+    "uf": "MG",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5990.jpg",
+    "votos": {
+      "reduz_pena": "Ausente (Licença Saúde)",
+      "arcabouco": "Sim",
+      "marco_temporal": "Sim",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Sim"
+    }
+  },
+  {
+    "id": 11,
+    "nome": "Chico Rodrigues",
+    "nome_completo": "Francisco de Assis Rodrigues",
+    "partido": "PSB",
+    "uf": "RR",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador470.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Sim",
+      "marco_temporal": "Ausente (Missão)",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Não"
+    }
+  },
+  {
+    "id": 12,
+    "nome": "Cid Gomes",
+    "nome_completo": "Cid Ferreira Gomes",
+    "partido": "PSB",
+    "uf": "CE",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5973.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Sim",
+      "marco_temporal": "Não",
+      "reforma_tributaria": "Ausente (Justificado)",
+      "licenciamento_ambiental": "Ausente (Justificado)",
+      "bets": "Presente (Não Votou)"
+    }
+  },
+  {
+    "id": 13,
+    "nome": "Ciro Nogueira",
+    "nome_completo": "Ciro Nogueira Lima Filho",
+    "partido": "PP",
+    "uf": "PI",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador739.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Não",
+      "marco_temporal": "Sim",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Não"
+    }
+  },
+  {
+    "id": 14,
+    "nome": "Cleitinho",
+    "nome_completo": "Cleiton Gontijo de Azevedo",
+    "partido": "REPUBLICANOS",
+    "uf": "MG",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador6337.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Não",
+      "marco_temporal": "Sim",
+      "reforma_tributaria": "Não",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Sim"
+    }
+  },
+  {
+    "id": 15,
+    "nome": "Confúcio Moura",
+    "nome_completo": "Confúcio Aires Moura",
+    "partido": "MDB",
+    "uf": "RO",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador475.jpg",
+    "votos": {
+      "reduz_pena": "Não",
+      "arcabouco": "Sim",
+      "marco_temporal": "Não",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Não"
+    }
+  },
+  {
+    "id": 16,
+    "nome": "Damares Alves",
+    "nome_completo": "Damares Regina Alves",
+    "partido": "REPUBLICANOS",
+    "uf": "DF",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador6335.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Sim",
+      "marco_temporal": "Sim",
+      "reforma_tributaria": "Não",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Sim"
+    }
+  },
+  {
+    "id": 17,
+    "nome": "Daniella Ribeiro",
+    "nome_completo": "Daniella Velloso Borges Ribeiro",
+    "partido": "PP",
+    "uf": "PB",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5998.jpg",
+    "votos": {
+      "reduz_pena": "Não",
+      "arcabouco": "Sim",
+      "marco_temporal": "Sim",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Ausente (Justificado)",
+      "bets": "Ausente (Justificado)"
+    }
+  },
+  {
+    "id": 18,
+    "nome": "Davi Alcolumbre",
+    "nome_completo": "David Samuel Alcolumbre Tobelem",
+    "partido": "UNIÃO",
+    "uf": "AP",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador3830.jpg",
+    "votos": {
+      "reduz_pena": "Presidente (Art. 51)",
+      "arcabouco": "Sim",
+      "marco_temporal": "Sim",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Presidente (Art. 51)",
+      "bets": "Ausente (Justificado)"
+    }
+  },
+  {
+    "id": 19,
+    "nome": "Dr. Hiran",
+    "nome_completo": "Hiran Manuel Gonçalves da Silva",
+    "partido": "PP",
+    "uf": "RR",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5793.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Sim",
+      "marco_temporal": "Sim",
+      "reforma_tributaria": "Não",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Não"
+    }
+  },
+  {
+    "id": 20,
+    "nome": "Dra. Eudócia",
+    "nome_completo": "Eudocia Maria Holanda de Araujo Caldas",
+    "partido": "PL",
+    "uf": "AL",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5906.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "licenciamento_ambiental": "Sim"
+    }
+  },
+  {
+    "id": 21,
+    "nome": "Eduardo Braga",
+    "nome_completo": "Carlos Eduardo de Souza Braga",
+    "partido": "MDB",
+    "uf": "AM",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador4994.jpg",
+    "votos": {
+      "reduz_pena": "Presente (Não Votou)",
+      "arcabouco": "Sim",
+      "marco_temporal": "Não",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Não"
+    }
+  },
+  {
+    "id": 22,
+    "nome": "Eduardo Girão",
+    "nome_completo": "Luis Eduardo Grangeiro Girão",
+    "partido": "NOVO",
+    "uf": "CE",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5976.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Não",
+      "marco_temporal": "Sim",
+      "reforma_tributaria": "Não",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Sim"
+    }
+  },
+  {
+    "id": 23,
+    "nome": "Eduardo Gomes",
+    "nome_completo": "Carlos Eduardo Torres Gomes",
+    "partido": "PL",
+    "uf": "TO",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador3777.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Sim",
+      "marco_temporal": "Sim",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Ausente (Missão)",
+      "bets": "Sim"
+    }
+  },
+  {
+    "id": 24,
+    "nome": "Efraim Filho",
+    "nome_completo": "Efraim de Araújo Morais Filho",
+    "partido": "UNIÃO",
+    "uf": "PB",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador4642.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Sim",
+      "marco_temporal": "Sim",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Não"
+    }
+  },
+  {
+    "id": 25,
+    "nome": "Eliziane Gama",
+    "nome_completo": "Eliziane Pereira Gama Melo",
+    "partido": "PSD",
+    "uf": "MA",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5718.jpg",
+    "votos": {
+      "reduz_pena": "Presente (Não Votou)",
+      "arcabouco": "Sim",
+      "marco_temporal": "Não",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Não",
+      "bets": "Presente (Não Votou)"
+    }
+  },
+  {
+    "id": 26,
+    "nome": "Esperidião Amin",
+    "nome_completo": "Esperidião Amin Helou Filho",
+    "partido": "PP",
+    "uf": "SC",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador22.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Não",
+      "marco_temporal": "Sim",
+      "reforma_tributaria": "Não",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Sim"
+    }
+  },
+  {
+    "id": 27,
+    "nome": "Fabiano Contarato",
+    "nome_completo": "Fabiano Contarato",
+    "partido": "PT",
+    "uf": "ES",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5953.jpg",
+    "votos": {
+      "reduz_pena": "Não",
+      "arcabouco": "Sim",
+      "marco_temporal": "Não",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Não",
+      "bets": "Não"
+    }
+  },
+  {
+    "id": 28,
+    "nome": "Fernando Dueire",
+    "nome_completo": "Fernando Antonio Caminha Dueire",
+    "partido": "MDB",
+    "uf": "PE",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5917.jpg",
+    "votos": {
+      "reduz_pena": "Não",
+      "arcabouco": "Sim",
+      "marco_temporal": "Sim",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Ausente (Justificado)",
+      "bets": "Presente (Não Votou)"
+    }
+  },
+  {
+    "id": 29,
+    "nome": "Fernando Farias",
+    "nome_completo": "Fernando Lopes de Farias",
+    "partido": "MDB",
+    "uf": "AL",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador6345.jpg",
+    "votos": {
+      "reduz_pena": "Não",
+      "arcabouco": "Sim",
+      "marco_temporal": "Sim",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Presente (Não Votou)"
+    }
+  },
+  {
+    "id": 30,
+    "nome": "Flávio Arns",
+    "nome_completo": "Flávio José Arns",
+    "partido": "PSB",
+    "uf": "PR",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador345.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Sim",
+      "marco_temporal": "Sim",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Ausente (Licença Saúde)",
+      "bets": "Sim"
+    }
+  },
+  {
+    "id": 31,
+    "nome": "Flávio Bolsonaro",
+    "nome_completo": "Flávio Nantes Bolsonaro",
+    "partido": "PL",
+    "uf": "RJ",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5894.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Não",
+      "marco_temporal": "Ausente (Justificado)",
+      "reforma_tributaria": "Não",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Sim"
+    }
+  },
+  {
+    "id": 32,
+    "nome": "Giordano",
+    "nome_completo": "Alexandre Luiz Giordano",
+    "partido": "S/Partido",
+    "uf": "SP",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador6008.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Sim",
+      "marco_temporal": "Presente (Não Votou)",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Ausente (Justificado)",
+      "bets": "Ausente (Missão)"
+    }
+  },
+  {
+    "id": 33,
+    "nome": "Hamilton Mourão",
+    "nome_completo": "Antonio Hamilton Martins Mourão",
+    "partido": "REPUBLICANOS",
+    "uf": "RS",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador6341.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Sim",
+      "marco_temporal": "Sim",
+      "reforma_tributaria": "Não",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Sim"
+    }
+  },
+  {
+    "id": 34,
+    "nome": "Humberto Costa",
+    "nome_completo": "Humberto Sérgio Costa Lima",
+    "partido": "PT",
+    "uf": "PE",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5008.jpg",
+    "votos": {
+      "reduz_pena": "Não",
+      "arcabouco": "Ausente (Missão)",
+      "marco_temporal": "Não",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Não",
+      "bets": "Sim"
+    }
+  },
+  {
+    "id": 35,
+    "nome": "Irajá",
+    "nome_completo": "Irajá Silvestre Filho",
+    "partido": "PSD",
+    "uf": "TO",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5385.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Sim",
+      "marco_temporal": "Ausente (Justificado)",
+      "reforma_tributaria": "Ausente (Justificado)",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Não"
+    }
+  },
+  {
+    "id": 36,
+    "nome": "Ivete da Silveira",
+    "nome_completo": "Ivete Marli Appel da Silveira",
+    "partido": "MDB",
+    "uf": "SC",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador6010.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Sim",
+      "marco_temporal": "Ausente (Licença Saúde)",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Não"
+    }
+  },
+  {
+    "id": 37,
+    "nome": "Izalci Lucas",
+    "nome_completo": "Izalci Lucas Ferreira",
+    "partido": "PL",
+    "uf": "DF",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador4770.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Sim",
+      "marco_temporal": "Ausente (Justificado)",
+      "reforma_tributaria": "Não",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Sim"
+    }
+  },
+  {
+    "id": 38,
+    "nome": "Jader Barbalho",
+    "nome_completo": "Jader Fontenelle Barbalho",
+    "partido": "MDB",
+    "uf": "PA",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador35.jpg",
+    "votos": {
+      "reduz_pena": "Não",
+      "arcabouco": "Sim",
+      "marco_temporal": "Ausente (Justificado)",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Não"
+    }
+  },
+  {
+    "id": 39,
+    "nome": "Jaime Bagattoli",
+    "nome_completo": "Jaime Maximino Bagattoli",
+    "partido": "PL",
+    "uf": "RO",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador6340.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Não",
+      "marco_temporal": "Sim",
+      "reforma_tributaria": "Não",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Sim"
+    }
+  },
+  {
+    "id": 40,
+    "nome": "Jaques Wagner",
+    "nome_completo": "Jaques Wagner",
+    "partido": "PT",
+    "uf": "BA",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador581.jpg",
+    "votos": {
+      "reduz_pena": "Não",
+      "arcabouco": "Sim",
+      "marco_temporal": "Não",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Não",
+      "bets": "Não"
+    }
+  },
+  {
+    "id": 41,
+    "nome": "Jayme Campos",
+    "nome_completo": "Jayme Veríssimo de Campos",
+    "partido": "UNIÃO",
+    "uf": "MT",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador4531.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Sim",
+      "marco_temporal": "Sim",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Não"
+    }
+  },
+  {
+    "id": 42,
+    "nome": "Jorge Kajuru",
+    "nome_completo": "Jorge Kajuru Reis da Costa Nasser",
+    "partido": "PSB",
+    "uf": "GO",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5895.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Sim",
+      "marco_temporal": "Sim",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Não",
+      "bets": "Sim"
+    }
+  },
+  {
+    "id": 43,
+    "nome": "Jorge Seif",
+    "nome_completo": "Jorge Seif Júnior",
+    "partido": "PL",
+    "uf": "SC",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador6342.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Não",
+      "marco_temporal": "Sim",
+      "reforma_tributaria": "Não",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Sim"
+    }
+  },
+  {
+    "id": 44,
+    "nome": "José Lacerda",
+    "nome_completo": "José Esteves de Lacerda Filho",
+    "partido": "PSD",
+    "uf": "MT",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador6305.jpg",
+    "votos": {
+      "reduz_pena": "Não"
+    }
+  },
+  {
+    "id": 45,
+    "nome": "Jussara Lima",
+    "nome_completo": "Antônia Jussara Gomes Alves Sousa Lima",
+    "partido": "PSD",
+    "uf": "PI",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador6369.jpg",
+    "votos": {
+      "reduz_pena": "Não",
+      "arcabouco": "Sim",
+      "marco_temporal": "Não",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Não"
+    }
+  },
+  {
+    "id": 46,
+    "nome": "Laércio Oliveira",
+    "nome_completo": "Laércio José de Oliveira",
+    "partido": "PP",
+    "uf": "SE",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador4811.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Não",
+      "marco_temporal": "Sim",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Presente (Não Votou)"
+    }
+  },
+  {
+    "id": 47,
+    "nome": "Leila Barros",
+    "nome_completo": "Leila Gomes de Barros Rêgo",
+    "partido": "PDT",
+    "uf": "DF",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5979.jpg",
+    "votos": {
+      "reduz_pena": "Não",
+      "arcabouco": "Sim",
+      "marco_temporal": "Não",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Não",
+      "bets": "Sim"
+    }
+  },
+  {
+    "id": 48,
+    "nome": "Lucas Barreto",
+    "nome_completo": "Luiz Cantuária Barreto",
+    "partido": "PSD",
+    "uf": "AP",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5926.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Sim",
+      "marco_temporal": "Sim",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Não"
+    }
+  },
+  {
+    "id": 49,
+    "nome": "Luis Carlos Heinze",
+    "nome_completo": "Luis Carlos Heinze",
+    "partido": "PP",
+    "uf": "RS",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador1186.jpg",
+    "votos": {
+      "reduz_pena": "Presente (Não Votou)",
+      "arcabouco": "Não",
+      "marco_temporal": "Ausente (Licença Saúde)",
+      "reforma_tributaria": "Não",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Não"
+    }
+  },
+  {
+    "id": 50,
+    "nome": "Magno Malta",
+    "nome_completo": "Magno Pereira Malta",
+    "partido": "PL",
+    "uf": "ES",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador631.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Não",
+      "marco_temporal": "Sim",
+      "reforma_tributaria": "Não",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Sim"
+    }
+  },
+  {
+    "id": 51,
+    "nome": "Mara Gabrilli",
+    "nome_completo": "Mara Cristina Gabrilli",
+    "partido": "PSD",
+    "uf": "SP",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5376.jpg",
+    "votos": {
+      "reduz_pena": "Não",
+      "arcabouco": "Ausente (Licença Saúde)",
+      "marco_temporal": "Ausente (Licença Saúde)",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Não",
+      "bets": "Sim"
+    }
+  },
+  {
+    "id": 52,
+    "nome": "Marcelo Castro",
+    "nome_completo": "Marcelo Costa e Castro",
+    "partido": "MDB",
+    "uf": "PI",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador742.jpg",
+    "votos": {
+      "reduz_pena": "Não",
+      "arcabouco": "Sim",
+      "marco_temporal": "Não",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Não"
+    }
+  },
+  {
+    "id": 53,
+    "nome": "Marcio Bittar",
+    "nome_completo": "Marcio Miguel Bittar",
+    "partido": "PL",
+    "uf": "AC",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador285.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Sim",
+      "marco_temporal": "Sim",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Sim"
+    }
+  },
+  {
+    "id": 54,
+    "nome": "Marcos Rogério",
+    "nome_completo": "Marcos Rogério da Silva Brito",
+    "partido": "PL",
+    "uf": "RO",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5422.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Não",
+      "marco_temporal": "Sim",
+      "reforma_tributaria": "Ausente (Justificado)",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Sim"
+    }
+  },
+  {
+    "id": 55,
+    "nome": "Marcos do Val",
+    "nome_completo": "Marcos Ribeiro do Val",
+    "partido": "PODEMOS",
+    "uf": "ES",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5942.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Ausente (Licença Saúde)",
+      "marco_temporal": "Sim",
+      "reforma_tributaria": "Não",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Sim"
+    }
+  },
+  {
+    "id": 56,
+    "nome": "Mecias de Jesus",
+    "nome_completo": "Antônio Mecias Pereira de Jesus",
+    "partido": "REPUBLICANOS",
+    "uf": "RR",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador6027.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Sim",
+      "marco_temporal": "Sim",
+      "reforma_tributaria": "Não",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Sim"
+    }
+  },
+  {
+    "id": 57,
+    "nome": "Nelsinho Trad",
+    "nome_completo": "Nelson Trad Filho",
+    "partido": "PSD",
+    "uf": "MS",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5985.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Sim",
+      "marco_temporal": "Ausente (Missão)",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Ausente (Justificado)"
+    }
+  },
+  {
+    "id": 58,
+    "nome": "Omar Aziz",
+    "nome_completo": "Omar José Abdel Aziz",
+    "partido": "PSD",
+    "uf": "AM",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5525.jpg",
+    "votos": {
+      "reduz_pena": "Presente (Não Votou)",
+      "arcabouco": "Sim",
+      "marco_temporal": "Não",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Presente (Não Votou)"
+    }
+  },
+  {
+    "id": 59,
+    "nome": "Oriovisto Guimarães",
+    "nome_completo": "Oriovisto Guimaraes",
+    "partido": "PSDB",
+    "uf": "PR",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5924.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Sim",
+      "marco_temporal": "Sim",
+      "reforma_tributaria": "Não",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Presente (Não Votou)"
+    }
+  },
+  {
+    "id": 60,
+    "nome": "Otto Alencar",
+    "nome_completo": "Otto Roberto Mendonça de Alencar",
+    "partido": "PSD",
+    "uf": "BA",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5523.jpg",
+    "votos": {
+      "reduz_pena": "Não",
+      "arcabouco": "Sim",
+      "marco_temporal": "Não",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Presente (Não Votou)",
+      "bets": "Não"
+    }
+  },
+  {
+    "id": 61,
+    "nome": "Paulo Paim",
+    "nome_completo": "Paulo Renato Paim",
+    "partido": "PT",
+    "uf": "RS",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador825.jpg",
+    "votos": {
+      "reduz_pena": "Não",
+      "arcabouco": "Sim",
+      "marco_temporal": "Não",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Não",
+      "bets": "Não"
+    }
+  },
+  {
+    "id": 62,
+    "nome": "Plínio Valério",
+    "nome_completo": "Francisco Plínio Valério Tomaz",
+    "partido": "PSDB",
+    "uf": "AM",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5502.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Sim",
+      "marco_temporal": "Sim",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Sim"
+    }
+  },
+  {
+    "id": 63,
+    "nome": "Professora Dorinha Seabra",
+    "nome_completo": "Maria Auxiliadora Seabra Rezende",
+    "partido": "UNIÃO",
+    "uf": "TO",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5386.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Sim",
+      "marco_temporal": "Sim",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Sim"
+    }
+  },
+  {
+    "id": 64,
+    "nome": "Randolfe Rodrigues",
+    "nome_completo": "Randolph Frederich Rodrigues Alves",
+    "partido": "PT",
+    "uf": "AP",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5012.jpg",
+    "votos": {
+      "reduz_pena": "Não",
+      "arcabouco": "Sim",
+      "marco_temporal": "Não",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Presente (Não Votou)",
+      "bets": "Não"
+    }
+  },
+  {
+    "id": 65,
+    "nome": "Renan Calheiros",
+    "nome_completo": "José Renan Vasconcelos Calheiros",
+    "partido": "MDB",
+    "uf": "AL",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador70.jpg",
+    "votos": {
+      "reduz_pena": "Não",
+      "arcabouco": "Sim",
+      "marco_temporal": "Sim",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Presente (Não Votou)"
+    }
+  },
+  {
+    "id": 66,
+    "nome": "Rodrigo Pacheco",
+    "nome_completo": "Rodrigo Otavio Soares Pacheco",
+    "partido": "PSD",
+    "uf": "MG",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5732.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Presidente (Art. 51)",
+      "marco_temporal": "Presidente (Art. 51)",
+      "reforma_tributaria": "Presidente (Art. 51)",
+      "licenciamento_ambiental": "Ausente (Justificado)",
+      "bets": "Presente (Não Votou)"
+    }
+  },
+  {
+    "id": 67,
+    "nome": "Rogerio Marinho",
+    "nome_completo": "Rogério Simonetti Marinho",
+    "partido": "PL",
+    "uf": "RN",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador4694.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Não",
+      "marco_temporal": "Sim",
+      "reforma_tributaria": "Não",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Sim"
+    }
+  },
+  {
+    "id": 68,
+    "nome": "Rogério Carvalho",
+    "nome_completo": "Rogério Carvalho Santos",
+    "partido": "PT",
+    "uf": "SE",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5352.jpg",
+    "votos": {
+      "reduz_pena": "Não",
+      "arcabouco": "Sim",
+      "marco_temporal": "Não",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Não",
+      "bets": "Não"
+    }
+  },
+  {
+    "id": 69,
+    "nome": "Sergio Moro",
+    "nome_completo": "Sergio Fernando Moro",
+    "partido": "UNIÃO",
+    "uf": "PR",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador6331.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Sim",
+      "marco_temporal": "Sim",
+      "reforma_tributaria": "Não",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Sim"
+    }
+  },
+  {
+    "id": 70,
+    "nome": "Soraya Thronicke",
+    "nome_completo": "Soraya Vieira Thronicke",
+    "partido": "PODEMOS",
+    "uf": "MS",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5988.jpg",
+    "votos": {
+      "reduz_pena": "Não",
+      "arcabouco": "Sim",
+      "marco_temporal": "Sim",
+      "reforma_tributaria": "Não",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Não"
+    }
+  },
+  {
+    "id": 71,
+    "nome": "Styvenson Valentim",
+    "nome_completo": "Eann Styvenson Valentim Mendes",
+    "partido": "PSDB",
+    "uf": "RN",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5959.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Presente (Não Votou)",
+      "marco_temporal": "Sim",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Sim"
+    }
+  },
+  {
+    "id": 72,
+    "nome": "Sérgio Petecão",
+    "nome_completo": "Sérgio de Oliveira Cunha",
+    "partido": "PSD",
+    "uf": "AC",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador4560.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Sim",
+      "marco_temporal": "Ausente (Missão)",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Não"
+    }
+  },
+  {
+    "id": 73,
+    "nome": "Teresa Leitão",
+    "nome_completo": "Maria Teresa Leitão de Melo",
+    "partido": "PT",
+    "uf": "PE",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador6338.jpg",
+    "votos": {
+      "reduz_pena": "Não",
+      "arcabouco": "Sim",
+      "marco_temporal": "Ausente (Missão)",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Não",
+      "bets": "Sim"
+    }
+  },
+  {
+    "id": 74,
+    "nome": "Tereza Cristina",
+    "nome_completo": "Tereza Cristina Correa da Costa Dias",
+    "partido": "PP",
+    "uf": "MS",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5736.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Não",
+      "marco_temporal": "Sim",
+      "reforma_tributaria": "Não",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Sim"
+    }
+  },
+  {
+    "id": 75,
+    "nome": "Vanderlan Cardoso",
+    "nome_completo": "Vanderlan Vieira Cardoso",
+    "partido": "PSD",
+    "uf": "GO",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5899.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Sim",
+      "marco_temporal": "Sim",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Presente (Não Votou)"
+    }
+  },
+  {
+    "id": 76,
+    "nome": "Veneziano Vital do Rêgo",
+    "nome_completo": "Veneziano Vital do Rêgo Segundo Neto",
+    "partido": "MDB",
+    "uf": "PB",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5748.jpg",
+    "votos": {
+      "reduz_pena": "Não",
+      "arcabouco": "Sim",
+      "marco_temporal": "Ausente (Justificado)",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Ausente (Missão)",
+      "bets": "Não"
+    }
+  },
+  {
+    "id": 77,
+    "nome": "Wellington Fagundes",
+    "nome_completo": "Wellington Antonio Fagundes",
+    "partido": "PL",
+    "uf": "MT",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador1173.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Não",
+      "reforma_tributaria": "Não",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Presente (Não Votou)"
+    }
+  },
+  {
+    "id": 78,
+    "nome": "Weverton",
+    "nome_completo": "Weverton Rocha Marques de Sousa",
+    "partido": "PDT",
+    "uf": "MA",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5411.jpg",
+    "votos": {
+      "reduz_pena": "Presente (Não Votou)",
+      "arcabouco": "Sim",
+      "marco_temporal": "Sim",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Presidente (Art. 51)"
+    }
+  },
+  {
+    "id": 79,
+    "nome": "Wilder Morais",
+    "nome_completo": "Wilder Pedro de Morais",
+    "partido": "PL",
+    "uf": "GO",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5070.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Não",
+      "marco_temporal": "Sim",
+      "reforma_tributaria": "Não",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Sim"
+    }
+  },
+  {
+    "id": 80,
+    "nome": "Zenaide Maia",
+    "nome_completo": "Zenaide Maia Calado Pereira dos Santos",
+    "partido": "PSD",
+    "uf": "RN",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5783.jpg",
+    "votos": {
+      "reduz_pena": "Não",
+      "arcabouco": "Sim",
+      "marco_temporal": "Não",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Ausente",
+      "bets": "Sim"
+    }
+  },
+  {
+    "id": 81,
+    "nome": "Zequinha Marinho",
+    "nome_completo": "José da Cruz Marinho",
+    "partido": "PODEMOS",
+    "uf": "PA",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador3806.jpg",
+    "votos": {
+      "reduz_pena": "Sim",
+      "arcabouco": "Presente (Não Votou)",
+      "marco_temporal": "Sim",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Sim"
+    }
+  },
+  {
+    "id": 82,
+    "nome": "Margareth Buzetti",
+    "nome_completo": "Margareth Gettert Busetti",
+    "partido": "PSD",
+    "uf": "MT",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador6304.jpg",
+    "votos": {
+      "arcabouco": "Sim",
+      "marco_temporal": "Sim",
+      "reforma_tributaria": "Sim",
+      "licenciamento_ambiental": "Sim",
+      "bets": "Sim"
+    }
+  },
+  {
+    "id": 83,
+    "nome": "Rodrigo Cunha",
+    "nome_completo": "Rodrigo Santos Cunha",
+    "partido": "PODEMOS",
+    "uf": "AL",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5905.jpg",
+    "votos": {
+      "arcabouco": "Sim",
+      "marco_temporal": "Sim",
+      "reforma_tributaria": "Sim",
+      "bets": "Sim"
+    }
+  },
+  {
+    "id": 84,
+    "nome": "Romário",
+    "nome_completo": "Romario de Souza Faria",
+    "partido": "PL",
+    "uf": "RJ",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5322.jpg",
+    "votos": {
+      "arcabouco": "Não",
+      "marco_temporal": "Não",
+      "reforma_tributaria": "Não",
+      "licenciamento_ambiental": "Ausente",
+      "bets": "Sim"
+    }
+  },
+  {
+    "id": 85,
+    "nome": "Mauro Carvalho Junior",
+    "nome_completo": "Mauro Carvalho Junior",
+    "partido": "UNIÃO",
+    "uf": "MT",
+    "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador6362.jpg",
+    "votos": {
+      "marco_temporal": "Sim"
+    }
+  }
+]
