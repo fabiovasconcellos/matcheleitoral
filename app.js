@@ -836,11 +836,9 @@ function trackEvent(eventType, details = '') {
         time_since_last_event: timeSinceLastEvent
     };
 
-    if (eventType === 'inicio' || eventType.startsWith('compartilhamento_') || eventType === 'escolha_casa') {
-        sendSingleEvent(eventData);
-    } else {
-        eventQueue.push(eventData);
-    }
+    // Registra na fila interna e envia imediatamente para a aba "Eventos" da planilha
+    eventQueue.push(eventData);
+    sendSingleEvent(eventData);
 }
 
 function sendSingleEvent(eventData) {
