@@ -297,26 +297,30 @@ function setupEventListeners() {
         };
     }
 
-    // Listeners para a tela demográfica
+    // Listeners para a tela demográfica (escultura de eventos change e input)
     const demographicInputs = ['sexo-input', 'escolaridade-input', 'idade-input'];
     demographicInputs.forEach(id => {
         const el = document.getElementById(id);
         if (el) {
-            el.onchange = () => {
-                if (id === 'sexo-input') userProfile.sexo = el.value;
-                if (id === 'escolaridade-input') userProfile.escolaridade = el.value;
-                if (id === 'idade-input') userProfile.idade = el.value;
-                checkDemographicButton();
-            };
+            ['change', 'input'].forEach(evtType => {
+                el.addEventListener(evtType, (e) => {
+                    if (id === 'sexo-input') userProfile.sexo = e.target.value;
+                    if (id === 'escolaridade-input') userProfile.escolaridade = e.target.value;
+                    if (id === 'idade-input') userProfile.idade = e.target.value;
+                    checkDemographicButton();
+                });
+            });
         }
     });
 
     // Listener para nota na tela demográfica
     const congressoRadios = document.querySelectorAll('input[name="nota-congresso"]');
     congressoRadios.forEach(radio => {
-        radio.addEventListener('change', (e) => {
-            userProfile.avaliacaoCongresso = e.target.value;
-            checkDemographicButton();
+        ['change', 'input'].forEach(evtType => {
+            radio.addEventListener(evtType, (e) => {
+                userProfile.avaliacaoCongresso = e.target.value;
+                checkDemographicButton();
+            });
         });
     });
 
@@ -324,8 +328,12 @@ function setupEventListeners() {
     const viewMatchBtn = document.getElementById('view-match-btn');
     if (viewMatchBtn) {
         viewMatchBtn.onclick = () => {
-            trackEvent('demografica_completa', 'Respondeu pesquisa demográfica');
-            sendDataToSheet(true, false);
+            try {
+                trackEvent('demografica_completa', 'Respondeu pesquisa demográfica');
+                sendDataToSheet(true, false);
+            } catch (err) {
+                console.error("Erro no envio:", err);
+            }
             calculateResults();
         };
     }
@@ -370,7 +378,7 @@ function renderPauta() {
             <div class="stamp sim">SIM</div>
             <div class="stamp nao">NÃO</div>
             <span style="font-size:0.7rem; opacity:0.6;">PAUTA ${currentPautaIndex + 1}/${PAUTAS.length}</span>
-            <h2 style="margin-top:1rem;">${pauta.titulo}</h2>
+            <h2 style="margin-top:0.3rem;">${pauta.titulo}</h2>
             <p>${pauta.resumo}</p>
             
             <a href="${pauta.link}" target="_blank" class="saiba-mais">Saiba mais sobre este tema</a>
@@ -802,10 +810,10 @@ function checkDemographicButton() {
     const btn = document.getElementById('view-match-btn');
     if (!btn) return;
 
-    const hasSexo = userProfile.sexo !== "";
-    const hasEscolaridade = userProfile.escolaridade !== "";
-    const hasIdade = userProfile.idade !== "";
-    const hasNota = userProfile.avaliacaoCongresso !== "";
+    const hasSexo = Boolean(userProfile.sexo && userProfile.sexo.trim() !== "");
+    const hasEscolaridade = Boolean(userProfile.escolaridade && userProfile.escolaridade.trim() !== "");
+    const hasIdade = Boolean(userProfile.idade && userProfile.idade.toString().trim() !== "");
+    const hasNota = Boolean(userProfile.avaliacaoCongresso && userProfile.avaliacaoCongresso.toString().trim() !== "");
 
     btn.disabled = !(hasSexo && hasEscolaridade && hasIdade && hasNota);
 }
