@@ -82,6 +82,12 @@ const PAUTAS_CAMARA = [
         titulo: "Regulamentação das Bets",
         resumo: "Os deputados aprovaram no fim de 2023 o projeto de lei que regulamentou as apostas esportivas on-line, as chamadas bets. O texto aprovado tributou empresas e apostadores, definindo ainda regras para a exploração do serviço.",
         link: "https://www.camara.leg.br/noticias/1029089-camara-aprova-projeto-que-regulamenta-apostas-on-line"
+    },
+    {
+        id: "fim_escala_6x1",
+        titulo: "Fim da Escala 6x1",
+        resumo: "A Câmara dos Deputados aprovou em maio deste ano a Proposta de Emenda à Constituição (PEC) que estabelece jornada de trabalho de 40 horas semanais em cinco dias com dois de descanso, acabando com a escala 6 X 1 (um dia de descanso e 44 horas semanais).",
+        link: "https://www.camara.leg.br/noticias/1277141-CAMARA-APROVA-EM-DOIS-TURNOS-FIM-DA-ESCALA-6X1-COM-JORNADA-MAXIMA-DE-40-HORAS-SEMANAIS"
     }
 ];
 
@@ -874,7 +880,7 @@ function sendDataToSheet(isFinal, silent = false) {
         Q6_MarcoTemporal: userVotes['marco_temporal'] || "N/A",
         Q7_IsencaoIR: userVotes['isencao_ir'] || "N/A",
         Q8_Bets: userVotes['bets'] || "N/A",
-
+        Q9_Escala6x1: userVotes['fim_escala_6x1'] || "N/A",
         device: getDeviceType(),
         time_total: Math.round((Date.now() - sessionStartTime) / 1000),
         event_history: eventQueue
