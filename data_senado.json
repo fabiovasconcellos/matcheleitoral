@@ -13,7 +13,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
       "bets": "Ausente (Missão)"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "GOVERNADOR",
+    "numero_2026": "10",
+    "partido_2026": "REPUBLICANOS",
+    "uf_2026": "AC"
   },
   {
     "id": 2,
@@ -29,7 +34,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente (Licença Particular)",
       "bets": "Sim"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "SENADOR",
+    "numero_2026": "155",
+    "partido_2026": "MDB",
+    "uf_2026": "SE"
   },
   {
     "id": 3,
@@ -45,7 +55,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
       "bets": "Não"
-    }
+    },
+    "concorre_2026": false,
+    "cargo_2026": null,
+    "numero_2026": null,
+    "partido_2026": null,
+    "uf_2026": null
   },
   {
     "id": 4,
@@ -61,7 +76,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
       "bets": "Não"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "SENADOR",
+    "numero_2026": "100",
+    "partido_2026": "REPUBLICANOS",
+    "uf_2026": "BA"
   },
   {
     "id": 5,
@@ -77,7 +97,12 @@
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
       "bets": "Sim"
-    }
+    },
+    "concorre_2026": false,
+    "cargo_2026": null,
+    "numero_2026": null,
+    "partido_2026": null,
+    "uf_2026": null
   },
   {
     "id": 6,
@@ -93,7 +118,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
       "bets": "Não"
-    }
+    },
+    "concorre_2026": false,
+    "cargo_2026": null,
+    "numero_2026": null,
+    "partido_2026": null,
+    "uf_2026": null
   },
   {
     "id": 7,
@@ -109,7 +139,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
       "bets": "Não"
-    }
+    },
+    "concorre_2026": false,
+    "cargo_2026": null,
+    "numero_2026": null,
+    "partido_2026": null,
+    "uf_2026": null
   },
   {
     "id": 8,
@@ -120,7 +155,12 @@
     "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador6372.jpg",
     "votos": {
       "reduz_pena": "Sim"
-    }
+    },
+    "concorre_2026": false,
+    "cargo_2026": null,
+    "numero_2026": null,
+    "partido_2026": null,
+    "uf_2026": null
   },
   {
     "id": 9,
@@ -136,7 +176,12 @@
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
       "bets": "Sim"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "SENADOR",
+    "numero_2026": "222",
+    "partido_2026": "PL",
+    "uf_2026": "RJ"
   },
   {
     "id": 10,
@@ -152,7 +197,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
       "bets": "Sim"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "SENADOR",
+    "numero_2026": "555",
+    "partido_2026": "PSD",
+    "uf_2026": "MG"
   },
   {
     "id": 11,
@@ -168,7 +218,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
       "bets": "Não"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "SENADOR",
+    "numero_2026": "400",
+    "partido_2026": "PSB",
+    "uf_2026": "RR"
   },
   {
     "id": 12,
@@ -184,7 +239,12 @@
       "reforma_tributaria": "Ausente (Justificado)",
       "licenciamento_ambiental": "Ausente (Justificado)",
       "bets": "Presente (Não Votou)"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "SENADOR",
+    "numero_2026": "400",
+    "partido_2026": "PSB",
+    "uf_2026": "CE"
   },
   {
     "id": 13,
@@ -200,7 +260,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
       "bets": "Não"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "SENADOR",
+    "numero_2026": "111",
+    "partido_2026": "PP",
+    "uf_2026": "PI"
   },
   {
     "id": 14,
@@ -216,7 +281,12 @@
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
       "bets": "Sim"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "GOVERNADOR",
+    "numero_2026": "10",
+    "partido_2026": "REPUBLICANOS",
+    "uf_2026": "MG"
   },
   {
     "id": 15,
@@ -232,7 +302,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
       "bets": "Não"
-    }
+    },
+    "concorre_2026": false,
+    "cargo_2026": null,
+    "numero_2026": null,
+    "partido_2026": null,
+    "uf_2026": null
   },
   {
     "id": 16,
@@ -248,7 +323,12 @@
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
       "bets": "Sim"
-    }
+    },
+    "concorre_2026": false,
+    "cargo_2026": null,
+    "numero_2026": null,
+    "partido_2026": null,
+    "uf_2026": null
   },
   {
     "id": 17,
@@ -264,7 +344,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente (Justificado)",
       "bets": "Ausente (Justificado)"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "1º SUPLENTE",
+    "numero_2026": "100",
+    "partido_2026": "PP",
+    "uf_2026": "PB"
   },
   {
     "id": 18,
@@ -280,7 +365,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Presidente (Art. 51)",
       "bets": "Ausente (Justificado)"
-    }
+    },
+    "concorre_2026": false,
+    "cargo_2026": null,
+    "numero_2026": null,
+    "partido_2026": null,
+    "uf_2026": null
   },
   {
     "id": 19,
@@ -296,7 +386,12 @@
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
       "bets": "Não"
-    }
+    },
+    "concorre_2026": false,
+    "cargo_2026": null,
+    "numero_2026": null,
+    "partido_2026": null,
+    "uf_2026": null
   },
   {
     "id": 20,
@@ -308,7 +403,12 @@
     "votos": {
       "reduz_pena": "Sim",
       "licenciamento_ambiental": "Sim"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "1º SUPLENTE",
+    "numero_2026": "456",
+    "partido_2026": "PSDB",
+    "uf_2026": "AL"
   },
   {
     "id": 21,
@@ -324,7 +424,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
       "bets": "Não"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "SENADOR",
+    "numero_2026": "155",
+    "partido_2026": "MDB",
+    "uf_2026": "AM"
   },
   {
     "id": 22,
@@ -340,7 +445,12 @@
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
       "bets": "Sim"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "VICE-PRESIDENTE",
+    "numero_2026": "30",
+    "partido_2026": "NOVO",
+    "uf_2026": "BR"
   },
   {
     "id": 23,
@@ -356,7 +466,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente (Missão)",
       "bets": "Sim"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "SENADOR",
+    "numero_2026": "222",
+    "partido_2026": "PL",
+    "uf_2026": "TO"
   },
   {
     "id": 24,
@@ -372,7 +487,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
       "bets": "Não"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "GOVERNADOR",
+    "numero_2026": "22",
+    "partido_2026": "PL",
+    "uf_2026": "PB"
   },
   {
     "id": 25,
@@ -388,7 +508,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
       "bets": "Presente (Não Votou)"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "SENADOR",
+    "numero_2026": "133",
+    "partido_2026": "PT",
+    "uf_2026": "MA"
   },
   {
     "id": 26,
@@ -404,7 +529,12 @@
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
       "bets": "Sim"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "SENADOR",
+    "numero_2026": "111",
+    "partido_2026": "PP",
+    "uf_2026": "SC"
   },
   {
     "id": 27,
@@ -420,7 +550,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
       "bets": "Não"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "SENADOR",
+    "numero_2026": "133",
+    "partido_2026": "PT",
+    "uf_2026": "ES"
   },
   {
     "id": 28,
@@ -436,7 +571,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente (Justificado)",
       "bets": "Presente (Não Votou)"
-    }
+    },
+    "concorre_2026": false,
+    "cargo_2026": null,
+    "numero_2026": null,
+    "partido_2026": null,
+    "uf_2026": null
   },
   {
     "id": 29,
@@ -452,7 +592,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
       "bets": "Presente (Não Votou)"
-    }
+    },
+    "concorre_2026": false,
+    "cargo_2026": null,
+    "numero_2026": null,
+    "partido_2026": null,
+    "uf_2026": null
   },
   {
     "id": 30,
@@ -468,7 +613,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente (Licença Saúde)",
       "bets": "Sim"
-    }
+    },
+    "concorre_2026": false,
+    "cargo_2026": null,
+    "numero_2026": null,
+    "partido_2026": null,
+    "uf_2026": null
   },
   {
     "id": 31,
@@ -484,7 +634,12 @@
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
       "bets": "Sim"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "PRESIDENTE",
+    "numero_2026": "22",
+    "partido_2026": "PL",
+    "uf_2026": "BR"
   },
   {
     "id": 32,
@@ -500,7 +655,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente (Justificado)",
       "bets": "Ausente (Missão)"
-    }
+    },
+    "concorre_2026": false,
+    "cargo_2026": null,
+    "numero_2026": null,
+    "partido_2026": null,
+    "uf_2026": null
   },
   {
     "id": 33,
@@ -516,7 +676,12 @@
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
       "bets": "Sim"
-    }
+    },
+    "concorre_2026": false,
+    "cargo_2026": null,
+    "numero_2026": null,
+    "partido_2026": null,
+    "uf_2026": null
   },
   {
     "id": 34,
@@ -532,7 +697,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
       "bets": "Sim"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "SENADOR",
+    "numero_2026": "130",
+    "partido_2026": "PT",
+    "uf_2026": "PE"
   },
   {
     "id": 35,
@@ -548,7 +718,12 @@
       "reforma_tributaria": "Ausente (Justificado)",
       "licenciamento_ambiental": "Sim",
       "bets": "Não"
-    }
+    },
+    "concorre_2026": false,
+    "cargo_2026": null,
+    "numero_2026": null,
+    "partido_2026": null,
+    "uf_2026": null
   },
   {
     "id": 36,
@@ -564,7 +739,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
       "bets": "Não"
-    }
+    },
+    "concorre_2026": false,
+    "cargo_2026": null,
+    "numero_2026": null,
+    "partido_2026": null,
+    "uf_2026": null
   },
   {
     "id": 37,
@@ -580,7 +760,12 @@
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
       "bets": "Sim"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "DEPUTADO FEDERAL",
+    "numero_2026": "2200",
+    "partido_2026": "PL",
+    "uf_2026": "DF"
   },
   {
     "id": 38,
@@ -596,7 +781,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
       "bets": "Não"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "1º SUPLENTE",
+    "numero_2026": "151",
+    "partido_2026": "MDB",
+    "uf_2026": "PA"
   },
   {
     "id": 39,
@@ -612,7 +802,12 @@
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
       "bets": "Sim"
-    }
+    },
+    "concorre_2026": false,
+    "cargo_2026": null,
+    "numero_2026": null,
+    "partido_2026": null,
+    "uf_2026": null
   },
   {
     "id": 40,
@@ -628,7 +823,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
       "bets": "Não"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "SENADOR",
+    "numero_2026": "130",
+    "partido_2026": "PT",
+    "uf_2026": "BA"
   },
   {
     "id": 41,
@@ -644,7 +844,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
       "bets": "Não"
-    }
+    },
+    "concorre_2026": false,
+    "cargo_2026": null,
+    "numero_2026": null,
+    "partido_2026": null,
+    "uf_2026": null
   },
   {
     "id": 42,
@@ -660,7 +865,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
       "bets": "Sim"
-    }
+    },
+    "concorre_2026": false,
+    "cargo_2026": null,
+    "numero_2026": null,
+    "partido_2026": null,
+    "uf_2026": null
   },
   {
     "id": 43,
@@ -676,7 +886,12 @@
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
       "bets": "Sim"
-    }
+    },
+    "concorre_2026": false,
+    "cargo_2026": null,
+    "numero_2026": null,
+    "partido_2026": null,
+    "uf_2026": null
   },
   {
     "id": 44,
@@ -687,7 +902,12 @@
     "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador6305.jpg",
     "votos": {
       "reduz_pena": "Não"
-    }
+    },
+    "concorre_2026": false,
+    "cargo_2026": null,
+    "numero_2026": null,
+    "partido_2026": null,
+    "uf_2026": null
   },
   {
     "id": 45,
@@ -703,7 +923,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
       "bets": "Não"
-    }
+    },
+    "concorre_2026": false,
+    "cargo_2026": null,
+    "numero_2026": null,
+    "partido_2026": null,
+    "uf_2026": null
   },
   {
     "id": 46,
@@ -719,7 +944,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
       "bets": "Presente (Não Votou)"
-    }
+    },
+    "concorre_2026": false,
+    "cargo_2026": null,
+    "numero_2026": null,
+    "partido_2026": null,
+    "uf_2026": null
   },
   {
     "id": 47,
@@ -735,7 +965,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
       "bets": "Sim"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "SENADOR",
+    "numero_2026": "123",
+    "partido_2026": "PDT",
+    "uf_2026": "DF"
   },
   {
     "id": 48,
@@ -751,7 +986,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
       "bets": "Não"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "SENADOR",
+    "numero_2026": "555",
+    "partido_2026": "PSD",
+    "uf_2026": "AP"
   },
   {
     "id": 49,
@@ -767,7 +1007,12 @@
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
       "bets": "Não"
-    }
+    },
+    "concorre_2026": false,
+    "cargo_2026": null,
+    "numero_2026": null,
+    "partido_2026": null,
+    "uf_2026": null
   },
   {
     "id": 50,
@@ -783,7 +1028,12 @@
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
       "bets": "Sim"
-    }
+    },
+    "concorre_2026": false,
+    "cargo_2026": null,
+    "numero_2026": null,
+    "partido_2026": null,
+    "uf_2026": null
   },
   {
     "id": 51,
@@ -799,7 +1049,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
       "bets": "Sim"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "DEPUTADO ESTADUAL",
+    "numero_2026": "55177",
+    "partido_2026": "PSD",
+    "uf_2026": "SP"
   },
   {
     "id": 52,
@@ -815,7 +1070,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
       "bets": "Não"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "SENADOR",
+    "numero_2026": "151",
+    "partido_2026": "MDB",
+    "uf_2026": "PI"
   },
   {
     "id": 53,
@@ -831,7 +1091,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
       "bets": "Sim"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "SENADOR",
+    "numero_2026": "222",
+    "partido_2026": "PL",
+    "uf_2026": "AC"
   },
   {
     "id": 54,
@@ -847,7 +1112,12 @@
       "reforma_tributaria": "Ausente (Justificado)",
       "licenciamento_ambiental": "Sim",
       "bets": "Sim"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "GOVERNADOR",
+    "numero_2026": "22",
+    "partido_2026": "PL",
+    "uf_2026": "RO"
   },
   {
     "id": 55,
@@ -863,7 +1133,12 @@
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
       "bets": "Sim"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "SENADOR",
+    "numero_2026": "700",
+    "partido_2026": "AVANTE",
+    "uf_2026": "ES"
   },
   {
     "id": 56,
@@ -879,7 +1154,12 @@
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
       "bets": "Sim"
-    }
+    },
+    "concorre_2026": false,
+    "cargo_2026": null,
+    "numero_2026": null,
+    "partido_2026": null,
+    "uf_2026": null
   },
   {
     "id": 57,
@@ -895,7 +1175,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
       "bets": "Ausente (Justificado)"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "1º SUPLENTE",
+    "numero_2026": "222",
+    "partido_2026": "PSD",
+    "uf_2026": "MS"
   },
   {
     "id": 58,
@@ -911,7 +1196,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
       "bets": "Presente (Não Votou)"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "GOVERNADOR",
+    "numero_2026": "55",
+    "partido_2026": "PSD",
+    "uf_2026": "AM"
   },
   {
     "id": 59,
@@ -927,7 +1217,12 @@
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
       "bets": "Presente (Não Votou)"
-    }
+    },
+    "concorre_2026": false,
+    "cargo_2026": null,
+    "numero_2026": null,
+    "partido_2026": null,
+    "uf_2026": null
   },
   {
     "id": 60,
@@ -943,7 +1238,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Presente (Não Votou)",
       "bets": "Não"
-    }
+    },
+    "concorre_2026": false,
+    "cargo_2026": null,
+    "numero_2026": null,
+    "partido_2026": null,
+    "uf_2026": null
   },
   {
     "id": 61,
@@ -959,7 +1259,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
       "bets": "Não"
-    }
+    },
+    "concorre_2026": false,
+    "cargo_2026": null,
+    "numero_2026": null,
+    "partido_2026": null,
+    "uf_2026": null
   },
   {
     "id": 62,
@@ -975,7 +1280,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
       "bets": "Sim"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "SENADOR",
+    "numero_2026": "455",
+    "partido_2026": "PSDB",
+    "uf_2026": "AM"
   },
   {
     "id": 63,
@@ -991,7 +1301,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
       "bets": "Sim"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "GOVERNADOR",
+    "numero_2026": "44",
+    "partido_2026": "UNIÃO",
+    "uf_2026": "TO"
   },
   {
     "id": 64,
@@ -1007,7 +1322,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Presente (Não Votou)",
       "bets": "Não"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "SENADOR",
+    "numero_2026": "130",
+    "partido_2026": "PT",
+    "uf_2026": "AP"
   },
   {
     "id": 65,
@@ -1023,7 +1343,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
       "bets": "Presente (Não Votou)"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "SENADOR",
+    "numero_2026": "151",
+    "partido_2026": "MDB",
+    "uf_2026": "AL"
   },
   {
     "id": 66,
@@ -1039,7 +1364,12 @@
       "reforma_tributaria": "Presidente (Art. 51)",
       "licenciamento_ambiental": "Ausente (Justificado)",
       "bets": "Presente (Não Votou)"
-    }
+    },
+    "concorre_2026": false,
+    "cargo_2026": null,
+    "numero_2026": null,
+    "partido_2026": null,
+    "uf_2026": null
   },
   {
     "id": 67,
@@ -1055,7 +1385,12 @@
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
       "bets": "Sim"
-    }
+    },
+    "concorre_2026": false,
+    "cargo_2026": null,
+    "numero_2026": null,
+    "partido_2026": null,
+    "uf_2026": null
   },
   {
     "id": 68,
@@ -1071,7 +1406,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
       "bets": "Não"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "SENADOR",
+    "numero_2026": "131",
+    "partido_2026": "PT",
+    "uf_2026": "SE"
   },
   {
     "id": 69,
@@ -1087,7 +1427,12 @@
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
       "bets": "Sim"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "GOVERNADOR",
+    "numero_2026": "22",
+    "partido_2026": "PL",
+    "uf_2026": "PR"
   },
   {
     "id": 70,
@@ -1103,7 +1448,12 @@
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
       "bets": "Não"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "SENADOR",
+    "numero_2026": "400",
+    "partido_2026": "PSB",
+    "uf_2026": "MS"
   },
   {
     "id": 71,
@@ -1119,7 +1469,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
       "bets": "Sim"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "SENADOR",
+    "numero_2026": "200",
+    "partido_2026": "PODE",
+    "uf_2026": "RN"
   },
   {
     "id": 72,
@@ -1135,7 +1490,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
       "bets": "Não"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "SENADOR",
+    "numero_2026": "555",
+    "partido_2026": "PSD",
+    "uf_2026": "AC"
   },
   {
     "id": 73,
@@ -1151,7 +1511,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Não",
       "bets": "Sim"
-    }
+    },
+    "concorre_2026": false,
+    "cargo_2026": null,
+    "numero_2026": null,
+    "partido_2026": null,
+    "uf_2026": null
   },
   {
     "id": 74,
@@ -1167,7 +1532,12 @@
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
       "bets": "Sim"
-    }
+    },
+    "concorre_2026": false,
+    "cargo_2026": null,
+    "numero_2026": null,
+    "partido_2026": null,
+    "uf_2026": null
   },
   {
     "id": 75,
@@ -1183,7 +1553,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
       "bets": "Presente (Não Votou)"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "SENADOR",
+    "numero_2026": "555",
+    "partido_2026": "PSD",
+    "uf_2026": "GO"
   },
   {
     "id": 76,
@@ -1199,7 +1574,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente (Missão)",
       "bets": "Não"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "SENADOR",
+    "numero_2026": "155",
+    "partido_2026": "MDB",
+    "uf_2026": "PB"
   },
   {
     "id": 77,
@@ -1214,7 +1594,12 @@
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
       "bets": "Presente (Não Votou)"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "GOVERNADOR",
+    "numero_2026": "22",
+    "partido_2026": "PL",
+    "uf_2026": "MT"
   },
   {
     "id": 78,
@@ -1230,7 +1615,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
       "bets": "Presidente (Art. 51)"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "SENADOR",
+    "numero_2026": "123",
+    "partido_2026": "PDT",
+    "uf_2026": "MA"
   },
   {
     "id": 79,
@@ -1246,7 +1636,12 @@
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Sim",
       "bets": "Sim"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "GOVERNADOR",
+    "numero_2026": "22",
+    "partido_2026": "PL",
+    "uf_2026": "GO"
   },
   {
     "id": 80,
@@ -1262,7 +1657,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Ausente",
       "bets": "Sim"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "SENADOR",
+    "numero_2026": "555",
+    "partido_2026": "PSD",
+    "uf_2026": "RN"
   },
   {
     "id": 81,
@@ -1278,7 +1678,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
       "bets": "Sim"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "SENADOR",
+    "numero_2026": "200",
+    "partido_2026": "PODE",
+    "uf_2026": "PA"
   },
   {
     "id": 82,
@@ -1293,7 +1698,12 @@
       "reforma_tributaria": "Sim",
       "licenciamento_ambiental": "Sim",
       "bets": "Sim"
-    }
+    },
+    "concorre_2026": true,
+    "cargo_2026": "SENADOR",
+    "numero_2026": "111",
+    "partido_2026": "PP",
+    "uf_2026": "MT"
   },
   {
     "id": 83,
@@ -1307,7 +1717,12 @@
       "marco_temporal": "Sim",
       "reforma_tributaria": "Sim",
       "bets": "Sim"
-    }
+    },
+    "concorre_2026": false,
+    "cargo_2026": null,
+    "numero_2026": null,
+    "partido_2026": null,
+    "uf_2026": null
   },
   {
     "id": 84,
@@ -1322,7 +1737,12 @@
       "reforma_tributaria": "Não",
       "licenciamento_ambiental": "Ausente",
       "bets": "Sim"
-    }
+    },
+    "concorre_2026": false,
+    "cargo_2026": null,
+    "numero_2026": null,
+    "partido_2026": null,
+    "uf_2026": null
   },
   {
     "id": 85,
@@ -1333,6 +1753,11 @@
     "foto": "https://www.senado.leg.br/senadores/img/fotos-oficiais/senador6362.jpg",
     "votos": {
       "marco_temporal": "Sim"
-    }
+    },
+    "concorre_2026": false,
+    "cargo_2026": null,
+    "numero_2026": null,
+    "partido_2026": null,
+    "uf_2026": null
   }
 ]

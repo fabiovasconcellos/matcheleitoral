@@ -368,6 +368,22 @@ option {
     flex: 1;
     text-align: left;
 }
+.asterisco-concorre {
+    color: var(--accent-color, #00d2ff);
+    font-weight: bold;
+    font-size: 1.05em;
+    cursor: help;
+}
+
+.nota-concorre {
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 0.8rem;
+    margin-bottom: 0.6rem;
+    opacity: 0.85;
+}
+
 
 .match-pct {
     font-weight: bold;

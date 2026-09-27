@@ -136,7 +136,7 @@ let PAUTAS = PAUTAS_CAMARA;
 // Load Data
 async function loadData(dataFile) {
     try {
-        const response = await fetch(dataFile);
+        const response = await fetch(`${dataFile}?v=20260927_candidatos`);
         let rawDeputies = await response.json();
 
         // 1. DEDUPLICAÇÃO E MERGE DE DADOS
@@ -582,7 +582,7 @@ function calculateResults() {
                      onerror="this.style.opacity='0'">
             </div>
             <div class="dep-info">
-                <strong>${dep.nome}</strong><br>
+                <strong>${dep.nome}${dep.concorre_2026 ? ' <span class="asterisco-concorre" title="Concorre em 2026">*</span>' : ''}</strong><br>
                 <span style="font-size:0.8rem; opacity:0.7;">${dep.partido} - ${dep.uf}</span>
             </div>
             <div class="match-pct">${dep.pct}%</div>
@@ -611,7 +611,7 @@ function calculateResults() {
                         <img src="https://wsrv.nl/?url=${encodeURIComponent(dep.foto)}&w=400" style="position: absolute; top:0; left:0; width:100%; min-height:100%; object-fit:cover;" crossorigin="anonymous">
                     </div>
                     <div style="flex:1;">
-                        <h2 style="font-size:2.2rem; margin-bottom:5px;">${dep.nome}</h2>
+                        <h2 style="font-size:2.2rem; margin-bottom:5px;">${dep.nome}${dep.concorre_2026 ? ' *' : ''}</h2>
                         <p style="font-size:1.6rem; opacity:0.8;">${dep.partido} - ${dep.uf}</p>
                     </div>
                     <div style="font-size:3rem; font-weight:900; color:${idx === 0 ? '#00e676' : '#00d2ff'};">
@@ -739,8 +739,8 @@ function showDeputyDetail(depId, matchPct) {
                      style="width:100%; height:100%; object-fit:cover; object-position:top; position:absolute; top:0; left:0; z-index:2; display:block;" 
                      onerror="this.style.opacity='0'">
             </div>
-            <h2 style="margin:0;">${dep.nome}</h2>
-            <div style="opacity:0.7;">${dep.partido} - ${dep.uf}</div>
+            <h2 style="margin:0;">${dep.nome}${dep.concorre_2026 ? ' <span class="asterisco-concorre" title="Concorre em 2026">*</span>' : ''}</h2>
+            <div style="opacity:0.7;">${dep.partido} - ${dep.uf}${dep.concorre_2026 ? ' • <span style="color:var(--accent-color, #00d2ff); font-size:0.85rem;">Concorre em 2026</span>' : ''}</div>
             <div style="font-size:1.5rem; font-weight:bold; color:var(--success-color); margin-top:0.5rem;">${matchPct}% de Match</div>
         </div>
         <div style="margin-top:1rem;">
