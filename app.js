@@ -224,7 +224,11 @@ function showScreen(screenId) {
 }
 
 function populateParties() {
-    const partidos = [...new Set(deputies.map(d => d.partido))].filter(Boolean).sort();
+    const semPartidoValues = ['s/partido', 'sem partido', 'nenhum'];
+    const partidos = [...new Set(deputies.map(d => d.partido))]
+        .filter(Boolean)
+        .filter(p => !semPartidoValues.includes(p.trim().toLowerCase()))
+        .sort((a, b) => a.localeCompare(b, 'pt-BR'));
     const select = document.getElementById('partido-select');
     if (!select) return;
 
